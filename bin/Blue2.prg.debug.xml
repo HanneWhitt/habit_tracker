@@ -61,80 +61,78 @@
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="136" pc="268436911" symbol="loadCurrentData"/>
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="137" pc="268436946" symbol="loadCurrentData"/>
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="138" pc="268436981" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="141" pc="268437004" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="143" pc="268437012" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="144" pc="268437033" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="146" pc="268437046" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="148" pc="268437066" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="150" pc="268437091" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="151" pc="268437096" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="154" pc="268437106" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="156" pc="268437136" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="157" pc="268437149" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="159" pc="268437162" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="160" pc="268437185" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="163" pc="268437238" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="165" pc="268437246" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="167" pc="268437277" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="169" pc="268437285" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="171" pc="268437308" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="177" pc="268437314" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="178" pc="268437336" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="180" pc="268437361" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="181" pc="268437387" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="183" pc="268437407" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="184" pc="268437424" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="185" pc="268437431" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="186" pc="268437447" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="188" pc="268437454" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="189" pc="268437489" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="191" pc="268437524" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="196" pc="268437539" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="202" pc="268437568" symbol="loadCurrentData"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="15" lineNum="230" pc="268437615" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="15" lineNum="232" pc="268437619" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="16" lineNum="238" pc="268437640" symbol="onHide"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="17" lineNum="241" pc="268437645" symbol="contains"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="17" lineNum="242" pc="268437649" symbol="contains"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="245" pc="268437670" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="246" pc="268437674" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="248" pc="268437693" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="249" pc="268437710" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="251" pc="268437719" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="254" pc="268437728" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="255" pc="268437802" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="256" pc="268437811" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="257" pc="268437924" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="259" pc="268437933" symbol="daysInMonth"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="264" pc="268437971" symbol="daysInYear"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="265" pc="268437975" symbol="daysInYear"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="266" pc="268437992" symbol="daysInYear"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="268" pc="268438001" symbol="daysInYear"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="273" pc="268438008" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="275" pc="268438012" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="278" pc="268438019" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="279" pc="268438030" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="280" pc="268438045" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="282" pc="268438079" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="283" pc="268438090" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="287" pc="268438121" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="288" pc="268438132" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="290" pc="268438163" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="291" pc="268438174" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="294" pc="268438205" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="295" pc="268438216" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="296" pc="268438231" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="297" pc="268438244" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="302" pc="268438280" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="303" pc="268438310" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="305" pc="268438341" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="306" pc="268438352" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="309" pc="268438383" symbol="dayNumber"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="311" pc="268438390" symbol="dayNumber"/>
-<entry filename="Rez" id="26" lineNum="16" pc="268438394" symbol="MainLayout"/>
-<entry filename="Rez" id="26" lineNum="18" pc="268438406" symbol="MainLayout"/>
-<entry filename="Rez" id="26" lineNum="19" pc="268438525" symbol="MainLayout"/>
-<entry filename="Rez" id="26" lineNum="21" pc="268438577" symbol="MainLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="140" pc="268437004" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="142" pc="268437012" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="143" pc="268437033" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="145" pc="268437046" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="147" pc="268437066" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="149" pc="268437091" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="150" pc="268437096" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="153" pc="268437106" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="155" pc="268437136" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="156" pc="268437149" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="158" pc="268437162" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="159" pc="268437185" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="162" pc="268437238" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="164" pc="268437246" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="166" pc="268437277" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="168" pc="268437285" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="170" pc="268437308" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="176" pc="268437314" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="177" pc="268437336" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="179" pc="268437361" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="180" pc="268437387" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="182" pc="268437407" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="183" pc="268437424" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="184" pc="268437431" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="185" pc="268437447" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="187" pc="268437454" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="188" pc="268437469" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="14" lineNum="191" pc="268437498" symbol="loadCurrentData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="15" lineNum="219" pc="268437545" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="15" lineNum="221" pc="268437549" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="16" lineNum="227" pc="268437570" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="17" lineNum="230" pc="268437575" symbol="contains"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="17" lineNum="231" pc="268437579" symbol="contains"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="234" pc="268437600" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="235" pc="268437604" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="237" pc="268437623" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="238" pc="268437640" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="240" pc="268437649" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="243" pc="268437658" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="244" pc="268437732" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="245" pc="268437741" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="246" pc="268437854" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="18" lineNum="248" pc="268437863" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="253" pc="268437901" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="254" pc="268437905" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="255" pc="268437922" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="19" lineNum="257" pc="268437931" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="262" pc="268437938" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="264" pc="268437942" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="267" pc="268437949" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="268" pc="268437960" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="269" pc="268437975" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="271" pc="268438009" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="272" pc="268438020" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="276" pc="268438051" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="277" pc="268438062" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="279" pc="268438093" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="280" pc="268438104" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="283" pc="268438135" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="284" pc="268438146" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="285" pc="268438161" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="286" pc="268438174" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="291" pc="268438210" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="292" pc="268438240" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="294" pc="268438271" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="295" pc="268438282" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="298" pc="268438313" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="300" pc="268438320" symbol="dayNumber"/>
+<entry filename="Rez" id="26" lineNum="16" pc="268438324" symbol="MainLayout"/>
+<entry filename="Rez" id="26" lineNum="19" pc="268438336" symbol="MainLayout"/>
+<entry filename="Rez" id="26" lineNum="20" pc="268438455" symbol="MainLayout"/>
+<entry filename="Rez" id="26" lineNum="22" pc="268438519" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="8388937" symbol="day_of_week"/>
@@ -215,40 +213,40 @@
 <entry endPc="268436748" name="current_habits_val" stackId="18" startPc="268435630"/>
 <entry endPc="268436748" name="current_habits_key" stackId="17" startPc="268435630"/>
 <entry endPc="268436893" name="time_info" stackId="1" startPc="268436830"/>
-<entry endPc="268437568" name="i" stackId="19" startPc="268437539"/>
-<entry endPc="268437588" name="copy_length" stackId="17" startPc="268437314"/>
-<entry endPc="268437588" name="block_data" stackId="14" startPc="268437314"/>
-<entry endPc="268437588" name="write_start" stackId="18" startPc="268437314"/>
-<entry endPc="268437588" name="splice_start" stackId="16" startPc="268437314"/>
-<entry endPc="268437588" name="first_start" stackId="15" startPc="268437314"/>
-<entry endPc="268437588" name="storage_key" stackId="13" startPc="268437314"/>
-<entry endPc="268437588" name="block_start" stackId="11" startPc="268437136"/>
-<entry endPc="268437588" name="block_end" stackId="12" startPc="268437136"/>
-<entry endPc="268437601" name="block_idx" stackId="10" startPc="268437136"/>
-<entry endPc="268437601" name="habit_name" stackId="6" startPc="268437033"/>
-<entry endPc="268437601" name="habit_meta" stackId="7" startPc="268437033"/>
-<entry endPc="268437601" name="display_data" stackId="8" startPc="268437033"/>
-<entry endPc="268437601" name="blocks" stackId="9" startPc="268437033"/>
-<entry endPc="268437614" name="h" stackId="5" startPc="268437033"/>
-<entry endPc="268437614" name="current_data" stackId="4" startPc="268436898"/>
-<entry endPc="268437614" name="first_day_number" stackId="3" startPc="268436898"/>
-<entry endPc="268437615" name="n_days_back" stackId="2" startPc="268436894"/>
-<entry endPc="268437615" name="current_day_number" stackId="1" startPc="268436894"/>
-<entry endPc="268437640" name="dc" stackId="1" startPc="268437615"/>
-<entry endPc="268437670" name="element" stackId="2" startPc="268437645"/>
-<entry endPc="268437670" name="array" stackId="1" startPc="268437645"/>
-<entry endPc="268437971" name="year" stackId="2" startPc="268437670"/>
-<entry endPc="268437971" name="month" stackId="1" startPc="268437670"/>
-<entry endPc="268438008" name="year" stackId="1" startPc="268437971"/>
-<entry endPc="268438076" name="y" stackId="5" startPc="268438045"/>
-<entry endPc="268438264" name="m_str" stackId="7" startPc="268438231"/>
-<entry endPc="268438277" name="m" stackId="6" startPc="268438231"/>
-<entry endPc="268438393" name="days_since_31122019" stackId="4" startPc="268438012"/>
-<entry endPc="268438394" name="day" stackId="1" startPc="268438008"/>
-<entry endPc="268438394" name="year" stackId="3" startPc="268438008"/>
-<entry endPc="268438394" name="month" stackId="2" startPc="268438008"/>
-<entry endPc="268438594" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268438406"/>
-<entry endPc="268438595" name="dc" stackId="1" startPc="268438394"/>
+<entry endPc="268437498" name="i" stackId="19" startPc="268437469"/>
+<entry endPc="268437518" name="copy_length" stackId="17" startPc="268437314"/>
+<entry endPc="268437518" name="block_data" stackId="14" startPc="268437314"/>
+<entry endPc="268437518" name="write_start" stackId="18" startPc="268437314"/>
+<entry endPc="268437518" name="splice_start" stackId="16" startPc="268437314"/>
+<entry endPc="268437518" name="first_start" stackId="15" startPc="268437314"/>
+<entry endPc="268437518" name="storage_key" stackId="13" startPc="268437314"/>
+<entry endPc="268437518" name="block_start" stackId="11" startPc="268437136"/>
+<entry endPc="268437518" name="block_end" stackId="12" startPc="268437136"/>
+<entry endPc="268437531" name="block_idx" stackId="10" startPc="268437136"/>
+<entry endPc="268437531" name="habit_name" stackId="6" startPc="268437033"/>
+<entry endPc="268437531" name="habit_meta" stackId="7" startPc="268437033"/>
+<entry endPc="268437531" name="display_data" stackId="8" startPc="268437033"/>
+<entry endPc="268437531" name="blocks" stackId="9" startPc="268437033"/>
+<entry endPc="268437544" name="h" stackId="5" startPc="268437033"/>
+<entry endPc="268437544" name="current_data" stackId="4" startPc="268436898"/>
+<entry endPc="268437544" name="first_day_number" stackId="3" startPc="268436898"/>
+<entry endPc="268437545" name="n_days_to_display" stackId="2" startPc="268436894"/>
+<entry endPc="268437545" name="current_day_number" stackId="1" startPc="268436894"/>
+<entry endPc="268437570" name="dc" stackId="1" startPc="268437545"/>
+<entry endPc="268437600" name="element" stackId="2" startPc="268437575"/>
+<entry endPc="268437600" name="array" stackId="1" startPc="268437575"/>
+<entry endPc="268437901" name="year" stackId="2" startPc="268437600"/>
+<entry endPc="268437901" name="month" stackId="1" startPc="268437600"/>
+<entry endPc="268437938" name="year" stackId="1" startPc="268437901"/>
+<entry endPc="268438006" name="y" stackId="5" startPc="268437975"/>
+<entry endPc="268438194" name="m_str" stackId="7" startPc="268438161"/>
+<entry endPc="268438207" name="m" stackId="6" startPc="268438161"/>
+<entry endPc="268438323" name="days_since_31122019" stackId="4" startPc="268437942"/>
+<entry endPc="268438324" name="day" stackId="1" startPc="268437938"/>
+<entry endPc="268438324" name="year" stackId="3" startPc="268437938"/>
+<entry endPc="268438324" name="month" stackId="2" startPc="268437938"/>
+<entry endPc="268438536" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268438336"/>
+<entry endPc="268438537" name="dc" stackId="1" startPc="268438324"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
@@ -301,7 +299,7 @@
 </functionEntry>
 <functionEntry accessMode="public" name="loadCurrentData" parent="Blue2View">
 <param id="current_day_number"/>
-<param id="n_days_back"/>
+<param id="n_days_to_display"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onUpdate" parent="Blue2View">

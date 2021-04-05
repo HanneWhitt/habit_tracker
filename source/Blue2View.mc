@@ -130,13 +130,12 @@ class Blue2View extends WatchUi.View {
 	}
 
 	// A function to load from storage data for the last self.n_days and put it in an array
-    function loadCurrentData(current_day_number, n_days_back) {
+    function loadCurrentData(current_day_number, n_days_to_display) {
     	
-    	var first_day_number = current_day_number - n_days_back + 1; // +1 for boundary problem
+    	var first_day_number = current_day_number - n_days_to_display + 1; // +1 for boundary problem
     	System.println("First day number: " + first_day_number.toString());
     	System.println("Current day number: " + current_day_number.toString());
     	System.println("");
-    	
     	
 	   	var current_data = {};
 		
@@ -147,7 +146,7 @@ class Blue2View extends WatchUi.View {
     		
     		var habit_meta = Application.Storage.getValue(habit_name);
     		
-    		var display_data = new [n_days_back];
+    		var display_data = new [n_days_to_display];
     		var blocks = habit_meta["block_date_intervals"];
     		
     		// Iterate through data blocks, with most recent first
@@ -173,7 +172,7 @@ class Blue2View extends WatchUi.View {
 				} else { 
 					// Relevant data!
 					
-					// Construct storage key:		
+					// Construct storage key and load block:		
 					var storage_key = habit_name + '_' + block_start.toString();
 					var block_data = Application.Storage.getValue(storage_key);
 					
@@ -184,19 +183,9 @@ class Blue2View extends WatchUi.View {
 					var splice_start = first_start - block_start;
 					var copy_length = block_data.size() - splice_start;										
 					var write_start = first_start - first_day_number;
-										
-					System.println("splice start  " + splice_start.toString());
-					System.println("write diff  " + write_start.toString());
 					
 					for (var i = 0; i < copy_length; i += 1) {
-//						System.println(i + splice_start); // position to copy from 
-//						System.println(i + write_start); // position to copy to
-						
-						
 						display_data[i + write_start] = block_data[i + splice_start];
-						
-//						System.println("");
-						
 					}
 					
 					System.println(display_data);
