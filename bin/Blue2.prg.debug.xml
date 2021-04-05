@@ -128,9 +128,9 @@
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="281" pc="268438249" symbol="dayNumber"/>
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\Blue2View.mc" id="20" lineNum="283" pc="268438256" symbol="dayNumber"/>
 <entry filename="Rez" id="26" lineNum="16" pc="268438260" symbol="MainLayout"/>
-<entry filename="Rez" id="26" lineNum="18" pc="268438272" symbol="MainLayout"/>
-<entry filename="Rez" id="26" lineNum="19" pc="268438391" symbol="MainLayout"/>
-<entry filename="Rez" id="26" lineNum="21" pc="268438443" symbol="MainLayout"/>
+<entry filename="Rez" id="26" lineNum="19" pc="268438272" symbol="MainLayout"/>
+<entry filename="Rez" id="26" lineNum="20" pc="268438391" symbol="MainLayout"/>
+<entry filename="Rez" id="26" lineNum="22" pc="268438455" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="8388937" symbol="day_of_week"/>
@@ -243,8 +243,8 @@
 <entry endPc="268438260" name="day" stackId="1" startPc="268437874"/>
 <entry endPc="268438260" name="year" stackId="3" startPc="268437874"/>
 <entry endPc="268438260" name="month" stackId="2" startPc="268437874"/>
-<entry endPc="268438460" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268438272"/>
-<entry endPc="268438461" name="dc" stackId="1" startPc="268438260"/>
+<entry endPc="268438472" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268438272"/>
+<entry endPc="268438473" name="dc" stackId="1" startPc="268438260"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
