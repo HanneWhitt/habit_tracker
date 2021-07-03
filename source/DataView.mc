@@ -17,7 +17,7 @@ class DataView extends WatchUi.View {
 	protected var month_number;
 	protected var year;
 	protected var dayNum;	
-	protected var time_info;
+	protected var time;
 
     function initialize(arg) {
         View.initialize();
@@ -55,16 +55,10 @@ class DataView extends WatchUi.View {
     	self.loadSettings();
     	
     	// Get current time information
-    	self.time_info = self.getTime();
-    	self.day = self.time_info[0];
-    	self.month = self.time_info[1];
-    	self.month_number = self.time_info[2];
-    	self.year = self.time_info[3];
-    	
-    	self.dayNum = self.dayNumber(self.day, self.month_number, self.year);
+    	self.time = getTime();
     	
     	// A function to load from storage data for the last self.n_days and put it in an array
-    	self.current_data = self.loadCurrentData(self.dayNum, self.n_days);	
+    	self.current_data = self.loadCurrentData(self.time["day_num"], self.n_days);	
     	
     	
     }
@@ -82,20 +76,6 @@ class DataView extends WatchUi.View {
       	self.n_habits = self.active_habits.size();
 		
     }
-
-
-	// Get current time information
-	function getTime() {
-		// var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-		// var days_in_month = self.daysInMonth(now.month, now.year);
-		// var time_info = [now.day, now.month, month_to_number[now.month], now.year];
-
-    	// The time is, for dev, fixed as if the day is 7th Jan 2021. 
-		var time_info = [7, "Jan", 1, 2021];
-
-		return time_info;
-
-	}
 
 	// A function to load from storage data for the last n_days_to_display and put it in an array
     function loadCurrentData(current_day_number, n_days_to_display) {
@@ -163,7 +143,7 @@ class DataView extends WatchUi.View {
     	return current_data;	
     }
 
-//	function display(active_habits, current_data, selected_habit, selected_day) {
+//	function display(dc, selected_habit, selected_day) {
 //		
 //        // Bunch of variables
 //		var screen_radius = 120.0; // Should be read directly
@@ -172,19 +152,12 @@ class DataView extends WatchUi.View {
 //		var min_radius = 40.0; // Should be in config
 //		var gap_degrees = 2.0; // Should be in config
 //		var gap_radius = 3.0; // Should be in config
-//        
-//        // Set background white
-//        dc.clearClip();
-//		dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
-//		dc.clear();    
 //		
-//		// Get time info
-//		var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-//		var days_in_month = self.daysInMonth(now.month, now.year);
-//		
-//		//public var n_sectors = 14; // might want to change to e.g 2 weeks in future
-//		
+//		// days in month
+//		var days_in_month = self.daysInMonth(self.month, self.year);
+//				
 //		var degree_increment = (max_display_degrees - min_display_degrees)/n_sectors;
+//		var radius_increment = (screen_radius - min_radius)/self.n_habits;
 //		
 //		var current_data_habit_names = self.current_data[0];
 //		var current_data_values = self.current_data[1];
@@ -244,7 +217,7 @@ class DataView extends WatchUi.View {
 //			}
 //			
 //			
-//			radius_increment = (screen_radius - min_radius)/$.n_habits;
+//
 //			day_min_deg = min_display_degrees + day*degree_increment;
 //			day_max_deg = day_min_deg + degree_increment - gap_degrees;
 //		
@@ -281,102 +254,14 @@ class DataView extends WatchUi.View {
     function onUpdate(dc) {
   
         
-    }
-    
-    
-    function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
-		dc.setColor(colour, colour);
-		var width = endrad - startrad;
-        dc.setPenWidth(width);
-        dc.drawArc(
-        dc.getWidth() / 2,                     
-        dc.getHeight() / 2,       
-        startrad + width / 2,
-        Graphics.ARC_COUNTER_CLOCKWISE,
-        startdeg + 90,
-        enddeg + 90);
-	}
-        
+    }        
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
     }
-
-    function contains(array, element) {
-    	return array.indexOf(element) != -1;
-    }
-
-	function daysInMonth(month, year) {
-		if (month.equals("Feb")) {
-			// Check if it's a leap year
-			if (year % 4 == 0) {
-				return 29;
-			} else {
-				return 28;
-			}
-		} else {
-			if (self.contains(["Apr", "Jun", "Sep", "Nov"], month)) {
-				return 30;
-			} else if (self.contains(["Jan", "Mar", "May", "Jul", "Aug", "Oct", "Dec"], month)) {
-				return 31;
-			} else {
-				throw new InvalidValueException("daysInMonth() got month arg with unexpected value '" + month + "'");
-			}
-		}
-	}
 	
-	function daysInYear(year) {
-		if (year % 4 == 0) {
-			return 366;
-		} else {
-			return 365;
-		}
-	}
-	
-	// function to calculate the number of days since Dec 31st 2019. Used as a simpler language for dates internally
-	function dayNumber(day, month, year) {
-		
-		var days_since_31122019 = 0;
-		
-		// years...
-		if (year > 2020) {
-			for (var y = 2020; y < year; y += 1) {
-				days_since_31122019 += self.daysInYear(y);
-			} 
-		} else if (year < 2020) {
-			throw new InvalidValueException("dayNumber() only handles dates beyond 1st Jan 2020.");
-		}
-		
-		// months... 
-		if (month > 12) {
-			throw new InvalidValueException("Month number greater than 12 submitted to dayNumber()");
-		}
-		if (month < 1) {
-			throw new InvalidValueException("Month number less than 1 submitted to dayNumber()");
-		}
-		
-		if (month > 1) {
-			for (var m = 1; m < month; m += 1) {
-				var m_str = number_to_month[m];
-				days_since_31122019 += self.daysInMonth(m_str, year);
-			}
-		}
-		
-		// days...
-		if (day > self.daysInMonth(number_to_month[month], year)) {
-			throw new InvalidValueException("day value submitted to dayNumber() larger than number of days in month");
-		}
-		if (month < 1) {
-			throw new InvalidValueException("day value less than 1 submitted to dayNumber()");
-		}
-		
-		days_since_31122019 += day;
-		
-		return days_since_31122019;
-		
-	}
 }
 
 
