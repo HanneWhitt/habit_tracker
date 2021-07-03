@@ -1,6 +1,6 @@
 using Toybox.Application;
 
-class Blue2App extends Application.AppBase {
+class BlueApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -22,7 +22,7 @@ class Blue2App extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-        return [ new Blue2View() ];
+        return [ new DataView("NERDSSS") ];
     }
     
     // onStop() is called when your application is exiting

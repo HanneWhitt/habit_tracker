@@ -4,7 +4,7 @@ using Toybox.Application;
 using Toybox.System;
 
 
-class Blue2View extends WatchUi.View {
+class DataView extends WatchUi.View {
 
 	protected var colour_dict;
 	protected var active_habits;
@@ -19,8 +19,11 @@ class Blue2View extends WatchUi.View {
 	protected var dayNum;	
 	protected var time_info;
 
-    function initialize() {
+    function initialize(arg) {
         View.initialize();
+        
+        System.println(arg);
+        
     }
 
     // Load your resources here
