@@ -1,17 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Time.Gregorian;
 using Toybox.Application;
-
-
-
-function max(a, b) {
-    if (a > b) { 
-		return a;
-	} else { 
-		return b;
-	}
-}
-
+using Toybox.System;
 
 
 class Blue2View extends WatchUi.View {
@@ -29,10 +19,6 @@ class Blue2View extends WatchUi.View {
 	protected var dayNum;	
 	protected var time_info;
 
-	var month_to_number = {"Jan" => 1, "Feb" => 2, "Mar" => 3, "Apr" => 4, "May" => 5, "Jun" => 6, "Jul" => 7, "Aug" => 8, "Sep" => 9, "Oct" => 10, "Nov" => 11, "Dec" => 12};
-	var number_to_month = {1 => "Jan", 2 => "Feb", 3 => "Mar", 4 => "Apr", 5 => "May", 6 => "Jun", 7 => "Jul", 8 => "Aug", 9 => "Sep", 10 => "Oct", 11 => "Nov", 12 => "Dec"};
-	
-
     function initialize() {
         View.initialize();
     }
@@ -40,38 +26,14 @@ class Blue2View extends WatchUi.View {
     // Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.MainLayout(dc));
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
+		dc.clear();  
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    
-    	// STORAGE KEY format - gives day num of first day stored
-    	var h1_key = "Mindfulness_361"; // day 361 = 1st jan 2021 - 6 days, day 371 = 5th jan 2021
-		var h1_val = [1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1];
-		var h2_key = "Piano_368";
-		var h2_val = [0, 1, 0, 1];
-		
-    	var h1_key2 = "Mindfulness_364"; // Only data for 29 dec 2020
-		var h1_val2 = [1];
-		var h2_key2 = "Piano_364"; // 29-31 dec 2020
-		var h2_val2 = [0, 1, 0];
-		
-    	var h1_key3 = "Mindfulness_359"; // some earlier Mindfulness data that we actually don't want to show up in development. 
-		var h1_val3 = [1, 0];
-		
-		// We also need to store some metadata:
-		var h1_meta_key = "Mindfulness";
-		var h1_meta_val = {"short_name" => "M", "block_date_intervals" => [[359, 360], [361, 371]], "Type" => "Binary", "Colours" => "default_binary"};
-		var h2_meta_key = "Piano";
-		var h2_meta_val = {"short_name" => "P", "block_date_intervals" => [[364, 366], [368, 371]], "Type" => "Binary", "Colours" => "default_binary"};
-		
-		// And some very general stuff
-		var all_habits_key = "__ALL_HABITS__";
-		var all_habits_val = ["Mindfulness", "Exercise", "Piano"];
-		var current_habits_key = "__ACTIVE_HABITS__";
-		var current_habits_val = ["Mindfulness", "Piano"];
 		
 		// Writing all this to storage for development. All of this will be in storage already when app fully built. 
     	Application.Storage.setValue(h1_key, h1_val);
@@ -101,7 +63,6 @@ class Blue2View extends WatchUi.View {
     	// A function to load from storage data for the last self.n_days and put it in an array
     	self.current_data = self.loadCurrentData(self.dayNum, self.n_days);	
     	
-    	System.println(self.current_data);
     	
     }
 
@@ -114,7 +75,9 @@ class Blue2View extends WatchUi.View {
         
         // Habits to display
       	self.active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
-        self.n_habits = self.active_habits.size();
+      	      	
+      	self.n_habits = self.active_habits.size();
+		
     }
 
 
@@ -197,12 +160,140 @@ class Blue2View extends WatchUi.View {
     	return current_data;	
     }
 
+//	function display(active_habits, current_data, selected_habit, selected_day) {
+//		
+//        // Bunch of variables
+//		var screen_radius = 120.0; // Should be read directly
+//		var min_display_degrees = 0.0; // Should be in config
+//		var max_display_degrees = 300.0; // Should be in config
+//		var min_radius = 40.0; // Should be in config
+//		var gap_degrees = 2.0; // Should be in config
+//		var gap_radius = 3.0; // Should be in config
+//        
+//        // Set background white
+//        dc.clearClip();
+//		dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
+//		dc.clear();    
+//		
+//		// Get time info
+//		var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+//		var days_in_month = self.daysInMonth(now.month, now.year);
+//		
+//		//public var n_sectors = 14; // might want to change to e.g 2 weeks in future
+//		
+//		var degree_increment = (max_display_degrees - min_display_degrees)/n_sectors;
+//		
+//		var current_data_habit_names = self.current_data[0];
+//		var current_data_values = self.current_data[1];
+//		//System.println(current_data_habit_names);
+//		//System.println(current_data_values);
+//		
+//		var n_days_with_data = current_data_values.size();
+//		
+//		//var n_habits = "placeholder";
+//		var current_habits = 0;
+//		var day_data = null;
+//		var habit_name = null; 
+//		var habit_value = null;
+//		var habit_colour = null;
+//		var radius_increment = null;
+//		var day_min_deg = null;
+//		var day_max_deg = null;
+//		var colour_name = null;
+//
+//		var selected_day = 0;
+//		var selected = null;		
+//	
+//
+//		for (var day = 0; day < n_sectors; day += 1) {
+//					
+//			// There should always be an entry for day 0 so n_habits will never be "placeholder", this value chosen to throw error if it ever does
+//			var names_entry = current_data_habit_names[day];
+//			
+//			//System.println(day);
+//			//System.println(names_entry);
+//			//System.println((names_entry != null));
+//			//System.println(current_habits);
+//			//System.println($.n_habits);
+//			
+//			if (day < n_days_with_data) {
+//				
+//				if (names_entry != null) {
+//					//System.println("TRIGGGEREDDDDD");
+//					current_habits = names_entry;
+//					$.n_habits = current_habits.size();
+//				}
+//				
+//				//System.println(day);h
+//				//System.println(names_entry);
+//				//System.println((names_entry != null));
+//				//System.println(current_habits);
+//				//System.println($.n_habits);
+//				
+//				day_data = current_data_values[day];
+//				//System.println(day_data);
+//				
+//			} else {
+//				
+//				day_data = [0, 0, 0, 0];
+//				//System.println(day_data);
+//			
+//			}
+//			
+//			
+//			radius_increment = (screen_radius - min_radius)/$.n_habits;
+//			day_min_deg = min_display_degrees + day*degree_increment;
+//			day_max_deg = day_min_deg + degree_increment - gap_degrees;
+//		
+//			for (var j = 0; j < $.n_habits; j += 1) {
+//			
+//				habit_name = current_habits[j];
+//				
+//				if (day == $.selected_day and j == $.selected_habit) {
+//					selected = "selected";
+//				} else {
+//					selected = "unselected";
+//				}
+//					
+//				habit_value = day_data[j];
+//				
+//				colour_name = self.colour_scheme[habit_name][selected][habit_value];
+//				habit_colour = self.colour_dict[colour_name];
+//				
+//				//System.println(colour_name);
+//			
+//				self.annulusSector(
+//				dc, 
+//				day_min_deg, 
+//				day_max_deg, 
+//				min_radius + j*radius_increment, 
+//				min_radius + (j + 1)*radius_increment - gap_radius, 
+//				habit_colour
+//				);
+//		
+//	}
+
 
     // Update the view
     function onUpdate(dc) {
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+  
+        
     }
+    
+    
+    function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
+		dc.setColor(colour, colour);
+		var width = endrad - startrad;
+        dc.setPenWidth(width);
+        dc.drawArc(
+        dc.getWidth() / 2,                     
+        dc.getHeight() / 2,       
+        startrad + width / 2,
+        Graphics.ARC_COUNTER_CLOCKWISE,
+        startdeg + 90,
+        enddeg + 90);
+	}
+        
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
