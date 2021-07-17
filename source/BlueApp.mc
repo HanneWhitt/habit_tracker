@@ -22,7 +22,7 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-        return [ new DataView("NERDSSS") ];
+        return [ new DataView(false) ];
     }
     
     // onStop() is called when your application is exiting

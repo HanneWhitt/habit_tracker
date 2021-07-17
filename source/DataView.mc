@@ -4,31 +4,27 @@ using Toybox.Application;
 using Toybox.System;
 
 
+
 class DataView extends WatchUi.View {
 
+	protected var enable_selection;
 	protected var colour_dict;
 	protected var active_habits;
 	protected var current_data;
 	protected var n_days;
 	protected var n_habits;
-	protected var day;
-	protected var day_of_week;
-	protected var month;
-	protected var month_number;
-	protected var year;
-	protected var dayNum;	
-	protected var time;
+	protected var time;	
+	protected var dispSett;
+	
 
     function initialize(arg) {
         View.initialize();
-        
-        System.println(arg);
-        
+        self.enable_selection = arg;
+        System.println(enable_selection);
     }
 
     // Load your resources here
     function onLayout(dc) {
-        setLayout(Rez.Layouts.MainLayout(dc));
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
 		dc.clear();  
     }
@@ -50,9 +46,11 @@ class DataView extends WatchUi.View {
     	
     	// App code start
     	
-    	// A function to load general, permanent settings which depend on user preference - not the day or time. 
-    	// Some hard coded for dev but more could be made available to user later.
-    	self.loadSettings();
+		// A function to load settings which are qualities of the device. We only support fr645m for the moment. 
+		self.deviceSettings();
+    	
+    	// A function to load settings which will eventually be available to user as settings
+    	self.userSettings();   	
     	
     	// Get current time information
     	self.time = getTime();
@@ -63,10 +61,16 @@ class DataView extends WatchUi.View {
     	
     }
 
+	// A function to load settings which are qualities of the device. We only support fr645m for the moment. 
+	function deviceSettings() {
+		self.dispSett = WatchUi.loadResource(Rez.JsonData.displaySettings);
+		System.println(dispSett);
+	}
+	
 
     // A function to load general, permanent settings which depend on user preference - not the day or time. Some hard coded for dev but more could be made available to user later.
-    function loadSettings() {
-    
+    function userSettings() {
+        
     	// Days to display. If made available as a setting probably cap out at 28 to avoid having to do more than two different months on same screen
         self.n_days = 10;
         
@@ -143,43 +147,39 @@ class DataView extends WatchUi.View {
     	return current_data;	
     }
 
-//	function display(dc, selected_habit, selected_day) {
-//		
-//        // Bunch of variables
-//		var screen_radius = 120.0; // Should be read directly
-//		var min_display_degrees = 0.0; // Should be in config
-//		var max_display_degrees = 300.0; // Should be in config
-//		var min_radius = 40.0; // Should be in config
-//		var gap_degrees = 2.0; // Should be in config
-//		var gap_radius = 3.0; // Should be in config
-//		
-//		// days in month
-//		var days_in_month = self.daysInMonth(self.month, self.year);
-//				
-//		var degree_increment = (max_display_degrees - min_display_degrees)/n_sectors;
-//		var radius_increment = (screen_radius - min_radius)/self.n_habits;
-//		
-//		var current_data_habit_names = self.current_data[0];
-//		var current_data_values = self.current_data[1];
-//		//System.println(current_data_habit_names);
-//		//System.println(current_data_values);
-//		
-//		var n_days_with_data = current_data_values.size();
-//		
-//		//var n_habits = "placeholder";
-//		var current_habits = 0;
-//		var day_data = null;
-//		var habit_name = null; 
-//		var habit_value = null;
-//		var habit_colour = null;
-//		var radius_increment = null;
-//		var day_min_deg = null;
-//		var day_max_deg = null;
-//		var colour_name = null;
-//
-//		var selected_day = 0;
-//		var selected = null;		
-//	
+	function display(dc, selected_habit_idx, selected_day_idx) {
+		
+		var screen_radius = dc.getWidth()/2;
+		var days_in_month = self.time["days_in_month"];
+		var degree_increment = (self.dispSett["max_display_degrees"] - self.dispSett["min_display_degrees"])/self.n_days;
+		var radius_increment = (screen_radius - self.dispSett["min_radius"])/self.n_habits;
+
+		var habit_idx = null;
+		var day_idx = null;
+		
+
+		for (habit_idx = 0; habit_idx < self.n_habits; habit_idx += 1) {
+		
+			var habit_name = self.active_habits[habit_idx];
+
+			for (day_idx = 0; day_idx < self.n_days; day_idx += 1) {
+			
+				
+		
+				self.annulusSector(
+					dc, 
+					self.dispSett["min_display_degrees"] + day_idx*degree_increment, 
+					self.dispSett["min_display_degrees"] + (day_idx + 1)*degree_increment - self.dispSett["gap_degrees"], 
+					self.dispSett["min_radius"] + habit_idx*radius_increment, 
+					self.dispSett["min_radius"] + (habit_idx + 1)*radius_increment - self.dispSett["gap_radius"], 
+					Graphics.COLOR_DK_BLUE
+				);
+			}
+		}
+
+
+
+
 //
 //		for (var day = 0; day < n_sectors; day += 1) {
 //					
@@ -247,12 +247,12 @@ class DataView extends WatchUi.View {
 //				habit_colour
 //				);
 //		
-//	}
+	}
 
 
     // Update the view
     function onUpdate(dc) {
-  
+  		self.display(dc, 1, 0);
         
     }        
 

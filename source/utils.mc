@@ -1,4 +1,5 @@
 using Toybox.System;
+using Toybox.Graphics;
 
 
 function max(a, b) {
