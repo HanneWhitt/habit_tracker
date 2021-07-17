@@ -17,9 +17,9 @@ var h1_val3 = [1, 0];
 
 // We also need to store some metadata:
 var h1_meta_key = "Mindfulness";
-var h1_meta_val = {"short_name" => "M", "block_date_intervals" => [[359, 360], [361, 371]], "Type" => "Binary", "Colours" => "default_binary"};
+var h1_meta_val = {"Abbreviation" => "M", "block_date_intervals" => [[359, 360], [361, 371]], "Type" => "Binary", "Colours" => "Blue"};
 var h2_meta_key = "Piano";
-var h2_meta_val = {"short_name" => "P", "block_date_intervals" => [[364, 366], [368, 371]], "Type" => "Binary", "Colours" => "default_binary"};
+var h2_meta_val = {"Abbreviation" => "P", "block_date_intervals" => [[364, 366], [368, 371]], "Type" => "Binary", "Colours" => "Blue"};
 
 // And some very general stuff
 var all_habits_key = "__ALL_HABITS__";

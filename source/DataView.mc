@@ -13,9 +13,10 @@ class DataView extends WatchUi.View {
 	protected var current_data;
 	protected var n_days;
 	protected var n_habits;
+	protected var habit_metadata;
 	protected var time;	
 	protected var dispSett;
-	
+	protected var colour_scheme;
 
     function initialize(arg) {
         View.initialize();
@@ -76,9 +77,25 @@ class DataView extends WatchUi.View {
         
         // Habits to display
       	self.active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
-      	      	
       	self.n_habits = self.active_habits.size();
-		
+      	
+      	// Habit metadata
+      	self.habit_metadata = {};
+      	self.colour_scheme = {};
+      	var habit_name;
+      	var habit_meta;
+      	var habit_colours;
+      	
+      	for (var h = 0; h < self.n_habits; h += 1) {
+      	
+      		habit_name = self.active_habits[h];
+      		
+      		habit_meta = Application.Storage.getValue(habit_name);
+    		self.habit_metadata[habit_name] = habit_meta;
+    		
+    		habit_colours = habit_meta["Colours"];
+    		self.colour_scheme[habit_colours] = WatchUi.loadResource(Rez.JsonData.colourSchemes)[habit_colours];
+		}
     }
 
 	// A function to load from storage data for the last n_days_to_display and put it in an array
@@ -94,12 +111,11 @@ class DataView extends WatchUi.View {
 		
     		var habit_name = self.active_habits[h];
 			System.println("\nLoading " + habit_name + " data...");    		
-    		
-    		// Load habit metadata (includes block start and end dates)
-    		var habit_meta = Application.Storage.getValue(habit_name);
-    		
+    		    		
     		var display_data = new [n_days_to_display];
-    		var blocks = habit_meta["block_date_intervals"];
+    		
+    		// Get blocks from habit metadata    		
+    		var blocks = self.habit_metadata[habit_name]["block_date_intervals"];
     		
     		System.println("Available data blocks: " + blocks.toString());
     		
@@ -144,8 +160,42 @@ class DataView extends WatchUi.View {
 			current_data[habit_name] = display_data;
 		}
     	
+    	System.println(current_data);
+    	
     	return current_data;	
     }
+
+
+	function get_colour(habit_name, datum, selected) {
+		
+		var type = self.habit_metadata[habit_name]["Type"];
+		var habit_colours = self.habit_metadata[habit_name]["Colours"];
+			
+		if (type.equals("Binary")) {
+		
+			if (datum == 1) {
+				datum = "Yes";
+			} else if (datum == 0) {
+				datum = "No";
+			} else if (datum == null) {
+				datum = "No data";
+			} else {
+				throw new InvalidValueException("Invalid datum in storage!");
+			}
+			
+			if (selected) {
+				return self.colour_scheme[habit_colours]["selected"][datum];
+			} else {
+				return self.colour_scheme[habit_colours]["unselected"][datum];
+			}
+							
+		} else {
+			throw new InvalidValueException("Only Binary habits implemented at the moment.");
+		}
+		
+		
+	}
+
 
 	function display(dc, selected_habit_idx, selected_day_idx) {
 		
@@ -154,106 +204,39 @@ class DataView extends WatchUi.View {
 		var degree_increment = (self.dispSett["max_display_degrees"] - self.dispSett["min_display_degrees"])/self.n_days;
 		var radius_increment = (screen_radius - self.dispSett["min_radius"])/self.n_habits;
 
-		var habit_idx = null;
-		var day_idx = null;
+		var habit_name;
+		var datum;
+		var selected;
+		var colour;
 		
-
-		for (habit_idx = 0; habit_idx < self.n_habits; habit_idx += 1) {
+		for (var habit_idx = 0; habit_idx < self.n_habits; habit_idx += 1) {
 		
-			var habit_name = self.active_habits[habit_idx];
+			habit_name = self.active_habits[habit_idx];
 
-			for (day_idx = 0; day_idx < self.n_days; day_idx += 1) {
-			
+			for (var day_idx = 0; day_idx < self.n_days; day_idx += 1) {
+
+				datum = self.current_data[habit_name][day_idx];
 				
-		
+				selected = (day_idx == selected_day_idx and habit_idx == selected_habit_idx);
+				
+				colour = self.get_colour(habit_name, datum, selected);
+				
 				self.annulusSector(
 					dc, 
 					self.dispSett["min_display_degrees"] + day_idx*degree_increment, 
 					self.dispSett["min_display_degrees"] + (day_idx + 1)*degree_increment - self.dispSett["gap_degrees"], 
 					self.dispSett["min_radius"] + habit_idx*radius_increment, 
 					self.dispSett["min_radius"] + (habit_idx + 1)*radius_increment - self.dispSett["gap_radius"], 
-					Graphics.COLOR_DK_BLUE
+					colour
 				);
 			}
 		}
-
-
-
-
-//
-//		for (var day = 0; day < n_sectors; day += 1) {
-//					
-//			// There should always be an entry for day 0 so n_habits will never be "placeholder", this value chosen to throw error if it ever does
-//			var names_entry = current_data_habit_names[day];
-//			
-//			//System.println(day);
-//			//System.println(names_entry);
-//			//System.println((names_entry != null));
-//			//System.println(current_habits);
-//			//System.println($.n_habits);
-//			
-//			if (day < n_days_with_data) {
-//				
-//				if (names_entry != null) {
-//					//System.println("TRIGGGEREDDDDD");
-//					current_habits = names_entry;
-//					$.n_habits = current_habits.size();
-//				}
-//				
-//				//System.println(day);h
-//				//System.println(names_entry);
-//				//System.println((names_entry != null));
-//				//System.println(current_habits);
-//				//System.println($.n_habits);
-//				
-//				day_data = current_data_values[day];
-//				//System.println(day_data);
-//				
-//			} else {
-//				
-//				day_data = [0, 0, 0, 0];
-//				//System.println(day_data);
-//			
-//			}
-//			
-//			
-//
-//			day_min_deg = min_display_degrees + day*degree_increment;
-//			day_max_deg = day_min_deg + degree_increment - gap_degrees;
-//		
-//			for (var j = 0; j < $.n_habits; j += 1) {
-//			
-//				habit_name = current_habits[j];
-//				
-//				if (day == $.selected_day and j == $.selected_habit) {
-//					selected = "selected";
-//				} else {
-//					selected = "unselected";
-//				}
-//					
-//				habit_value = day_data[j];
-//				
-//				colour_name = self.colour_scheme[habit_name][selected][habit_value];
-//				habit_colour = self.colour_dict[colour_name];
-//				
-//				//System.println(colour_name);
-//			
-//				self.annulusSector(
-//				dc, 
-//				day_min_deg, 
-//				day_max_deg, 
-//				min_radius + j*radius_increment, 
-//				min_radius + (j + 1)*radius_increment - gap_radius, 
-//				habit_colour
-//				);
-//		
 	}
 
 
     // Update the view
     function onUpdate(dc) {
   		self.display(dc, 1, 0);
-        
     }        
 
     // Called when this View is removed from the screen. Save the
