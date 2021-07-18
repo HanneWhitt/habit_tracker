@@ -11,6 +11,11 @@ class BlueApp extends Application.AppBase {
 	// This is where app level settings can be initialized or retrieved from
 	// the object store before the initial View is created.
     function onStart(state) {
+		// A function to load settings which are qualities of the device. We only support fr645m for the moment. 
+		deviceSettings();
+    	
+    	// A function to load settings which will eventually be available to user as settings
+    	userSettings();   	
     }
     
     // Return the initial view of your application here
@@ -22,7 +27,7 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-        return [ new DataView(null) ];
+        return [ new DataViewInitial(), new DataViewInitialDelegate() ];
     }
 //    
 //    function getGlanceView() {
