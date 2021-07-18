@@ -22,8 +22,12 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-        return [ new DataView(false) ];
+        return [ new DataView(null) ];
     }
+//    
+//    function getGlanceView() {
+//        return [ new DataView(null), new DataViewDelegate() ];
+//    }
     
     // onStop() is called when your application is exiting
     // When the system is going to terminate an application, onStop() is called.

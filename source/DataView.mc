@@ -2,26 +2,41 @@ using Toybox.WatchUi;
 using Toybox.Time.Gregorian;
 using Toybox.Application;
 using Toybox.System;
+using Toybox.Lang;
 
+
+var n_habits;
+var n_days;
+var total_items;
+var item_idx;
+
+
+// Convert item_idx (index over all selectables) to day_idx, habit_idx pair
+function item_to_coords(item_idx) {
+	if (item_idx == total_items - 1 or item_idx == null) {
+		return [null, null];
+	} else if (item_idx < total_items - 1 and item_idx >= 0) {
+		return [item_idx / n_habits, item_idx % n_habits]; 
+	} else {
+		var exception_string = "Invalid item_idx: " + item_idx.toString() + ". Must be in range 0 - " + (total_items - 1).toString();
+		throw new Lang.InvalidValueException(exception_string);
+	}
+}
 
 
 class DataView extends WatchUi.View {
 
-	protected var enable_selection;
 	protected var colour_dict;
 	protected var active_habits;
 	protected var current_data;
-	protected var n_days;
-	protected var n_habits;
 	protected var habit_metadata;
 	protected var time;	
 	protected var dispSett;
 	protected var colour_scheme;
 
-    function initialize(arg) {
+    function initialize(selection_idx) {
         View.initialize();
-        self.enable_selection = arg;
-        System.println(enable_selection);
+        item_idx = selection_idx;
     }
 
     // Load your resources here
@@ -56,8 +71,8 @@ class DataView extends WatchUi.View {
     	// Get current time information
     	self.time = getTime();
     	
-    	// A function to load from storage data for the last self.n_days and put it in an array
-    	self.current_data = self.loadCurrentData(self.time["day_num"], self.n_days);	
+    	// A function to load from storage data for the last n_days and put it in an array
+    	self.current_data = self.loadCurrentData(self.time["day_num"], n_days);	
     	
     	
     }
@@ -73,11 +88,14 @@ class DataView extends WatchUi.View {
     function userSettings() {
         
     	// Days to display. If made available as a setting probably cap out at 28 to avoid having to do more than two different months on same screen
-        self.n_days = 10;
+        n_days = 10;
         
         // Habits to display
       	self.active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
-      	self.n_habits = self.active_habits.size();
+      	n_habits = self.active_habits.size();
+      	
+      	// Total items
+      	total_items = n_days*n_habits + 1;
       	
       	// Habit metadata
       	self.habit_metadata = {};
@@ -86,7 +104,7 @@ class DataView extends WatchUi.View {
       	var habit_meta;
       	var habit_colours;
       	
-      	for (var h = 0; h < self.n_habits; h += 1) {
+      	for (var h = 0; h < n_habits; h += 1) {
       	
       		habit_name = self.active_habits[h];
       		
@@ -107,7 +125,7 @@ class DataView extends WatchUi.View {
     	// dict to store data
 	   	var current_data = {};
 		
-		for (var h = 0; h < self.n_habits; h += 1) {
+		for (var h = 0; h < n_habits; h += 1) {
 		
     		var habit_name = self.active_habits[h];
 			System.println("\nLoading " + habit_name + " data...");    		
@@ -127,7 +145,7 @@ class DataView extends WatchUi.View {
 				
 				if (block_end > current_day_number) { 
 					// should never happen - data was recorded on future days!?
-					throw new InvalidValueException("block end date seems to be after current date which should be impossible");
+					throw new Lang.InvalidValueException("block end date seems to be after current date which should be impossible");
 				
 				} else if (block_end < first_day_number) { 
 					// When we reach the point that all the rest of the data is before the first day to be shown on screen - so does not need to be loaded
@@ -164,7 +182,7 @@ class DataView extends WatchUi.View {
     	
     	return current_data;	
     }
-
+    
 
 	function get_colour(habit_name, datum, selected) {
 		
@@ -180,7 +198,7 @@ class DataView extends WatchUi.View {
 			} else if (datum == null) {
 				datum = "No data";
 			} else {
-				throw new InvalidValueException("Invalid datum in storage!");
+				throw new Lang.InvalidValueException("Invalid datum in storage!");
 			}
 			
 			if (selected) {
@@ -190,30 +208,36 @@ class DataView extends WatchUi.View {
 			}
 							
 		} else {
-			throw new InvalidValueException("Only Binary habits implemented at the moment.");
+			throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
 		}
-		
 		
 	}
 
 
-	function display(dc, selected_habit_idx, selected_day_idx) {
+	function display_habit_data(dc, item_idx) {
+		
+		var coords = item_to_coords(item_idx);
+		var selected_day_idx = coords[0];
+		var selected_habit_idx = coords[1];
+		
+		System.println(selected_habit_idx);
+		System.println(selected_day_idx);
 		
 		var screen_radius = dc.getWidth()/2;
 		var days_in_month = self.time["days_in_month"];
-		var degree_increment = (self.dispSett["max_display_degrees"] - self.dispSett["min_display_degrees"])/self.n_days;
-		var radius_increment = (screen_radius - self.dispSett["min_radius"])/self.n_habits;
+		var degree_increment = (self.dispSett["max_display_degrees"] - self.dispSett["min_display_degrees"])/n_days;
+		var radius_increment = (screen_radius - self.dispSett["min_radius"])/n_habits;
 
 		var habit_name;
 		var datum;
 		var selected;
 		var colour;
 		
-		for (var habit_idx = 0; habit_idx < self.n_habits; habit_idx += 1) {
+		for (var habit_idx = 0; habit_idx < n_habits; habit_idx += 1) {
 		
 			habit_name = self.active_habits[habit_idx];
 
-			for (var day_idx = 0; day_idx < self.n_days; day_idx += 1) {
+			for (var day_idx = 0; day_idx < n_days; day_idx += 1) {
 
 				datum = self.current_data[habit_name][day_idx];
 				
@@ -232,11 +256,18 @@ class DataView extends WatchUi.View {
 			}
 		}
 	}
-
+		
+	
+	function display_full() {
+	
+	}
+	
 
     // Update the view
     function onUpdate(dc) {
-  		self.display(dc, 1, 0);
+    
+		self.display_habit_data(dc, 13);
+		
     }        
 
     // Called when this View is removed from the screen. Save the
@@ -247,4 +278,44 @@ class DataView extends WatchUi.View {
 	
 }
 
+
+//class DataViewDelegate extends WatchUi.InputDelegate {
+//    
+//    // Key indexes 
+//    var start_key = 4;
+//    var back_key = 5;
+//    var up_key = 13;
+//    var down_key = 8;
+//    
+//    function initialize() {
+//		InputDelegate.initialize();
+//	}
+//	
+//	function up() {
+//		item_idx = (item_idx + 1) % total_items;
+//	}
+//	
+//	function down() {
+//		item_idx = (item_idx - 1) % total_items;
+//	}
+//	
+//    function onKey(keyEvent) {
+//    	
+//    	// We are on start screen
+//    	if item_idx == null;
+//    	
+//    	var key = keyEvent.getKey();
+//    	
+//    	if (key == up_key) {
+//    		self.up();
+//    	} else if (key == down_key) {
+//    		self.down();
+//    	}
+//    	
+//    	System.println("Key Pressed:");
+//    	System.println(keyEvent.getKey());
+//        WatchUi.requestUpdate();
+//        return true;
+//    }
+//}
 
