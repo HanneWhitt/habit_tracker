@@ -29,9 +29,9 @@ class BlueApp extends Application.AppBase {
     function getInitialView() {
         return [ new DataViewInitial(), new DataViewInitialDelegate() ];
     }
-//    
+    
 //    function getGlanceView() {
-//        return [ new DataView(null), new DataViewDelegate() ];
+//        return [ new DataViewInitial(), new DataViewInitialDelegate() ];
 //    }
     
     // onStop() is called when your application is exiting

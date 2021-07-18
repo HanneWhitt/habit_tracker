@@ -48,7 +48,7 @@ function get_colour(habit_name, datum, selected) {
 	
 }
 
-
+// Display habit data only
 function display_habit_data(dc, item_idx) {
 	
 	var coords = item_to_coords(item_idx);
@@ -92,7 +92,10 @@ function display_habit_data(dc, item_idx) {
 	}
 }
 
+// Full display for use in selection mode; Show settings symbol if appropriate
+// Add day numbers, Habit labels
+function display_full(dc, item_idx) {
 
-function display_full() {
-
+	display_habit_data(dc, item_idx);
+	
 }

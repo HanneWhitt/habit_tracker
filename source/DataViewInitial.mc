@@ -44,7 +44,7 @@ class DataViewInitial extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc) {
-		self.display_habit_data(dc, null);
+		display_habit_data(dc, null);
     }        
 
     // Called when this View is removed from the screen. Save the

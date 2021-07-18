@@ -1,6 +1,7 @@
 using Toybox.System;
 using Toybox.Application;
 using Toybox.Lang;
+using Toybox.Attention;
 
 
 var n_habits;
@@ -111,3 +112,40 @@ function loadCurrentData(current_day_number, n_days_to_display) {
 	
 	return current_data;	
 }
+
+
+function change_datum(item_idx) {
+
+	var coords = item_to_coords(item_idx);
+	var selected_day_idx = coords[0];
+	var selected_habit_idx = coords[1];
+	var selected_habit_name = active_habits[selected_habit_idx];
+	var type = habit_metadata[selected_habit_name]["Type"];
+	
+	var datum = current_data[selected_habit_name][selected_day_idx];
+	var response = null;
+	
+	if (type.equals("Binary")) {
+	
+		if (datum == 0 or datum == null) {
+			datum = 1;
+			response = "vibrate";
+		} else if (datum == 1) {
+			datum = 0;
+		} else {
+			throw new Lang.InvalidValueException("Invalid datum in current_data!");
+		}
+						
+	} else {
+		throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
+	}
+	
+	current_data[selected_habit_name][selected_day_idx] = datum;
+	
+	return response;
+
+}
+
+
+
+

@@ -4,6 +4,9 @@ using Toybox.Application;
 using Toybox.System;
 
 
+var response_code = null;
+
+
 class DataViewSelect extends WatchUi.View {
 
 
@@ -46,7 +49,8 @@ class DataViewSelect extends WatchUi.View {
     // Update the view
     function onUpdate(dc) {
     
-		self.display_habit_data(dc, item_idx);
+		display_full(dc, item_idx);
+		respond(response_code);
 		
     }        
 
@@ -74,10 +78,12 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     		up();
     	} else if (key == down_key) {
     		down();
+    	} else if (key == start_key) {
+    		response_code = change_datum(item_idx);
     	}
     	
-    	System.println("Key Pressed:");
-    	System.println(keyEvent.getKey());
+    	System.println(response_code);
+    	    	
         WatchUi.requestUpdate();
         return true;
     }
