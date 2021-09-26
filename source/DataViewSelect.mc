@@ -4,7 +4,7 @@ using Toybox.Application;
 using Toybox.System;
 
 
-var response_code = null;
+var response_code = "None";
 
 
 class DataViewSelect extends WatchUi.View {
@@ -25,18 +25,6 @@ class DataViewSelect extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-		
-		// Writing all this to storage for development. All of this will be in storage already when app fully built. 
-    	Application.Storage.setValue(h1_key, h1_val);
-    	Application.Storage.setValue(h2_key, h2_val);
-    	Application.Storage.setValue(h2_key2, h2_val2);
-    	Application.Storage.setValue(h1_meta_key, h1_meta_val);
-    	Application.Storage.setValue(h2_meta_key, h2_meta_val);
-    	Application.Storage.setValue(all_habits_key, all_habits_val);
-    	Application.Storage.setValue(current_habits_key, current_habits_val);
-    	
-    	
-    	// App code start
     	
     	// Get current time information
     	time = getTime();
@@ -48,16 +36,20 @@ class DataViewSelect extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc) {
-    
 		display_full(dc, item_idx);
 		respond(response_code);
-		
+		response_code = "None";
     }        
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
+    
+    	System.println(current_data);
+    
+    	saveCurrentData(current_data);
+    
     }
 	
 }
@@ -80,6 +72,8 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     		down();
     	} else if (key == start_key) {
     		response_code = change_datum(item_idx);
+    	} else if (key == back_key) {
+    		WatchUi.pushView(carousel_view, carousel_delegate, 2);
     	}
     	
     	System.println(response_code);

@@ -20,19 +20,7 @@ class DataViewInitial extends WatchUi.View {
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
-    function onShow() {
-		
-		// Writing all this to storage for development. All of this will be in storage already when app fully built. 
-    	Application.Storage.setValue(h1_key, h1_val);
-    	Application.Storage.setValue(h2_key, h2_val);
-    	Application.Storage.setValue(h2_key2, h2_val2);
-    	Application.Storage.setValue(h1_meta_key, h1_meta_val);
-    	Application.Storage.setValue(h2_meta_key, h2_meta_val);
-    	Application.Storage.setValue(all_habits_key, all_habits_val);
-    	Application.Storage.setValue(current_habits_key, current_habits_val);
-    	
-    	
-    	// App code start
+    function onShow() {  	
     	
     	// Get current time information
     	time = getTime();
@@ -65,6 +53,8 @@ class DataViewInitialDelegate extends WatchUi.InputDelegate {
     function onKey(keyEvent) {
     
 		if (keyEvent.getKey() == start_key) {
+			
+			// initial day selection is -1 i.e display index of current day. 
     		WatchUi.pushView(new DataViewSelect(0), new DataViewSelectDelegate(), 1);
     	}
         return true;

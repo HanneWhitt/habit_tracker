@@ -1,5 +1,6 @@
 using Toybox.System;
 using Toybox.Attention;
+using Toybox.Lang;
 
 
 function max(a, b) {
@@ -29,9 +30,14 @@ function vibrate_with_delay(delay_ms, vibration_ms) {
 
 // Vibration, sounds, or other ways that the watch responds to the user momentarily, without changing data 
 function respond(response_code) {
-	if (response_code != null) {
-		if (response_code.equals("vibrate")) {
-				vibrate_with_delay(300, 700);
-			}
+	System.println(response_code);
+	if (response_code.equals("None")) {
+		System.println("No response");
+	} else if (response_code.equals("vibrate")) {
+		vibrate_with_delay(300, 700);
+	} else {
+		throw new Lang.InvalidValueException("Invalid response code");
 	}
 }
+
+

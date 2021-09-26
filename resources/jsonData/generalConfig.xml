@@ -1,3 +1,4 @@
 <resources>
     <jsonData id="colourSchemes" filename="colourSchemes.json"/>
+    <jsonData id="setupValues" filename="setupValues.json"/>
 </resources>

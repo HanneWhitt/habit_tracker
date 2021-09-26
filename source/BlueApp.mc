@@ -1,5 +1,11 @@
 using Toybox.Application;
 
+
+var first_use;
+var carousel_view;
+var carousel_delegate;
+
+
 class BlueApp extends Application.AppBase {
 
     function initialize() {
@@ -11,10 +17,26 @@ class BlueApp extends Application.AppBase {
 	// This is where app level settings can be initialized or retrieved from
 	// the object store before the initial View is created.
     function onStart(state) {
-		// A function to load settings which are qualities of the device. We only support fr645m for the moment. 
-		deviceSettings();
+    
+    	System.println("onSTART RAN");
     	
-    	// A function to load settings which will eventually be available to user as settings
+    	Application.Storage.clearValues();
+		
+		// Is this the first time the app has run?
+		first_use = is_first_use();
+		
+		System.println(first_use);
+		
+		// If so, set up app by writing default and example values to storage
+		if (first_use) {
+			first_time_setup();
+		}
+		
+		// A function to load app-wide settings/set variables not available to the user
+		fixedSettings();
+    	
+    	//  A function to load app-wide settings/set variables based on settings which 
+    	// will be available to the user
     	userSettings();   	
     }
     
@@ -27,7 +49,11 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-        return [ new DataViewInitial(), new DataViewInitialDelegate() ];
+    
+    	carousel_view = new DataViewInitial();
+    	carousel_delegate = new DataViewInitialDelegate();
+    
+        return [ carousel_view, carousel_delegate ];
     }
     
 //    function getGlanceView() {

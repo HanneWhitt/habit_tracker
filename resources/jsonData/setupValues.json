@@ -1,0 +1,29 @@
+{
+	"__N_USES__": 0,
+	"__ALL_HABITS__": [ 
+		"Habit 1",
+		"Habit 2",
+		"Habit 3"
+	],
+	"__ACTIVE_HABITS__": [ 
+		"Habit 1",
+		"Habit 2"
+	],
+	"Habit 1": {
+		"Abbreviation": "H1",
+		"block_date_intervals": [[359, 360], [361, 371]], 
+		"Type": "Binary", 
+		"Colours": "Blue"
+	},
+	"Habit 2": {
+		"Abbreviation": "H2",
+		"block_date_intervals": [[364, 366], [368, 371]], 
+		"Type": "Binary", 
+		"Colours": "Blue"
+	},
+	"Habit 1_361": [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+	"Habit 1_364": [1],
+	"Habit 1_359": [1, 0],
+	"Habit 2_368": [0, 1, 0, 1],
+	"Habit 2_364": [0, 1, 0]
+}

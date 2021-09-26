@@ -3,7 +3,6 @@ using Toybox.System;
 
 
 var colour_scheme;
-var dispSett;
 
 
 function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
@@ -55,12 +54,9 @@ function display_habit_data(dc, item_idx) {
 	var selected_day_idx = coords[0];
 	var selected_habit_idx = coords[1];
 	
-	System.println(selected_habit_idx);
-	System.println(selected_day_idx);
-	
 	var screen_radius = dc.getWidth()/2;
 	var days_in_month = time["days_in_month"];
-	var degree_increment = (dispSett["max_display_degrees"] - dispSett["min_display_degrees"])/n_days;
+	var day_degrees = (dispSett["max_display_degrees"] - dispSett["min_display_degrees"] - (n_days - 1)*dispSett["gap_degrees"])/n_days;
 	var radius_increment = (screen_radius - dispSett["min_radius"])/n_habits;
 
 	var habit_name;
@@ -80,10 +76,13 @@ function display_habit_data(dc, item_idx) {
 			
 			colour = get_colour(habit_name, datum, selected);
 			
+			var max_deg = dispSett["max_display_degrees"] - day_idx*(day_degrees + dispSett["gap_degrees"]);
+			var min_deg = max_deg - day_degrees;
+			
 			annulusSector(
 				dc, 
-				dispSett["min_display_degrees"] + day_idx*degree_increment, 
-				dispSett["min_display_degrees"] + (day_idx + 1)*degree_increment - dispSett["gap_degrees"], 
+				min_deg, 
+				max_deg, 
 				dispSett["min_radius"] + habit_idx*radius_increment, 
 				dispSett["min_radius"] + (habit_idx + 1)*radius_increment - dispSett["gap_radius"], 
 				colour

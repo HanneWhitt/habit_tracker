@@ -1,10 +1,50 @@
 using Toybox.WatchUi;
 using Toybox.Application;
+using Toybox.System;
+
+// First use information
+var first_use_date;
+var n_uses;
+var dispSett;
+
+
+function is_first_use() {
+	System.println(Application.Storage.getValue("__FIRST_USE_DAYNUM__"));
+	return (Application.Storage.getValue("__FIRST_USE_DAYNUM__") == null);
+}
+
+
+// Should only ever be run once. Initialises all settings and data at default/example values. 
+function first_time_setup() {
+
+	System.println("FIRST TIME SET UP");
+	
+	// Remove anything hanging around
+	Application.Storage.clearValues();
+
+	// First use date
+	// Application.Storage.setValue("__FIRST_USE_DAYNUM__", getTime()["day_num"]);
+
+	// Set up values from json file
+	var setupValues = WatchUi.loadResource(Rez.JsonData.setupValues);
+	for (var entry_idx = 0; entry_idx < setupValues.size(); entry_idx += 1) {
+		System.println(setupValues.keys()[entry_idx]);
+		Application.Storage.setValue(setupValues.keys()[entry_idx], setupValues.values()[entry_idx]);
+	}
+
+}
+
+
 
 
 // A function to load settings which are qualities of the device. We only support fr645m for the moment. 
-function deviceSettings() {
-	self.dispSett = WatchUi.loadResource(Rez.JsonData.displaySettings);
+function fixedSettings() {
+
+	first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
+	n_uses = Application.Storage.getValue("__N_USES__");
+	
+	dispSett = WatchUi.loadResource(Rez.JsonData.displaySettings);
+	
 }
 
 
@@ -18,7 +58,7 @@ function userSettings() {
   	self.active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
   	n_habits = self.active_habits.size();
   	
-  	// Total items
+  	// Total items on data display screen, +1 for settings symbol
   	total_items = n_days*n_habits + 1;
   	
   	// Habit metadata
