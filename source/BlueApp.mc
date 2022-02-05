@@ -25,10 +25,10 @@ class BlueApp extends Application.AppBase {
 		// Is this the first time the app has run?
 		first_use = is_first_use();
 		
-		var thing = new [3];
+		var thing = [1, 2, 3];
 		System.println(thing);
 		System.println(thing.size());
-		System.println(thing);
+		System.println(thing.slice(1, 3));
 		
 
 		// If so, set up app by writing default and example values to storage

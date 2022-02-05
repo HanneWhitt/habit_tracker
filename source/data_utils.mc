@@ -68,14 +68,19 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 	var loaded_data = {"__DAYNUM_INTERVAL__" => [start_daynum, last_daynum]};
 	
 	// Iterate through habits
-	for (var h = 1; h <= habits_to_load.size; h += 1) {
-	
+	for (var h = 0; h < habits_to_load.size(); h += 1) {
+		
 		var habit_name = habits_to_load[h];
 		var loaded_habit_data;
 		loaded_habit_data = new [0];
 
+		print(h);
+		print(habit_name);
+
 		// Iterate through year blocks
 		for (var y = start_year; y <= end_year; y += 1) {
+			
+			print(y);
 			
 			// Year length
 			var year_length = daysInYear(y);
@@ -91,8 +96,7 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 			} else {
 				// ...otherwise, do a check that the loaded data has the right length
 				if (year_length != block_data.size()) {
-					var exception = new InvalidValueException("Loaded data block " + storage_key + "j has wrong length");
-					throw exception;
+					throw new Lang.InvalidValueException("Loaded data block " + storage_key + " has wrong length (" + block_data.size().toString() + ")");
 				}				
 			}
 			
@@ -105,7 +109,7 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 			var read_end_daynum = min(last_daynum, block_end);
 			
 			// Convert to daynum within year
-			var read_start_index = DayInYear(read_start_daynum);
+			var read_start_index = DayInYear(read_start_daynum) - 1;
 			var read_end_index = DayInYear(read_end_daynum);
 			
 			// Select data and add to array
@@ -116,12 +120,11 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 
 		// Check that the combined loaded data for this habit has the expected length
 		if (loaded_habit_data.size() != n_days) {
-			var exception = new InvalidValueException("Combined loaded data has wrong length");
-			throw exception;
+			throw new Lang.InvalidValueException("Combined loaded data has length " + loaded_habit_data.size().toString() + ", expected length " + n_days.toString());
 		}
 		
 		// Add it to the master array
-		loaded_data[h] = loaded_habit_data;
+		loaded_data[habit_name] = loaded_habit_data;
 
 	}
 	
@@ -168,7 +171,7 @@ function change_datum(item_idx) {
 }
 
 
-function saveCurrentData(current_data) {
+function saveData(data_dict) {
 	
 	var current_data_first_day = current_data["__DAYNUM_INTERVAL__"][0];
 	var current_data_last_day = current_data["__DAYNUM_INTERVAL__"][1];

@@ -3,6 +3,11 @@ using Toybox.Attention;
 using Toybox.Lang;
 
 
+function print(str) {
+	System.println(str);
+}
+
+
 function max(a, b) {
     if (a > b) { 
 		return a;
