@@ -30,7 +30,7 @@ class DataViewSelect extends WatchUi.View {
     	time = getTime();
     	
     	// A function to load from storage data for the last n_days and put it in an array
-    	current_data = loadCurrentData(time["day_num"], n_days);	
+    	current_data = loadHabitData(time["day_num"], n_days);	
     	
     }
 

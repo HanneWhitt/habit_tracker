@@ -11,13 +11,11 @@
 	],
 	"Habit 1": {
 		"Abbreviation": "H1",
-		"block_date_intervals": [[359, 360], [361, 371]], 
 		"Type": "Binary", 
 		"Colours": "Blue"
 	},
 	"Habit 2": {
 		"Abbreviation": "H2",
-		"block_date_intervals": [[364, 366], [368, 371]], 
 		"Type": "Binary", 
 		"Colours": "Blue"
 	},

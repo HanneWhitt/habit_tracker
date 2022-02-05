@@ -3,14 +3,20 @@ using Toybox.Application;
 using Toybox.System;
 
 // First use information
-var first_use_date;
+var first_use_bool; 
+var first_use_time_info;
 var n_uses;
 var dispSett;
+var data_start_daynum;
 
 
 function is_first_use() {
 	System.println(Application.Storage.getValue("__FIRST_USE_DAYNUM__"));
-	return (Application.Storage.getValue("__FIRST_USE_DAYNUM__") == null);
+	first_use_bool = (Application.Storage.getValue("__FIRST_USE_DAYNUM__") == null);
+	if (first_use_bool) {
+			System.println("THIS IS FIRST USE OF APPLICATION");
+	}
+	return first_use_bool;
 }
 
 
@@ -22,10 +28,21 @@ function first_time_setup() {
 	// Remove anything hanging around
 	Application.Storage.clearValues();
 
-	// First use date
-	// Application.Storage.setValue("__FIRST_USE_DAYNUM__", getTime()["day_num"]);
+	// First time date info
+	first_use_time_info = getTime();
+	
+	System.println("FIRST TIME INFO...");
+	System.println(first_use_time_info);
+	
+	// Set first use date
+	Application.Storage.setValue("__FIRST_USE_DAYNUM__", first_use_time_info["day_num"]);
+	
+	// First possible date to record data is 1st Jan, at least one year before first use date
+	data_start_daynum = dayNumber(1, 1, first_use_time_info["year"] - 1);	
+	Application.Storage.setValue("__DATA_START_DAYNUM__", data_start_daynum);
+	Application.Storage.setValue("__DATA_START_YEAR__", first_use_time_info["year"] - 1);	
 
-	// Set up values from json file
+	// Set up default settings values from json file
 	var setupValues = WatchUi.loadResource(Rez.JsonData.setupValues);
 	for (var entry_idx = 0; entry_idx < setupValues.size(); entry_idx += 1) {
 		System.println(setupValues.keys()[entry_idx]);
@@ -35,12 +52,23 @@ function first_time_setup() {
 }
 
 
+var new_habit_dict;
 
+function set_up_new_habit(name, abbreviation, type, colours) {
+	
+	System.println("SETTING UP HABIT:");
+	System.println(name);
+
+	var new_habit_dict = {"Abbreviation" => abbreviation, "Type" => type, "Colours" => colours};
+
+	Application.Storage.setValue(name, new_habit_dict);
+	
+}
 
 // A function to load settings which are qualities of the device. We only support fr645m for the moment. 
 function fixedSettings() {
 
-	first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
+	var first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
 	n_uses = Application.Storage.getValue("__N_USES__");
 	
 	dispSett = WatchUi.loadResource(Rez.JsonData.displaySettings);

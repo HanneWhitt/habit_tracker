@@ -77,14 +77,41 @@ function dayNumber(day, month, year) {
 }
 
 
+function yearFromDaynum(daynum) {
+	
+	if (daynum <= 0) {
+		throw new InvalidValueException("daynum must be >0");
+	}
+
+	for (var y = 2020; y < 2520; y += 1) {
+		if (daynum <= dayNumber(31, 12, y)) {
+			return y;
+		}
+	}
+	
+	throw new InvalidValueException("Are you really using my crappy app in 2521??");
+
+}
+
+
+function DayInYear(daynum) {
+	var y = yearFromDaynum(daynum);
+	if (y == 2020) {
+		return daynum;
+	} else {
+		return daynum - dayNumber(31, 12, y - 1);
+	}
+}
+
+
 // Get current time information
 function getTime() {
-	var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-	// var days_in_month = daysInMonth(now.month, now.year);
-	// var time_info = [now.day, now.month, month_to_number[now.month], now.year];
 
-	// The time is, for dev, fixed as if the day is 7th Jan 2021. 
-	var time_info = {"day" => 7, "month_name" => "Jan", "month_num" =>  1, "year" => 2021, "days_in_month" => 31, "day_num" => 371};
+	var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+	var days_in_month = daysInMonth(now.month, now.year);
+	var monthnum_today = month_to_number[now.month];
+	var daynum_today = dayNumber(now.day, monthnum_today, now.year);
+	var time_info = {"day" => now.day, "month_name" => now.month, "month_num" =>  monthnum_today, "year" => now.year, "days_in_month" => days_in_month, "day_num" => daynum_today};
 
 	return time_info;
 
