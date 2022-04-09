@@ -4,6 +4,8 @@ using Toybox.Application;
 var first_use;
 var carousel_view;
 var carousel_delegate;
+var selection_view;
+var selection_delegate;
 
 
 class BlueApp extends Application.AppBase {
@@ -37,11 +39,11 @@ class BlueApp extends Application.AppBase {
 		}
 		
 		// A function to load app-wide settings/set variables not available to the user
-		fixedSettings();
+		refreshFixedSettings();
     	
     	//  A function to load app-wide settings/set variables based on settings which 
     	// will be available to the user
-    	userSettings();   	
+    	refreshUserSettings();   	
     }
     
     // Return the initial view of your application here

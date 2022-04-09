@@ -57,9 +57,7 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 	
 	//var first_day_number = current_day_number - n_days_to_display + 1; // +1 for boundary problem
 	System.println("loadCurrentData() loading data from day " + start_daynum.toString() + " to " + last_daynum.toString());
-	
-   	var n_days = last_daynum - start_daynum + 1;
-		
+			
 	// Get the years of the first and last day
 	var start_year = yearFromDaynum(start_daynum);
 	var end_year = yearFromDaynum(last_daynum);
@@ -132,6 +130,13 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 	
 }
 
+// Given a daynum, load n_days of data leading up to and including that day
+function loadDaynumHabitData(habits_to_load, last_daynum) {
+	var start_daynum = last_daynum - n_days + 1;
+	return loadHabitData(start_daynum, last_daynum, active_habits);
+}
+
+
 
 function change_datum(item_idx) {
 
@@ -171,7 +176,7 @@ function change_datum(item_idx) {
 }
 
 
-function saveData(data_dict) {
+function saveHabitData(data_dict) {
 	
 	var current_data_first_day = current_data["__DAYNUM_INTERVAL__"][0];
 	var current_data_last_day = current_data["__DAYNUM_INTERVAL__"][1];

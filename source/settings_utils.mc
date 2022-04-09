@@ -66,7 +66,7 @@ function set_up_new_habit(name, abbreviation, type, colours) {
 }
 
 // A function to load settings which are qualities of the device. We only support fr645m for the moment. 
-function fixedSettings() {
+function refreshFixedSettings() {
 
 	var first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
 	n_uses = Application.Storage.getValue("__N_USES__");
@@ -77,10 +77,10 @@ function fixedSettings() {
 
 
 // A function to load general, permanent settings which depend on user preference - not the day or time. Some hard coded for dev but more could be made available to user later.
-function userSettings() {
+function refreshUserSettings() {
     
 	// Days to display. If made available as a setting probably cap out at 28 to avoid having to do more than two different months on same screen
-    n_days = 10;
+    n_days = Application.Storage.getValue("__N_DAYS__");
     
     // Habits to display
   	self.active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");

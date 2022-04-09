@@ -48,7 +48,7 @@ class DataViewSelect extends WatchUi.View {
     
     	System.println(current_data);
     
-    	saveCurrentData(current_data);
+    	saveHabitData(current_data);
     
     }
 	

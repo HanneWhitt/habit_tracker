@@ -9,6 +9,7 @@
 		"Habit 1",
 		"Habit 2"
 	],
+	"__N_DAYS__": 20,
 	"Habit 1": {
 		"Abbreviation": "H1",
 		"Type": "Binary", 

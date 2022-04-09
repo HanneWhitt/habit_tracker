@@ -48,14 +48,14 @@ function get_colour(habit_name, datum, selected) {
 }
 
 // Display habit data only
-function display_habit_data(dc, item_idx) {
+function display_habit_data(dc, habit_data, item_idx) {
 	
 	var coords = item_to_coords(item_idx);
 	var selected_day_idx = coords[0];
 	var selected_habit_idx = coords[1];
 	
 	var screen_radius = dc.getWidth()/2;
-	var days_in_month = time["days_in_month"];
+	//var days_in_month = time["days_in_month"];
 	var day_degrees = (dispSett["max_display_degrees"] - dispSett["min_display_degrees"] - (n_days - 1)*dispSett["gap_degrees"])/n_days;
 	var radius_increment = (screen_radius - dispSett["min_radius"])/n_habits;
 
@@ -70,7 +70,7 @@ function display_habit_data(dc, item_idx) {
 
 		for (var day_idx = 0; day_idx < n_days; day_idx += 1) {
 
-			datum = current_data[habit_name][day_idx];
+			datum = habit_data[habit_name][day_idx];
 			
 			selected = (day_idx == selected_day_idx and habit_idx == selected_habit_idx);
 			
