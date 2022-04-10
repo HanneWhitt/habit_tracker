@@ -7,30 +7,15 @@ using Toybox.Attention;
 var n_habits;
 var n_days;
 var total_items;
-var item_idx;
 
 var active_habits;
-var current_data;
 var habit_metadata;
-var time;
 
 // Key indexes 
 var start_key = 4;
 var back_key = 5;
 var up_key = 13;
 var down_key = 8;
-
-
-function up() {
-	item_idx = (item_idx + 1) % total_items;
-}
-
-function down() {
-	item_idx = (item_idx - 1) % total_items;
-	if (item_idx < 0) {
-		item_idx += total_items;
-	}
-}
 
 
 // Convert item_idx (index over all selectables) to day_idx, habit_idx pair

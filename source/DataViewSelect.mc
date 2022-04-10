@@ -4,41 +4,45 @@ using Toybox.Application;
 using Toybox.System;
 
 
-var response_code = "None";
+var item_idx;
 
 
 class DataViewSelect extends WatchUi.View {
 
 
-    function initialize(selection_idx) {
+    function initialize() {
         View.initialize();
-        item_idx = selection_idx;
     }
 
     // Load your resources here
     function onLayout(dc) {
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
-		dc.clear();  
+		dc.clear();
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    	
-    	// Get current time information
-    	time = getTime();
-    	
-    	// A function to load from storage data for the last n_days and put it in an array
-    	current_data = loadHabitData(time["day_num"], n_days);	
-    	
+    	// Set item index back to 1 whenever the view brought to foreground
+        item_idx = 1;
+	   	// Refresh current daynum
+    	current_daynum = getTime()["day_num"];
+    	// Load the data from the last n_days
+    	current_data = loadDaynumHabitData(active_habits, current_daynum);
     }
 
     // Update the view
     function onUpdate(dc) {
-		display_full(dc, item_idx);
-		respond(response_code);
-		response_code = "None";
+    	
+    	// Refresh the data if the day has changed (i.e if it has just passed midnight)
+    	var new_daynum = getTime()["day_num"];
+		if (new_daynum != current_daynum) {
+	    	current_data = loadDaynumHabitData(active_habits, new_daynum);
+	    	current_daynum = new_daynum;
+		}
+		display_full(dc, current_data, item_idx);		
+		
     }        
 
     // Called when this View is removed from the screen. Save the
@@ -48,18 +52,32 @@ class DataViewSelect extends WatchUi.View {
     
     	System.println(current_data);
     
-    	saveHabitData(current_data);
+    	//saveHabitData(current_data);
     
     }
 	
 }
 
 
+function up() {
+	item_idx = (item_idx + 1) % total_items;
+}
+
+function down() {
+	item_idx = (item_idx - 1) % total_items;
+	if (item_idx < 0) {
+		item_idx += total_items;
+	}
+}
+
 
 class DataViewSelectDelegate extends WatchUi.InputDelegate {
 
+	protected var response_code;
+
     function initialize() {
 		InputDelegate.initialize();
+		self.response_code = "None";
 	}
 	
     function onKey(keyEvent) {
@@ -71,7 +89,8 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     	} else if (key == down_key) {
     		down();
     	} else if (key == start_key) {
-    		response_code = change_datum(item_idx);
+    		self.response_code = change_datum(item_idx);
+    		respond(self.response_code);
     	} else if (key == back_key) {
     		WatchUi.pushView(carousel_view, carousel_delegate, 2);
     	}

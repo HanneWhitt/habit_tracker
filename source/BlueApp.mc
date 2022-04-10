@@ -43,7 +43,14 @@ class BlueApp extends Application.AppBase {
     	
     	//  A function to load app-wide settings/set variables based on settings which 
     	// will be available to the user
-    	refreshUserSettings();   	
+    	refreshUserSettings();
+    	
+    	carousel_view = new DataViewInitial();
+    	carousel_delegate = new DataViewInitialDelegate();
+    	
+    	selection_view = new DataViewSelect();
+		selection_delegate = new DataViewSelectDelegate();
+    	
     }
     
     // Return the initial view of your application here
@@ -55,9 +62,6 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-    
-    	carousel_view = new DataViewInitial();
-    	carousel_delegate = new DataViewInitialDelegate();
     
         return [ carousel_view, carousel_delegate ];
     }

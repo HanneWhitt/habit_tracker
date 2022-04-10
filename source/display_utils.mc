@@ -93,8 +93,8 @@ function display_habit_data(dc, habit_data, item_idx) {
 
 // Full display for use in selection mode; Show settings symbol if appropriate
 // Add day numbers, Habit labels
-function display_full(dc, item_idx) {
+function display_full(dc, habit_data, item_idx) {
 
-	display_habit_data(dc, item_idx);
+	display_habit_data(dc, habit_data, item_idx);
 	
 }
