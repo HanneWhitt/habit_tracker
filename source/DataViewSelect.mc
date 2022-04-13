@@ -25,7 +25,7 @@ class DataViewSelect extends WatchUi.View {
     // loading resources into memory.
     function onShow() {
     	// Set item index back to 1 whenever the view brought to foreground
-        item_idx = 1;
+        item_idx = 0;
 	   	// Refresh current daynum
     	current_daynum = getTime()["day_num"];
     	// Load the data from the last n_days
@@ -35,9 +35,10 @@ class DataViewSelect extends WatchUi.View {
     // Update the view
     function onUpdate(dc) {
     	
-    	// Refresh the data if the day has changed (i.e if it has just passed midnight)
+    	// Save and refresh the data if the day has changed (i.e if it has just passed midnight)
     	var new_daynum = getTime()["day_num"];
 		if (new_daynum != current_daynum) {
+			SaveHabitData(current_data);
 	    	current_data = loadDaynumHabitData(active_habits, new_daynum);
 	    	current_daynum = new_daynum;
 		}
@@ -51,8 +52,6 @@ class DataViewSelect extends WatchUi.View {
     function onHide() {
     
     	System.println(current_data);
-    
-    	//saveHabitData(current_data);
     
     }
 	
@@ -90,6 +89,7 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     		down();
     	} else if (key == start_key) {
     		self.response_code = change_datum(item_idx);
+    		SaveHabitData(current_data);
     		respond(self.response_code);
     	} else if (key == back_key) {
     		WatchUi.pushView(carousel_view, carousel_delegate, 2);

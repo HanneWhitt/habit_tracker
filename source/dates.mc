@@ -113,7 +113,7 @@ function getTime() {
 	var daynum_today = dayNumber(now.day, monthnum_today, now.year);
 	var time_info = {"day" => now.day, "month_name" => now.month, "month_num" =>  monthnum_today, "year" => now.year, "days_in_month" => days_in_month, "day_num" => daynum_today};
 
-	time_info = {"day_num" => 376, "year" => 2021};
+	//time_info = {"day_num" => 376, "year" => 2021};
 
 	return time_info;
 

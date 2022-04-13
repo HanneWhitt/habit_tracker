@@ -7,9 +7,10 @@
 	],
 	"__ACTIVE_HABITS__": [ 
 		"Habit 1",
-		"Habit 2"
+		"Habit 2",
+		"Habit 3"
 	],
-	"__N_DAYS__": 20,
+	"__N_DAYS__": 14,
 	"Habit 1": {
 		"Abbreviation": "H1",
 		"Type": "Binary", 
@@ -17,6 +18,11 @@
 	},
 	"Habit 2": {
 		"Abbreviation": "H2",
+		"Type": "Binary", 
+		"Colours": "Blue"
+	},
+	"Habit 3": {
+		"Abbreviation": "H3",
 		"Type": "Binary", 
 		"Colours": "Blue"
 	},

@@ -38,37 +38,50 @@ function getStorageKey(habit_name, year) {
 
 
 // A function to load from storage data for the last n_days_to_display and put it in an array
-function loadHabitData(start_daynum, last_daynum, habits_to_load) {
+function SaveLoadHabitData(start_daynum, last_daynum, habits, save_data) {
 	
-	//var first_day_number = current_day_number - n_days_to_display + 1; // +1 for boundary problem
-	System.println("loadCurrentData() loading data from day " + start_daynum.toString() + " to " + last_daynum.toString());
-			
+	var n = last_daynum - start_daynum + 1;
+	
 	// Get the years of the first and last day
 	var start_year = yearFromDaynum(start_daynum);
 	var end_year = yearFromDaynum(last_daynum);
 	
-	// Initalise dict for data. Always contains a stamp of the daynum so that day associated with each datum is never muddled
+	// Initalise dict for loaded data. 
+	// Always contains a stamp of the daynum so that day associated with each datum is never muddled
 	var loaded_data = {"__DAYNUM_INTERVAL__" => [start_daynum, last_daynum]};
 	
+	if (save_data == null) {
+		System.println("SaveLoadHabitData() LOADING data from day " + start_daynum.toString() + " to " + last_daynum.toString());
+	} else {
+		System.println("SaveLoadHabitData() SAVING data from day " + start_daynum.toString() + " to " + last_daynum.toString());
+	} 
+	
 	// Iterate through habits
-	for (var h = 0; h < habits_to_load.size(); h += 1) {
+	for (var h = 0; h < habits.size(); h += 1) {		
 		
-		var habit_name = habits_to_load[h];
-		var loaded_habit_data;
-		loaded_habit_data = new [0];
-
-		print(h);
-		print(habit_name);
+		var habit_name = habits[h];
+		var habit_data;
+		
+		print('\n' + habit_name);
+		
+		
+		if (save_data == null) {
+			habit_data = new [0];
+		} else {
+			habit_data = save_data[habit_name];
+		}
 
 		// Iterate through year blocks
 		for (var y = start_year; y <= end_year; y += 1) {
 			
 			print(y);
 			
+			print(habit_data);
+			
 			// Year length
 			var year_length = daysInYear(y);
 			
-			// Load appropriate block for habit and year
+			// Load current saved version of appropriate block for habit and year
 			var storage_key = getStorageKey(habit_name, y);
 			var block_data = Application.Storage.getValue(storage_key);
 			
@@ -83,42 +96,68 @@ function loadHabitData(start_daynum, last_daynum, habits_to_load) {
 				}				
 			}
 			
-			// Get daynums of start and end of block
+			// Get daynums of start and end of year block
 			var block_start = dayNumber(1, 1, y);
 			var block_end = dayNumber(31, 12, y);
 			
 			// Get daynums to read from this block
-			var read_start_daynum = max(start_daynum, block_start);
-			var read_end_daynum = min(last_daynum, block_end);
+			var overlap_start_daynum = max(start_daynum, block_start);
+			var overlap_end_daynum = min(last_daynum, block_end);
+			var overlap_length = overlap_end_daynum - overlap_start_daynum + 1;
 			
-			// Convert to daynum within year
-			var read_start_index = DayInYear(read_start_daynum) - 1;
-			var read_end_index = DayInYear(read_end_daynum);
+			// Convert to daynum within year to get indices within saved year blocks
+			var save_data_start_index = DayInYear(overlap_start_daynum) - 1;
 			
-			// Select data and add to array
-			var read = block_data.slice(read_start_index, read_end_index);
-			loaded_habit_data.addAll(read);
+			if (save_data == null) {
+				// Select data and add to array
+				var read = block_data.slice(save_data_start_index, save_data_start_index + overlap_length);
+				habit_data.addAll(read);
+				
+			} else {
+				// Get indexes to take from habit data 
+				var write_start_index = overlap_start_daynum - start_daynum;
+				
+				// Integrate into block				
+				for (var w = 0; w < overlap_length; w += 1) {
+					block_data[w + save_data_start_index] = habit_data[w + write_start_index];
+				}
+				
+				// Save or overwrite block with new data
+				Application.Storage.setValue(storage_key, block_data);
+			}
 		
 		}
 
-		// Check that the combined loaded data for this habit has the expected length
-		if (loaded_habit_data.size() != n_days) {
-			throw new Lang.InvalidValueException("Combined loaded data has length " + loaded_habit_data.size().toString() + ", expected length " + n_days.toString());
+		if (save_data == null) { 
+			// Check that the combined loaded data for this habit has the expected length
+			if (habit_data.size() != n) {
+				throw new Lang.InvalidValueException("Combined loaded data has length " + habit_data.size().toString() + ", expected length " + n.toString());
+			}
+			
+			// Add it to the master array
+			loaded_data[habit_name] = habit_data;
 		}
-		
-		// Add it to the master array
-		loaded_data[habit_name] = loaded_habit_data;
-
 	}
 	
 	return loaded_data;
 	
 }
 
+
 // Given a daynum, load n_days of data leading up to and including that day
 function loadDaynumHabitData(habits_to_load, last_daynum) {
 	var start_daynum = last_daynum - n_days + 1;
-	return loadHabitData(start_daynum, last_daynum, active_habits);
+	return SaveLoadHabitData(start_daynum, last_daynum, active_habits, null);
+}
+
+
+// Given a daynum, load n_days of data leading up to and including that day
+function SaveHabitData(save_data) {
+	var start_daynum = save_data["__DAYNUM_INTERVAL__"][0];
+	var last_daynum = save_data["__DAYNUM_INTERVAL__"][1];
+	print(save_data);
+	print((save_data == null));
+	SaveLoadHabitData(start_daynum, last_daynum, active_habits, save_data);
 }
 
 
@@ -131,7 +170,6 @@ function change_datum(item_idx) {
 	
 	System.println(selected_day_idx);
 	System.println(selected_habit_idx);
-	
 	
 	var selected_habit_name = active_habits[selected_habit_idx];
 	var type = habit_metadata[selected_habit_name]["Type"];
@@ -159,80 +197,4 @@ function change_datum(item_idx) {
 	return response;
 
 }
-
-
-function saveHabitData(data_dict) {
-	
-	var current_data_first_day = current_data["__DAYNUM_INTERVAL__"][0];
-	var current_data_last_day = current_data["__DAYNUM_INTERVAL__"][1];
-	
-	for (var h = 0; h < n_habits; h += 1) {
-	
-		var habit_name = active_habits[h];
-		System.println("\nSaving " + habit_name + " data...");
-		
-		// ITERATE BACKWARDS DAY BY DAY KEEPING TRACK OF DAYNUM and SAVING TO APPROPRIATE BLOCK
-		// UPDATE BLOCK DATES IF NEW DAY INFO
-		// CREATE NEW BLOCK IF LENGTH GREATER THAN MAX
-				// Get blocks from habit metadata    		
-		var blocks = habit_metadata[habit_name]["block_date_intervals"];
-		
-		var current_write_day = current_data_last_day;
-		
-		// Iterate through data blocks, with most recent first
-		for (var block_idx = blocks.size() - 1; block_idx >= 0; block_idx -= 1) {
-			
-			var block_start = blocks[block_idx][0];
-			var block_end = blocks[block_idx][1];
-			
-			if (block_end > current_data_last_day) { 
-				// should never happen - means the metadata says that it contains data stored on days which haven't happened yet
-				throw new Lang.InvalidValueException("Loaded block end date seems to be after last data in current data which should be impossible");
-			
-			} else if (block_end < current_data_first_day) { 
-				// When we reach the point that all the remaining blocks finish before the first block in current_data, so do not need to be updated
-				System.println("No more blocks to update for " + habit_name);
-				break;
-				
-			} else { 
-				// Blocks which need to be updated
-				
-				// Construct storage key and load block:		
-				var storage_key = habit_name + '_' + block_start.toString();
-				var old_block = Application.Storage.getValue(storage_key);
-				System.println("Loaded old block " + storage_key + " length " + old_block.size().toString());
-				
-				// Figure out what data to transfer to what positions in the loaded block
-				var new_block_length = current_write_day - block_start + 1;
-				var new_block = new [new_block_length];
-				
-				for (var write_idx = new_block_length - 1; write_idx >= 0; write_idx -= 1) {
-					
-					if (current_write_day >= current_data_first_day) {
-						new_block[write_idx] = current_data[habit_name][current_write_day - current_data_first_day];
-				
-					} else { 
-						new_block[write_idx] = old_block[write_idx];
-						
-					}
-					
-					current_write_day -= 1;
-				
-				}
-				
-				System.println(old_block);
-				System.println(new_block);
-				
-				
-				//Overwrite
-				Application.Storage.setValue(storage_key, new_block);
-				
-			}
-			
-		}
-		
-	}
-	
-}
-
 
