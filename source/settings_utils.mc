@@ -83,8 +83,8 @@ function refreshUserSettings() {
     n_days = Application.Storage.getValue("__N_DAYS__");
     
     // Habits to display
-  	self.active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
-  	n_habits = self.active_habits.size();
+  	active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
+  	n_habits = active_habits.size();
   	
   	// Total items on data display screen, +1 for settings symbol
   	total_items = n_days*n_habits + 1;

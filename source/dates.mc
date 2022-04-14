@@ -111,10 +111,25 @@ function getTime() {
 	var days_in_month = daysInMonth(now.month, now.year);
 	var monthnum_today = month_to_number[now.month];
 	var daynum_today = dayNumber(now.day, monthnum_today, now.year);
-	var time_info = {"day" => now.day, "month_name" => now.month, "month_num" =>  monthnum_today, "year" => now.year, "days_in_month" => days_in_month, "day_num" => daynum_today};
+	var time_info = {"day" => now.day, "day_of_week" => now.day_of_week, "month_name" => now.month, "month_num" =>  monthnum_today, "year" => now.year, "days_in_month" => days_in_month, "day_num" => daynum_today};
 
 	//time_info = {"day_num" => 376, "year" => 2021};
 
 	return time_info;
+}
 
+	
+function month_day_string(day) {
+	var last_char = day.toString().toCharArray().reverse()[0];
+	var day_string = day.toString();
+	if (last_char == "1") {
+		day_string = "1st";
+	} else if (last_char == "2") {
+		day_string = "2nd";
+	} else if (last_char == "3") {
+		day_string = "3rd";
+	} else {
+		day_string = day_string + "th";
+	}
+	return day_string;
 }

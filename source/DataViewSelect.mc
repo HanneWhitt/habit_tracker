@@ -5,7 +5,7 @@ using Toybox.System;
 
 
 var item_idx;
-
+var current_time;
 
 class DataViewSelect extends WatchUi.View {
 
@@ -27,7 +27,8 @@ class DataViewSelect extends WatchUi.View {
     	// Set item index back to 1 whenever the view brought to foreground
         item_idx = 0;
 	   	// Refresh current daynum
-    	current_daynum = getTime()["day_num"];
+    	current_time = getTime();
+    	current_daynum = current_time["day_num"];
     	// Load the data from the last n_days
     	current_data = loadDaynumHabitData(active_habits, current_daynum);
     }
@@ -36,13 +37,14 @@ class DataViewSelect extends WatchUi.View {
     function onUpdate(dc) {
     	
     	// Save and refresh the data if the day has changed (i.e if it has just passed midnight)
-    	var new_daynum = getTime()["day_num"];
-		if (new_daynum != current_daynum) {
+    	var new_time = getTime();
+		if (new_time["day_num"] != current_daynum) {
 			SaveHabitData(current_data);
-	    	current_data = loadDaynumHabitData(active_habits, new_daynum);
-	    	current_daynum = new_daynum;
+	    	current_time = new_time;
+    		current_daynum = new_time["day_num"];
+	    	current_data = loadDaynumHabitData(active_habits, current_daynum);
 		}
-		display_full(dc, current_data, item_idx);		
+		display_full(dc, current_data, item_idx, current_time, true);		
 		
     }        
 
@@ -92,7 +94,7 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     		SaveHabitData(current_data);
     		respond(self.response_code);
     	} else if (key == back_key) {
-    		WatchUi.pushView(carousel_view, carousel_delegate, 2);
+    		WatchUi.popView(2);
     	}
     	
     	System.println(response_code);

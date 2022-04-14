@@ -10,13 +10,28 @@ function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
 	var width = endrad - startrad;
     dc.setPenWidth(width);
     dc.drawArc(
-    dc.getWidth() / 2,                     
-    dc.getHeight() / 2,       
-    startrad + width / 2,
-    Graphics.ARC_COUNTER_CLOCKWISE,
-    startdeg + 90,
-    enddeg + 90);
+	    dc.getWidth() / 2,                     
+	    dc.getHeight() / 2,       
+	    startrad + width / 2,
+	    Graphics.ARC_COUNTER_CLOCKWISE,
+	    startdeg + 90,
+	    enddeg + 90
+    );
 }
+
+
+function center_date(dc, day_of_week, day) {
+	var date_string = day_of_week + "\n" + day.toString();
+	dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(
+        dc.getWidth() / 2,
+        dc.getHeight() / 2 - 28,
+        Graphics.FONT_XTINY,
+        date_string,
+        Graphics.TEXT_JUSTIFY_CENTER
+    );
+}
+
 
 function get_colour(habit_name, datum, selected) {
 	
@@ -48,7 +63,7 @@ function get_colour(habit_name, datum, selected) {
 }
 
 // Display habit data only
-function display_habit_data(dc, habit_data, item_idx) {
+function display_habit_data(dc, habit_data, item_idx, time, show_habit) {
 	
 	var coords = item_to_coords(item_idx);
 	var selected_day_idx = coords[0];
@@ -78,23 +93,33 @@ function display_habit_data(dc, habit_data, item_idx) {
 			
 			var max_deg = dispSett["max_display_degrees"] - day_idx*(day_degrees + dispSett["gap_degrees"]);
 			var min_deg = max_deg - day_degrees;
+			var min_rad = dispSett["min_radius"] + habit_idx*radius_increment;
+			var max_rad = dispSett["min_radius"] + (habit_idx + 1)*radius_increment - dispSett["gap_radius"];
 			
 			annulusSector(
 				dc, 
 				min_deg, 
 				max_deg, 
-				dispSett["min_radius"] + habit_idx*radius_increment, 
-				dispSett["min_radius"] + (habit_idx + 1)*radius_increment - dispSett["gap_radius"], 
+				min_rad, 
+				max_rad, 
 				colour
 			);
+				
 		}
 	}
 }
 
 // Full display for use in selection mode; Show settings symbol if appropriate
 // Add day numbers, Habit labels
-function display_full(dc, habit_data, item_idx) {
+function display_full(dc, habit_data, item_idx, time, show_habit) {
 
-	display_habit_data(dc, habit_data, item_idx);
+//	if (time != null) {
+//		var day_of_week = time["day_of_week"];
+//		var day = time["day"];
+////		var month_name = time["month_name"];
+//		center_date(dc, day_of_week, day);
+//	}
+
+	display_habit_data(dc, habit_data, item_idx, time, show_habit);
 	
 }

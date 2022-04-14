@@ -45,8 +45,9 @@ class DataViewInitial extends WatchUi.View {
 	    	current_data = loadDaynumHabitData(active_habits, new_daynum);
 	    	current_daynum = new_daynum;
 		}
-		    	
-		display_habit_data(dc, current_data, null);
+		
+		// Show data with no selection, no date, no habit names displayed
+		display_habit_data(dc, current_data, null, null, false);
     }        
 
     // Called when this View is removed from the screen. Save the
@@ -66,12 +67,11 @@ class DataViewInitialDelegate extends WatchUi.InputDelegate {
 	}
 	
     function onKey(keyEvent) {
-    
-		if (keyEvent.getKey() == start_key) {
-			// initial day selection is -1 i.e display index of current day. 
+    	var key = keyEvent.getKey();
+		if (key == start_key) {
 			WatchUi.pushView(selection_view, selection_delegate, 1);
-    	}
-        return true;
+    	}      
+    	return true;
     }
 }
 

@@ -136,305 +136,327 @@
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="13" lineNum="112" pc="268438232" symbol="getTime"/>
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="13" lineNum="113" pc="268438251" symbol="getTime"/>
 <entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="13" lineNum="114" pc="268438282" symbol="getTime"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="13" lineNum="118" pc="268438368" symbol="getTime"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="15" lineNum="17" pc="268438372" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="15" lineNum="18" pc="268438376" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="16" lineNum="22" pc="268438395" symbol="onLayout"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="16" lineNum="23" pc="268438399" symbol="onLayout"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="16" lineNum="24" pc="268438439" symbol="onLayout"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="17" lineNum="30" pc="268438452" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="17" lineNum="33" pc="268438456" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="17" lineNum="36" pc="268438481" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="40" pc="268438517" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="43" pc="268438521" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="44" pc="268438540" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="45" pc="268438554" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="46" pc="268438583" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="49" pc="268438596" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="55" pc="268438620" symbol="onHide"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="21" lineNum="64" pc="268438625" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="21" lineNum="65" pc="268438629" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="22" lineNum="68" pc="268438648" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="22" lineNum="70" pc="268438652" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="22" lineNum="72" pc="268438675" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="22" lineNum="74" pc="268438715" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="23" lineNum="6" pc="268438719" symbol="print"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="23" lineNum="7" pc="268438731" symbol="print"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="24" lineNum="11" pc="268438750" symbol="max"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="24" lineNum="12" pc="268438762" symbol="max"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="24" lineNum="13" pc="268438770" symbol="max"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="24" lineNum="15" pc="268438776" symbol="max"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="19" pc="268438780" symbol="min"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="20" pc="268438792" symbol="min"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="21" pc="268438800" symbol="min"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="23" pc="268438806" symbol="min"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="26" lineNum="28" pc="268438810" symbol="contains"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="26" lineNum="29" pc="268438822" symbol="contains"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="33" pc="268438843" symbol="vibrate_with_delay"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="34" pc="268438855" symbol="vibrate_with_delay"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="35" pc="268438870" symbol="vibrate_with_delay"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="40" pc="268438960" symbol="vibrate_with_delay"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="41" pc="268438978" symbol="vibrate_with_delay"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="46" pc="268439003" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="47" pc="268439015" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="48" pc="268439033" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="49" pc="268439052" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="50" pc="268439076" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="51" pc="268439095" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="53" pc="268439120" symbol="respond"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="29" lineNum="13" pc="268439153" symbol="is_first_use"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="29" lineNum="14" pc="268439165" symbol="is_first_use"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="29" lineNum="15" pc="268439207" symbol="is_first_use"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="29" lineNum="16" pc="268439243" symbol="is_first_use"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="29" lineNum="17" pc="268439254" symbol="is_first_use"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="29" lineNum="19" pc="268439278" symbol="is_first_use"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="24" pc="268439288" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="26" pc="268439300" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="29" pc="268439321" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="32" pc="268439343" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="34" pc="268439362" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="35" pc="268439383" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="38" pc="268439407" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="41" pc="268439448" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="42" pc="268439497" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="43" pc="268439532" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="46" pc="268439579" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="47" pc="268439616" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="48" pc="268439640" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="49" pc="268439670" symbol="first_time_setup"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="57" pc="268439734" symbol="set_up_new_habit"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="59" pc="268439746" symbol="set_up_new_habit"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="60" pc="268439767" symbol="set_up_new_habit"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="62" pc="268439785" symbol="set_up_new_habit"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="64" pc="268439823" symbol="set_up_new_habit"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="69" pc="268439850" symbol="refreshFixedSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="71" pc="268439862" symbol="refreshFixedSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="72" pc="268439890" symbol="refreshFixedSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="74" pc="268439924" symbol="refreshFixedSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="80" pc="268439968" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="83" pc="268439980" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="86" pc="268440014" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="87" pc="268440048" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="90" pc="268440073" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="93" pc="268440104" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="94" pc="268440118" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="95" pc="268440132" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="96" pc="268440132" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="97" pc="268440132" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="99" pc="268440132" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="101" pc="268440153" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="103" pc="268440166" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="104" pc="268440191" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="106" pc="268440204" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="107" pc="268440214" symbol="refreshUserSettings"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="35" lineNum="13" pc="268440277" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="35" lineNum="14" pc="268440281" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="21" pc="268440300" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="23" pc="268440304" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="25" pc="268440327" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="28" pc="268440349" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="30" pc="268440368" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="31" pc="268440415" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="32" pc="268440435" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="33" pc="268440464" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="37" pc="268440503" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="38" pc="268440514" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="42" pc="268440529" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="46" pc="268440541" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="48" pc="268440553" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="49" pc="268440583" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="51" pc="268440613" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="52" pc="268440643" symbol="onStart"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="64" pc="268440674" symbol="getInitialView"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="66" pc="268440678" symbol="getInitialView"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="38" lineNum="77" pc="268440718" symbol="onStop"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="39" lineNum="8" pc="268440723" symbol="annulusSector"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="39" lineNum="9" pc="268440735" symbol="annulusSector"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="39" lineNum="10" pc="268440751" symbol="annulusSector"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="39" lineNum="11" pc="268440758" symbol="annulusSector"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="39" lineNum="12" pc="268440772" symbol="annulusSector"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="21" pc="268440858" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="23" pc="268440870" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="24" pc="268440889" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="26" pc="268440908" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="28" pc="268440927" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="29" pc="268440938" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="30" pc="268440948" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="31" pc="268440959" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="32" pc="268440969" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="33" pc="268440976" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="35" pc="268440986" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="38" pc="268441020" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="39" pc="268441025" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="41" pc="268441049" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="45" pc="268441073" symbol="get_colour"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="51" pc="268441108" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="53" pc="268441120" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="54" pc="268441135" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="55" pc="268441145" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="57" pc="268441155" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="59" pc="268441174" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="60" pc="268441244" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="62" pc="268441272" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="63" pc="268441272" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="64" pc="268441272" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="65" pc="268441272" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="67" pc="268441272" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="69" pc="268441293" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="71" pc="268441306" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="73" pc="268441327" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="75" pc="268441337" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="77" pc="268441355" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="79" pc="268441374" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="80" pc="268441411" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="82" pc="268441418" symbol="display_habit_data"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="96" pc="268441526" symbol="display_full"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="98" pc="268441538" symbol="display_full"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="44" lineNum="13" pc="268441557" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="44" lineNum="14" pc="268441561" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="45" lineNum="18" pc="268441580" symbol="onLayout"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="45" lineNum="19" pc="268441584" symbol="onLayout"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="45" lineNum="20" pc="268441624" symbol="onLayout"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="46" lineNum="26" pc="268441637" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="46" lineNum="28" pc="268441641" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="46" lineNum="30" pc="268441654" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="46" lineNum="32" pc="268441679" symbol="onShow"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="36" pc="268441715" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="39" pc="268441719" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="40" pc="268441738" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="41" pc="268441752" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="42" pc="268441772" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="43" pc="268441801" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="45" pc="268441814" symbol="onUpdate"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="52" pc="268441845" symbol="onHide"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="54" pc="268441849" symbol="onHide"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="61" pc="268441874" symbol="up"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="62" pc="268441886" symbol="up"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="50" lineNum="65" pc="268441918" symbol="down"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="50" lineNum="66" pc="268441930" symbol="down"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="50" lineNum="67" pc="268441961" symbol="down"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="50" lineNum="68" pc="268441978" symbol="down"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="77" pc="268442004" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="78" pc="268442008" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="79" pc="268442026" symbol="initialize"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="82" pc="268442040" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="84" pc="268442044" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="86" pc="268442057" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="87" pc="268442071" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="88" pc="268442086" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="89" pc="268442100" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="90" pc="268442115" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="91" pc="268442129" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="92" pc="268442156" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="93" pc="268442176" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="94" pc="268442199" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="95" pc="268442213" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="98" pc="268442253" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="100" pc="268442277" symbol="onKey"/>
-<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="53" lineNum="101" pc="268442293" symbol="onKey"/>
-<entry filename="Rez" id="59" lineNum="19" pc="268442297" symbol="MainLayout"/>
-<entry filename="Rez" id="59" lineNum="21" pc="268442309" symbol="MainLayout"/>
-<entry filename="Rez" id="59" lineNum="22" pc="268442428" symbol="MainLayout"/>
-<entry filename="Rez" id="59" lineNum="24" pc="268442480" symbol="MainLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="13" lineNum="118" pc="268438384" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="122" pc="268438388" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="123" pc="268438400" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="124" pc="268438437" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="125" pc="268438450" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="126" pc="268438461" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="127" pc="268438471" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="128" pc="268438482" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="129" pc="268438492" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="130" pc="268438503" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="132" pc="268438513" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\dates.mc" id="14" lineNum="134" pc="268438523" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="16" lineNum="17" pc="268438527" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="16" lineNum="18" pc="268438531" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="17" lineNum="22" pc="268438550" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="17" lineNum="23" pc="268438554" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="17" lineNum="24" pc="268438594" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="30" pc="268438607" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="33" pc="268438611" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="18" lineNum="36" pc="268438636" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="40" pc="268438672" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="43" pc="268438676" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="44" pc="268438695" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="45" pc="268438709" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="46" pc="268438738" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="19" lineNum="50" pc="268438751" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="20" lineNum="56" pc="268438778" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="22" lineNum="65" pc="268438783" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="22" lineNum="66" pc="268438787" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="23" lineNum="69" pc="268438806" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="23" lineNum="70" pc="268438810" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="23" lineNum="71" pc="268438823" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="23" lineNum="72" pc="268438837" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewInitial.mc" id="23" lineNum="74" pc="268438877" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="24" lineNum="6" pc="268438881" symbol="print"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="24" lineNum="7" pc="268438893" symbol="print"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="11" pc="268438912" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="12" pc="268438924" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="13" pc="268438932" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="25" lineNum="15" pc="268438938" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="26" lineNum="19" pc="268438942" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="26" lineNum="20" pc="268438954" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="26" lineNum="21" pc="268438962" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="26" lineNum="23" pc="268438968" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="28" pc="268438972" symbol="contains"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="27" lineNum="29" pc="268438984" symbol="contains"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="33" pc="268439005" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="34" pc="268439017" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="35" pc="268439032" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="40" pc="268439122" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="28" lineNum="41" pc="268439140" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="46" pc="268439165" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="47" pc="268439177" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="48" pc="268439195" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="49" pc="268439214" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="50" pc="268439238" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="51" pc="268439257" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\general_utils.mc" id="29" lineNum="53" pc="268439282" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="13" pc="268439315" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="14" pc="268439327" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="15" pc="268439369" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="16" pc="268439405" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="17" pc="268439416" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="30" lineNum="19" pc="268439440" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="24" pc="268439450" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="26" pc="268439462" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="29" pc="268439483" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="32" pc="268439505" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="34" pc="268439524" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="35" pc="268439545" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="38" pc="268439569" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="41" pc="268439610" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="42" pc="268439659" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="43" pc="268439694" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="46" pc="268439741" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="47" pc="268439778" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="48" pc="268439802" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="31" lineNum="49" pc="268439832" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="57" pc="268439896" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="59" pc="268439908" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="60" pc="268439929" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="62" pc="268439947" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="32" lineNum="64" pc="268439985" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="69" pc="268440012" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="71" pc="268440024" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="72" pc="268440052" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="33" lineNum="74" pc="268440086" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="80" pc="268440130" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="83" pc="268440142" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="86" pc="268440176" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="87" pc="268440210" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="90" pc="268440235" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="93" pc="268440266" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="94" pc="268440280" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="95" pc="268440294" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="96" pc="268440294" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="97" pc="268440294" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="99" pc="268440294" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="101" pc="268440315" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="103" pc="268440328" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="104" pc="268440353" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="106" pc="268440366" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\settings_utils.mc" id="34" lineNum="107" pc="268440376" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="13" pc="268440439" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="36" lineNum="14" pc="268440443" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="21" pc="268440462" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="23" pc="268440466" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="26" pc="268440489" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="28" pc="268440508" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="29" pc="268440555" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="30" pc="268440575" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="31" pc="268440604" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="35" pc="268440643" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="36" pc="268440654" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="40" pc="268440669" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="44" pc="268440681" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="46" pc="268440693" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="47" pc="268440723" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="49" pc="268440753" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="37" lineNum="50" pc="268440783" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="38" lineNum="62" pc="268440814" symbol="getInitialView"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="38" lineNum="64" pc="268440818" symbol="getInitialView"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\BlueApp.mc" id="39" lineNum="75" pc="268440858" symbol="onStop"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="8" pc="268440863" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="9" pc="268440875" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="10" pc="268440891" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="11" pc="268440898" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="40" lineNum="12" pc="268440912" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="23" pc="268440998" symbol="center_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="24" pc="268441010" symbol="center_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="25" pc="268441032" symbol="center_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="41" lineNum="26" pc="268441068" symbol="center_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="36" pc="268441147" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="38" pc="268441159" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="39" pc="268441178" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="41" pc="268441197" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="43" pc="268441216" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="44" pc="268441227" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="45" pc="268441237" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="46" pc="268441248" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="47" pc="268441258" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="48" pc="268441265" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="50" pc="268441275" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="53" pc="268441309" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="54" pc="268441314" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="56" pc="268441338" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="42" lineNum="60" pc="268441362" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="66" pc="268441397" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="68" pc="268441409" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="69" pc="268441424" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="70" pc="268441434" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="72" pc="268441444" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="74" pc="268441463" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="75" pc="268441533" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="77" pc="268441561" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="78" pc="268441561" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="79" pc="268441561" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="80" pc="268441561" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="82" pc="268441561" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="84" pc="268441582" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="86" pc="268441595" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="88" pc="268441616" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="90" pc="268441626" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="92" pc="268441644" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="94" pc="268441663" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="95" pc="268441700" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="96" pc="268441707" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="97" pc="268441729" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="43" lineNum="99" pc="268441772" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="44" lineNum="114" pc="268441823" symbol="display_full"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\display_utils.mc" id="44" lineNum="123" pc="268441835" symbol="display_full"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="46" lineNum="13" pc="268441858" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="46" lineNum="14" pc="268441862" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="18" pc="268441881" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="19" pc="268441885" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="47" lineNum="20" pc="268441925" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="26" pc="268441938" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="28" pc="268441942" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="30" pc="268441955" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="31" pc="268441974" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="48" lineNum="33" pc="268441996" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="37" pc="268442032" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="40" pc="268442036" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="41" pc="268442049" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="42" pc="268442069" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="43" pc="268442089" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="44" pc="268442099" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="45" pc="268442115" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="49" lineNum="47" pc="268442153" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="50" lineNum="54" pc="268442194" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="50" lineNum="56" pc="268442198" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="51" lineNum="63" pc="268442223" symbol="up"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="51" lineNum="64" pc="268442235" symbol="up"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="67" pc="268442267" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="68" pc="268442279" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="69" pc="268442310" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="52" lineNum="70" pc="268442327" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="54" lineNum="79" pc="268442353" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="54" lineNum="80" pc="268442357" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="54" lineNum="81" pc="268442375" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="84" pc="268442389" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="86" pc="268442393" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="88" pc="268442406" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="89" pc="268442420" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="90" pc="268442435" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="91" pc="268442449" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="92" pc="268442464" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="93" pc="268442478" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="94" pc="268442505" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="95" pc="268442525" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="96" pc="268442548" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="97" pc="268442562" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="100" pc="268442586" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="102" pc="268442610" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\habit_app\\Blue2\\source\\DataViewSelect.mc" id="55" lineNum="103" pc="268442626" symbol="onKey"/>
+<entry filename="Rez" id="61" lineNum="19" pc="268442630" symbol="MainLayout"/>
+<entry filename="Rez" id="61" lineNum="21" pc="268442642" symbol="MainLayout"/>
+<entry filename="Rez" id="61" lineNum="22" pc="268442761" symbol="MainLayout"/>
+<entry filename="Rez" id="61" lineNum="24" pc="268442813" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry field="true" id="13" symbol="habit_metadata"/>
-<entry field="true" id="72" symbol="displaySettings"/>
-<entry id="58" method="true" symbol="annulusSector"/>
-<entry field="true" id="54" symbol="selection_view"/>
-<entry id="65" method="true" symbol="down"/>
-<entry field="true" id="43" symbol="dispSett"/>
-<entry id="71" method="true" symbol="MainLayout"/>
+<entry field="true" id="75" symbol="displaySettings"/>
+<entry id="59" method="true" symbol="annulusSector"/>
+<entry field="true" id="55" symbol="selection_view"/>
+<entry id="68" method="true" symbol="down"/>
+<entry field="true" id="44" symbol="dispSett"/>
+<entry id="74" method="true" symbol="MainLayout"/>
+<entry id="32" method="true" symbol="month_day_string"/>
 <entry field="true" id="9" symbol="n_habits"/>
-<entry field="true" id="62" symbol="item_idx"/>
-<entry field="true" id="40" symbol="first_use_bool"/>
-<entry field="true" id="33" symbol="current_data"/>
+<entry field="true" id="64" symbol="item_idx"/>
+<entry field="true" id="41" symbol="first_use_bool"/>
+<entry field="true" id="34" symbol="current_data"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
-<entry id="45" method="true" symbol="is_first_use"/>
+<entry id="46" method="true" symbol="is_first_use"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry id="29" method="true" symbol="yearFromDaynum"/>
 <entry id="28" method="true" symbol="dayNumber"/>
-<entry field="true" id="75" symbol="AppName"/>
+<entry field="true" id="78" symbol="AppName"/>
 <entry id="23" method="true" symbol="change_datum"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8389345" symbol="rezId"/>
 <entry field="true" id="11" symbol="total_items"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry field="true" id="52" symbol="carousel_view"/>
-<entry id="46" method="true" symbol="first_time_setup"/>
+<entry field="true" id="53" symbol="carousel_view"/>
+<entry id="47" method="true" symbol="first_time_setup"/>
+<entry field="true" id="65" symbol="current_time"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
-<entry field="true" id="55" symbol="selection_delegate"/>
+<entry field="true" id="56" symbol="selection_delegate"/>
 <entry id="8388712" method="true" symbol="print"/>
-<entry id="35" object="true" symbol="DataViewInitialDelegate"/>
-<entry id="64" method="true" symbol="up"/>
+<entry id="36" object="true" symbol="DataViewInitialDelegate"/>
+<entry id="67" method="true" symbol="up"/>
 <entry id="20" method="true" symbol="SaveLoadHabitData"/>
 <entry id="27" method="true" symbol="daysInYear"/>
 <entry field="true" id="24" symbol="month_to_number"/>
-<entry field="true" id="41" symbol="first_use_time_info"/>
+<entry field="true" id="42" symbol="first_use_time_info"/>
 <entry id="26" method="true" symbol="daysInMonth"/>
 <entry field="true" id="8388721" method="true" symbol="min"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-<entry field="true" id="74" symbol="setupValues"/>
-<entry id="68" module="true" symbol="Menus"/>
-<entry id="36" method="true" symbol="max"/>
+<entry field="true" id="77" symbol="setupValues"/>
+<entry id="71" module="true" symbol="Menus"/>
+<entry id="37" method="true" symbol="max"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
-<entry field="true" id="76" symbol="response_code"/>
+<entry field="true" id="79" symbol="response_code"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry field="true" id="17" symbol="down_key"/>
 <entry field="true" id="14" symbol="start_key"/>
-<entry field="true" id="73" symbol="colourSchemes"/>
-<entry id="38" method="true" symbol="vibrate_with_delay"/>
+<entry field="true" id="76" symbol="colourSchemes"/>
+<entry id="39" method="true" symbol="vibrate_with_delay"/>
 <entry id="8388987" method="true" symbol="vibrate"/>
-<entry id="59" method="true" symbol="get_colour"/>
-<entry field="true" id="51" symbol="first_use"/>
-<entry id="37" method="true" symbol="contains"/>
-<entry id="39" method="true" symbol="respond"/>
-<entry id="49" method="true" symbol="refreshFixedSettings"/>
-<entry id="63" object="true" symbol="DataViewSelect"/>
+<entry id="61" method="true" symbol="get_colour"/>
+<entry field="true" id="52" symbol="first_use"/>
+<entry id="38" method="true" symbol="contains"/>
+<entry id="40" method="true" symbol="respond"/>
+<entry id="50" method="true" symbol="refreshFixedSettings"/>
+<entry id="66" object="true" symbol="DataViewSelect"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="31" method="true" symbol="getTime"/>
 <entry id="8388645" module="true" symbol="Time"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="18" method="true" symbol="item_to_coords"/>
-<entry field="true" id="42" symbol="n_uses"/>
+<entry id="60" method="true" symbol="center_date"/>
+<entry field="true" id="43" symbol="n_uses"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="21" method="true" symbol="loadDaynumHabitData"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="70" symbol="LauncherIcon"/>
-<entry field="true" id="32" symbol="current_daynum"/>
+<entry field="true" id="73" symbol="LauncherIcon"/>
+<entry field="true" id="33" symbol="current_daynum"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry id="61" method="true" symbol="display_full"/>
+<entry id="63" method="true" symbol="display_full"/>
 <entry field="true" id="16" symbol="up_key"/>
-<entry field="true" id="53" symbol="carousel_delegate"/>
+<entry field="true" id="54" symbol="carousel_delegate"/>
 <entry id="19" method="true" symbol="getStorageKey"/>
-<entry id="48" method="true" symbol="set_up_new_habit"/>
+<entry id="49" method="true" symbol="set_up_new_habit"/>
 <entry field="true" id="25" symbol="number_to_month"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry field="true" id="12" symbol="active_habits"/>
-<entry id="50" method="true" symbol="refreshUserSettings"/>
+<entry id="51" method="true" symbol="refreshUserSettings"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry id="60" method="true" symbol="display_habit_data"/>
-<entry field="true" id="69" symbol="settings"/>
+<entry id="62" method="true" symbol="display_habit_data"/>
+<entry field="true" id="72" symbol="settings"/>
 <entry field="true" id="10" symbol="n_days"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry field="true" id="15" symbol="back_key"/>
-<entry id="56" object="true" symbol="BlueApp"/>
+<entry id="57" object="true" symbol="BlueApp"/>
 <entry id="8389097" method="true" symbol="onKey"/>
-<entry field="true" id="47" symbol="new_habit_dict"/>
+<entry field="true" id="48" symbol="new_habit_dict"/>
 <entry id="30" method="true" symbol="DayInYear"/>
-<entry id="34" object="true" symbol="DataViewInitial"/>
-<entry id="67" module="true" symbol="Layouts"/>
+<entry id="35" object="true" symbol="DataViewInitial"/>
+<entry id="70" module="true" symbol="Layouts"/>
 <entry id="8388636" module="true" symbol="Attention"/>
 <entry id="22" method="true" symbol="SaveHabitData"/>
-<entry field="true" id="57" symbol="colour_scheme"/>
+<entry field="true" id="58" symbol="colour_scheme"/>
 <entry id="8389125" method="true" symbol="onHide"/>
-<entry field="true" id="44" symbol="data_start_daynum"/>
-<entry id="66" object="true" symbol="DataViewSelectDelegate"/>
+<entry field="true" id="45" symbol="data_start_daynum"/>
+<entry id="69" object="true" symbol="DataViewSelectDelegate"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
 <localVars>
@@ -494,96 +516,110 @@
 <entry endPc="268438069" name="daynum" stackId="1" startPc="268437920"/>
 <entry endPc="268438146" name="y" stackId="2" startPc="268438081"/>
 <entry endPc="268438147" name="daynum" stackId="1" startPc="268438069"/>
-<entry endPc="268438371" name="monthnum_today" stackId="3" startPc="268438159"/>
-<entry endPc="268438371" name="now" stackId="1" startPc="268438159"/>
-<entry endPc="268438371" name="daynum_today" stackId="4" startPc="268438159"/>
-<entry endPc="268438371" name="days_in_month" stackId="2" startPc="268438159"/>
-<entry endPc="268438371" name="time_info" stackId="5" startPc="268438159"/>
-<entry endPc="268438452" name="dc" stackId="1" startPc="268438395"/>
-<entry endPc="268438619" name="new_daynum" stackId="2" startPc="268438521"/>
-<entry endPc="268438620" name="dc" stackId="1" startPc="268438517"/>
-<entry endPc="268438719" name="keyEvent" stackId="1" startPc="268438648"/>
-<entry endPc="268438750" name="str" stackId="1" startPc="268438719"/>
-<entry endPc="268438780" name="b" stackId="2" startPc="268438750"/>
-<entry endPc="268438780" name="a" stackId="1" startPc="268438750"/>
-<entry endPc="268438810" name="b" stackId="2" startPc="268438780"/>
-<entry endPc="268438810" name="a" stackId="1" startPc="268438780"/>
-<entry endPc="268438843" name="element" stackId="2" startPc="268438810"/>
-<entry endPc="268438843" name="array" stackId="1" startPc="268438810"/>
-<entry endPc="268438999" name="vibeData" stackId="3" startPc="268438870"/>
-<entry endPc="268439003" name="vibration_ms" stackId="2" startPc="268438843"/>
-<entry endPc="268439003" name="delay_ms" stackId="1" startPc="268438843"/>
-<entry endPc="268439153" name="response_code" stackId="1" startPc="268439003"/>
-<entry endPc="268439733" name="entry_idx" stackId="2" startPc="268439640"/>
-<entry endPc="268439733" name="setupValues" stackId="1" startPc="268439300"/>
-<entry endPc="268439849" name="new_habit_dict" stackId="5" startPc="268439746"/>
-<entry endPc="268439850" name="name" stackId="1" startPc="268439734"/>
-<entry endPc="268439850" name="type" stackId="3" startPc="268439734"/>
-<entry endPc="268439850" name="colours" stackId="4" startPc="268439734"/>
-<entry endPc="268439850" name="abbreviation" stackId="2" startPc="268439734"/>
-<entry endPc="268439967" name="first_use_date" stackId="1" startPc="268439862"/>
-<entry endPc="268440276" name="h" stackId="4" startPc="268440153"/>
-<entry endPc="268440276" name="habit_name" stackId="1" startPc="268439980"/>
-<entry endPc="268440276" name="habit_meta" stackId="2" startPc="268439980"/>
-<entry endPc="268440276" name="habit_colours" stackId="3" startPc="268439980"/>
-<entry endPc="268440673" name="thing" stackId="2" startPc="268440304"/>
-<entry endPc="268440674" name="state" stackId="1" startPc="268440300"/>
-<entry endPc="268440723" name="state" stackId="1" startPc="268440718"/>
-<entry endPc="268440857" name="width" stackId="7" startPc="268440735"/>
-<entry endPc="268440858" name="dc" stackId="1" startPc="268440723"/>
-<entry endPc="268440858" name="enddeg" stackId="3" startPc="268440723"/>
-<entry endPc="268440858" name="startdeg" stackId="2" startPc="268440723"/>
-<entry endPc="268440858" name="colour" stackId="6" startPc="268440723"/>
-<entry endPc="268440858" name="endrad" stackId="5" startPc="268440723"/>
-<entry endPc="268440858" name="startrad" stackId="4" startPc="268440723"/>
-<entry endPc="268441107" name="type" stackId="4" startPc="268440870"/>
-<entry endPc="268441107" name="habit_colours" stackId="5" startPc="268440870"/>
-<entry endPc="268441108" name="habit_name" stackId="1" startPc="268440858"/>
-<entry endPc="268441108" name="datum" stackId="2" startPc="268440858"/>
-<entry endPc="268441108" name="selected" stackId="3" startPc="268440858"/>
-<entry endPc="268441499" name="min_deg" stackId="17" startPc="268441327"/>
-<entry endPc="268441499" name="max_deg" stackId="16" startPc="268441327"/>
-<entry endPc="268441512" name="day_idx" stackId="15" startPc="268441327"/>
-<entry endPc="268441525" name="habit_idx" stackId="14" startPc="268441293"/>
-<entry endPc="268441525" name="colour" stackId="13" startPc="268441120"/>
-<entry endPc="268441525" name="screen_radius" stackId="7" startPc="268441120"/>
-<entry endPc="268441525" name="radius_increment" stackId="9" startPc="268441120"/>
-<entry endPc="268441525" name="day_degrees" stackId="8" startPc="268441120"/>
-<entry endPc="268441525" name="selected" stackId="12" startPc="268441120"/>
-<entry endPc="268441525" name="habit_name" stackId="10" startPc="268441120"/>
-<entry endPc="268441525" name="selected_habit_idx" stackId="6" startPc="268441120"/>
-<entry endPc="268441525" name="coords" stackId="4" startPc="268441120"/>
-<entry endPc="268441525" name="datum" stackId="11" startPc="268441120"/>
-<entry endPc="268441525" name="selected_day_idx" stackId="5" startPc="268441120"/>
-<entry endPc="268441526" name="dc" stackId="1" startPc="268441108"/>
-<entry endPc="268441526" name="habit_data" stackId="2" startPc="268441108"/>
-<entry endPc="268441526" name="item_idx" stackId="3" startPc="268441108"/>
-<entry endPc="268441557" name="dc" stackId="1" startPc="268441526"/>
-<entry endPc="268441557" name="habit_data" stackId="2" startPc="268441526"/>
-<entry endPc="268441557" name="item_idx" stackId="3" startPc="268441526"/>
-<entry endPc="268441637" name="dc" stackId="1" startPc="268441580"/>
-<entry endPc="268441844" name="new_daynum" stackId="2" startPc="268441719"/>
-<entry endPc="268441845" name="dc" stackId="1" startPc="268441715"/>
-<entry endPc="268442296" name="key" stackId="2" startPc="268442044"/>
-<entry endPc="268442297" name="keyEvent" stackId="1" startPc="268442040"/>
-<entry endPc="268442497" name="rez_cmp_local_bitmap_settings" stackId="2" startPc="268442309"/>
-<entry endPc="268442498" name="dc" stackId="1" startPc="268442297"/>
+<entry endPc="268438387" name="monthnum_today" stackId="3" startPc="268438159"/>
+<entry endPc="268438387" name="now" stackId="1" startPc="268438159"/>
+<entry endPc="268438387" name="daynum_today" stackId="4" startPc="268438159"/>
+<entry endPc="268438387" name="days_in_month" stackId="2" startPc="268438159"/>
+<entry endPc="268438387" name="time_info" stackId="5" startPc="268438159"/>
+<entry endPc="268438526" name="day_string" stackId="3" startPc="268438400"/>
+<entry endPc="268438526" name="last_char" stackId="2" startPc="268438400"/>
+<entry endPc="268438527" name="day" stackId="1" startPc="268438388"/>
+<entry endPc="268438607" name="dc" stackId="1" startPc="268438550"/>
+<entry endPc="268438777" name="new_daynum" stackId="2" startPc="268438676"/>
+<entry endPc="268438778" name="dc" stackId="1" startPc="268438672"/>
+<entry endPc="268438880" name="key" stackId="2" startPc="268438810"/>
+<entry endPc="268438881" name="keyEvent" stackId="1" startPc="268438806"/>
+<entry endPc="268438912" name="str" stackId="1" startPc="268438881"/>
+<entry endPc="268438942" name="b" stackId="2" startPc="268438912"/>
+<entry endPc="268438942" name="a" stackId="1" startPc="268438912"/>
+<entry endPc="268438972" name="b" stackId="2" startPc="268438942"/>
+<entry endPc="268438972" name="a" stackId="1" startPc="268438942"/>
+<entry endPc="268439005" name="element" stackId="2" startPc="268438972"/>
+<entry endPc="268439005" name="array" stackId="1" startPc="268438972"/>
+<entry endPc="268439161" name="vibeData" stackId="3" startPc="268439032"/>
+<entry endPc="268439165" name="vibration_ms" stackId="2" startPc="268439005"/>
+<entry endPc="268439165" name="delay_ms" stackId="1" startPc="268439005"/>
+<entry endPc="268439315" name="response_code" stackId="1" startPc="268439165"/>
+<entry endPc="268439895" name="entry_idx" stackId="2" startPc="268439802"/>
+<entry endPc="268439895" name="setupValues" stackId="1" startPc="268439462"/>
+<entry endPc="268440011" name="new_habit_dict" stackId="5" startPc="268439908"/>
+<entry endPc="268440012" name="name" stackId="1" startPc="268439896"/>
+<entry endPc="268440012" name="type" stackId="3" startPc="268439896"/>
+<entry endPc="268440012" name="colours" stackId="4" startPc="268439896"/>
+<entry endPc="268440012" name="abbreviation" stackId="2" startPc="268439896"/>
+<entry endPc="268440129" name="first_use_date" stackId="1" startPc="268440024"/>
+<entry endPc="268440438" name="h" stackId="4" startPc="268440315"/>
+<entry endPc="268440438" name="habit_name" stackId="1" startPc="268440142"/>
+<entry endPc="268440438" name="habit_meta" stackId="2" startPc="268440142"/>
+<entry endPc="268440438" name="habit_colours" stackId="3" startPc="268440142"/>
+<entry endPc="268440813" name="thing" stackId="2" startPc="268440466"/>
+<entry endPc="268440814" name="state" stackId="1" startPc="268440462"/>
+<entry endPc="268440863" name="state" stackId="1" startPc="268440858"/>
+<entry endPc="268440997" name="width" stackId="7" startPc="268440875"/>
+<entry endPc="268440998" name="dc" stackId="1" startPc="268440863"/>
+<entry endPc="268440998" name="enddeg" stackId="3" startPc="268440863"/>
+<entry endPc="268440998" name="startdeg" stackId="2" startPc="268440863"/>
+<entry endPc="268440998" name="colour" stackId="6" startPc="268440863"/>
+<entry endPc="268440998" name="endrad" stackId="5" startPc="268440863"/>
+<entry endPc="268440998" name="startrad" stackId="4" startPc="268440863"/>
+<entry endPc="268441146" name="date_string" stackId="4" startPc="268441010"/>
+<entry endPc="268441147" name="dc" stackId="1" startPc="268440998"/>
+<entry endPc="268441147" name="day" stackId="3" startPc="268440998"/>
+<entry endPc="268441147" name="day_of_week" stackId="2" startPc="268440998"/>
+<entry endPc="268441396" name="type" stackId="4" startPc="268441159"/>
+<entry endPc="268441396" name="habit_colours" stackId="5" startPc="268441159"/>
+<entry endPc="268441397" name="habit_name" stackId="1" startPc="268441147"/>
+<entry endPc="268441397" name="datum" stackId="2" startPc="268441147"/>
+<entry endPc="268441397" name="selected" stackId="3" startPc="268441147"/>
+<entry endPc="268441796" name="min_deg" stackId="19" startPc="268441616"/>
+<entry endPc="268441796" name="max_deg" stackId="18" startPc="268441616"/>
+<entry endPc="268441796" name="min_rad" stackId="20" startPc="268441616"/>
+<entry endPc="268441796" name="max_rad" stackId="21" startPc="268441616"/>
+<entry endPc="268441809" name="day_idx" stackId="17" startPc="268441616"/>
+<entry endPc="268441822" name="habit_idx" stackId="16" startPc="268441582"/>
+<entry endPc="268441822" name="colour" stackId="15" startPc="268441409"/>
+<entry endPc="268441822" name="screen_radius" stackId="9" startPc="268441409"/>
+<entry endPc="268441822" name="radius_increment" stackId="11" startPc="268441409"/>
+<entry endPc="268441822" name="day_degrees" stackId="10" startPc="268441409"/>
+<entry endPc="268441822" name="selected" stackId="14" startPc="268441409"/>
+<entry endPc="268441822" name="habit_name" stackId="12" startPc="268441409"/>
+<entry endPc="268441822" name="selected_habit_idx" stackId="8" startPc="268441409"/>
+<entry endPc="268441822" name="coords" stackId="6" startPc="268441409"/>
+<entry endPc="268441822" name="datum" stackId="13" startPc="268441409"/>
+<entry endPc="268441822" name="selected_day_idx" stackId="7" startPc="268441409"/>
+<entry endPc="268441823" name="dc" stackId="1" startPc="268441397"/>
+<entry endPc="268441823" name="show_habit" stackId="5" startPc="268441397"/>
+<entry endPc="268441823" name="habit_data" stackId="2" startPc="268441397"/>
+<entry endPc="268441823" name="time" stackId="4" startPc="268441397"/>
+<entry endPc="268441823" name="item_idx" stackId="3" startPc="268441397"/>
+<entry endPc="268441858" name="dc" stackId="1" startPc="268441823"/>
+<entry endPc="268441858" name="show_habit" stackId="5" startPc="268441823"/>
+<entry endPc="268441858" name="habit_data" stackId="2" startPc="268441823"/>
+<entry endPc="268441858" name="time" stackId="4" startPc="268441823"/>
+<entry endPc="268441858" name="item_idx" stackId="3" startPc="268441823"/>
+<entry endPc="268441938" name="dc" stackId="1" startPc="268441881"/>
+<entry endPc="268442193" name="new_time" stackId="2" startPc="268442036"/>
+<entry endPc="268442194" name="dc" stackId="1" startPc="268442032"/>
+<entry endPc="268442629" name="key" stackId="2" startPc="268442393"/>
+<entry endPc="268442630" name="keyEvent" stackId="1" startPc="268442389"/>
+<entry endPc="268442830" name="rez_cmp_local_bitmap_settings" stackId="2" startPc="268442642"/>
+<entry endPc="268442831" name="dc" stackId="1" startPc="268442630"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry offset="614" parentId="globals" symbolId="DataViewSelect" type="class"/>
-<dataEntry offset="693" parentId="globals" symbolId="BlueApp" type="class"/>
-<dataEntry offset="764" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="843" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="890" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="921" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="952" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="991" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="1046" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="1085" parentId="globals" symbolId="DataViewSelectDelegate" type="class"/>
-<dataEntry offset="1148" parentId="globals" symbolId="DataViewInitial" type="class"/>
-<dataEntry offset="1243" parentId="globals" symbolId="DataViewInitialDelegate" type="class"/>
+<dataEntry offset="638" parentId="globals" symbolId="DataViewSelect" type="class"/>
+<dataEntry offset="717" parentId="globals" symbolId="BlueApp" type="class"/>
+<dataEntry offset="788" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="867" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="914" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="945" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="976" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="1015" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="1070" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="1109" parentId="globals" symbolId="DataViewSelectDelegate" type="class"/>
+<dataEntry offset="1172" parentId="globals" symbolId="DataViewInitial" type="class"/>
+<dataEntry offset="1267" parentId="globals" symbolId="DataViewInitialDelegate" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="item_to_coords">
@@ -639,6 +675,10 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="getTime">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="month_day_string">
+<param id="day"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="DataViewInitial">
@@ -735,6 +775,12 @@
 <param id="colour"/>
 <documentation/>
 </functionEntry>
+<functionEntry accessMode="public" name="center_date">
+<param id="dc"/>
+<param id="day_of_week"/>
+<param id="day"/>
+<documentation/>
+</functionEntry>
 <functionEntry accessMode="public" name="get_colour">
 <param id="habit_name"/>
 <param id="datum"/>
@@ -745,12 +791,16 @@
 <param id="dc"/>
 <param id="habit_data"/>
 <param id="item_idx"/>
+<param id="time"/>
+<param id="show_habit"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="display_full">
 <param id="dc"/>
 <param id="habit_data"/>
 <param id="item_idx"/>
+<param id="time"/>
+<param id="show_habit"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="DataViewSelect">

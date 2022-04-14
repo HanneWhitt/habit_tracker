@@ -21,9 +21,7 @@ class BlueApp extends Application.AppBase {
     function onStart(state) {
     
     	System.println("onSTART RAN");
-    	
-    	Application.Storage.clearValues();
-		
+    			
 		// Is this the first time the app has run?
 		first_use = is_first_use();
 		
