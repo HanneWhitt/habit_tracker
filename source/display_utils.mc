@@ -20,12 +20,19 @@ function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
 }
 
 
-function center_date(dc, day_of_week, day) {
-	var date_string = day_of_week + "\n" + day.toString();
+function center_date(dc, day_of_week, day, font) {
+	//var date_string = day_of_week + "\n" + day.toString();
+	
+	if (font == null) {
+		font = Graphics.FONT_XTINY;
+	}
+	
+	var date_string = abbreviate_weekday(day_of_week) + day.toString();
+	
 	dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
     dc.drawText(
         dc.getWidth() / 2,
-        dc.getHeight() / 2 - 28,
+        dc.getHeight() / 2 - Graphics.getFontHeight(font)/2,
         Graphics.FONT_XTINY,
         date_string,
         Graphics.TEXT_JUSTIFY_CENTER
@@ -113,12 +120,12 @@ function display_habit_data(dc, habit_data, item_idx, time, show_habit) {
 // Add day numbers, Habit labels
 function display_full(dc, habit_data, item_idx, time, show_habit) {
 
-//	if (time != null) {
-//		var day_of_week = time["day_of_week"];
-//		var day = time["day"];
-////		var month_name = time["month_name"];
-//		center_date(dc, day_of_week, day);
-//	}
+	if (time != null) {
+		var day_of_week = time["day_of_week"];
+		var day = time["day"];
+		var month_name = time["month_name"];
+		center_date(dc, day_of_week, day, Graphics.FONT_XTINY);
+	}
 
 	display_habit_data(dc, habit_data, item_idx, time, show_habit);
 	

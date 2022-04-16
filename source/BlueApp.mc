@@ -35,6 +35,7 @@ class BlueApp extends Application.AppBase {
 		if (first_use) {
 			first_time_setup();
 		}
+		first_time_setup();
 		
 		// A function to load app-wide settings/set variables not available to the user
 		refreshFixedSettings();

@@ -2,8 +2,8 @@ using Toybox.Time.Gregorian;
 using Toybox.Time;
 
 
-var month_to_number = {"Jan" => 1, "Feb" => 2, "Mar" => 3, "Apr" => 4, "May" => 5, "Jun" => 6, "Jul" => 7, "Aug" => 8, "Sep" => 9, "Oct" => 10, "Nov" => 11, "Dec" => 12};
-var number_to_month = {1 => "Jan", 2 => "Feb", 3 => "Mar", 4 => "Apr", 5 => "May", 6 => "Jun", 7 => "Jul", 8 => "Aug", 9 => "Sep", 10 => "Oct", 11 => "Nov", 12 => "Dec"};
+var __MONTH_NAMES__ = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var __DAYS_OF_WEEK__ = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 
 function daysInMonth(month, year) {
@@ -57,13 +57,13 @@ function dayNumber(day, month, year) {
 	
 	if (month > 1) {
 		for (var m = 1; m < month; m += 1) {
-			var m_str = number_to_month[m];
+			var m_str = __MONTH_NAMES__[m-1];
 			days_since_31122019 += daysInMonth(m_str, year);
 		}
 	}
 	
 	// days...
-	if (day > daysInMonth(number_to_month[month], year)) {
+	if (day > daysInMonth(__MONTH_NAMES__[month-1], year)) {
 		throw new InvalidValueException("day value submitted to dayNumber() larger than number of days in month");
 	}
 	if (month < 1) {
@@ -109,7 +109,7 @@ function getTime() {
 
 	var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
 	var days_in_month = daysInMonth(now.month, now.year);
-	var monthnum_today = month_to_number[now.month];
+	var monthnum_today = __MONTH_NAMES__.indexOf(now.month);
 	var daynum_today = dayNumber(now.day, monthnum_today, now.year);
 	var time_info = {"day" => now.day, "day_of_week" => now.day_of_week, "month_name" => now.month, "month_num" =>  monthnum_today, "year" => now.year, "days_in_month" => days_in_month, "day_num" => daynum_today};
 
@@ -133,3 +133,27 @@ function month_day_string(day) {
 	}
 	return day_string;
 }
+
+function abbreviate_weekday(day_of_week) {
+	var char_array = day_of_week.toCharArray();
+	print(char_array);
+	var abbreviation = char_array[0].toString();
+	print(abbreviation);
+	
+	if (abbreviation.equals("T")) {
+		abbreviation = "T" + char_array[1].toString();
+	} else if (abbreviation.equals("S")) {
+		abbreviation = "S" + char_array[1].toString();
+	}
+	return abbreviation;
+}
+
+
+function day_of_week_by_index(day_today, index_difference) {
+	var today_index = __DAYS_OF_WEEK__.indexOf(day_today);
+	var return_day_index = (today_index + index_difference) % 7;
+	return __DAYS_OF_WEEK__[return_day_index];
+}
+	
+
+
