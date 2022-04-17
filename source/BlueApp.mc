@@ -74,6 +74,7 @@ class BlueApp extends Application.AppBase {
 	// If the application needs to save state to the object store it should be
 	// done in this function.
     function onStop(state) {
+		SaveHabitData(current_data);    
     }
 
 }

@@ -5,6 +5,7 @@ using Toybox.System;
 
 
 var item_idx;
+var previous_item_idx;
 var current_time;
 
 class DataViewSelect extends WatchUi.View {
@@ -16,21 +17,22 @@ class DataViewSelect extends WatchUi.View {
 
     // Load your resources here
     function onLayout(dc) {
-        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
-		dc.clear();
+//        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
+//		dc.clear();
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    	// Set item index back to 1 whenever the view brought to foreground
+    	// Set item indexes back to start whenever the view brought to foreground
         item_idx = 0;
+        previous_item_idx = null;
 	   	// Refresh current daynum
     	current_time = getTime();
     	current_daynum = current_time["day_num"];
     	// Load the data from the last n_days
-    	current_data = loadDaynumHabitData(active_habits, current_daynum);
+    	//current_data = loadDaynumHabitData(active_habits, current_daynum);
     }
 
     // Update the view
@@ -44,7 +46,7 @@ class DataViewSelect extends WatchUi.View {
     		current_daynum = new_time["day_num"];
 	    	current_data = loadDaynumHabitData(active_habits, current_daynum);
 		}
-		display_full(dc, current_data, item_idx, current_time, true);		
+		sectorDisplay.display_selection_and_labelling(dc, current_data, current_time);		
 		
     }        
 
@@ -61,10 +63,12 @@ class DataViewSelect extends WatchUi.View {
 
 
 function up() {
+	previous_item_idx = item_idx;
 	item_idx = (item_idx + 1) % total_items;
 }
 
 function down() {
+	previous_item_idx = item_idx;
 	item_idx = (item_idx - 1) % total_items;
 	if (item_idx < 0) {
 		item_idx += total_items;
@@ -91,7 +95,6 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     		down();
     	} else if (key == start_key) {
     		self.response_code = change_datum(item_idx);
-    		SaveHabitData(current_data);
     		respond(self.response_code);
     	} else if (key == back_key) {
     		WatchUi.popView(2);

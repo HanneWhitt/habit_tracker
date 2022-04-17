@@ -76,7 +76,6 @@ function SaveLoadHabitData(start_daynum, last_daynum, habits, save_data) {
 			
 			print(y);
 			
-			print(habit_data);
 			
 			// Year length
 			var year_length = daysInYear(y);

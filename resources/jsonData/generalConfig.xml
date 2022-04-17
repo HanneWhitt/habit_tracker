@@ -1,4 +1,4 @@
 <resources>
-    <jsonData id="colourSchemes" filename="colourSchemes.json"/>
-    <jsonData id="setupValues" filename="setupValues.json"/>
+    <jsonData id="fixedSettings" filename="fixedSettings.json"/>
+    <jsonData id="userDefaults" filename="userDefaults.json"/>
 </resources>

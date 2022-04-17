@@ -1,9 +1,10 @@
 <resources>
-    <jsonData id="displaySettings">{
+    <jsonData id="fixedDisplaySettings">{
+    "screen_radius": 120.0,
     "min_display_degrees": 0.0,
     "max_display_degrees": 300.0,
     "min_radius": 40.0,
-    "gap_degrees": 2.0,
+    "gap_degrees": 3.0,
     "gap_radius": 3.0
     }</jsonData>
 </resources>

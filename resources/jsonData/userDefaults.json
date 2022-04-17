@@ -21,6 +21,9 @@
 		"Habit 6"
 	],
 	"__N_DAYS__": 14,
+	"__USER_DISPLAY_SETTINGS__": { 
+		"shape": "Annulus Sector"
+	},
 	"Habit 1": {
 		"Abbreviation": "H1",
 		"Type": "Binary", 
