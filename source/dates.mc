@@ -1,5 +1,6 @@
 using Toybox.Time.Gregorian;
 using Toybox.Time;
+using Toybox.Lang;
 
 
 var __MONTH_NAMES__ = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -103,17 +104,35 @@ function DayInYear(daynum) {
 	}
 }
 
+var time;
+var duration;
 
 // Get current time information
-function getTime() {
+function getTime(time_difference) {
 
-	var now = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+	time = Time.now();
+
+	if (time_difference != null) {
+		if (time_difference instanceof Lang.Dictionary) {
+			duration = Gregorian.duration(time_difference);
+		} else {
+			duration = Gregorian.duration({:days => time_difference});
+		}
+		time = time.add(duration);
+	}
+
+	var now = Gregorian.info(time, Time.FORMAT_MEDIUM);
 	var days_in_month = daysInMonth(now.month, now.year);
 	var monthnum_today = __MONTH_NAMES__.indexOf(now.month);
 	var daynum_today = dayNumber(now.day, monthnum_today, now.year);
-	var time_info = {"day" => now.day, "day_of_week" => now.day_of_week, "month_name" => now.month, "month_num" =>  monthnum_today, "year" => now.year, "days_in_month" => days_in_month, "day_num" => daynum_today};
-
-	//time_info = {"day_num" => 376, "year" => 2021};
+	var time_info = {"day" => now.day, 
+		"day_of_week" => now.day_of_week,
+		"month_name" => now.month,
+		"month_num" =>  monthnum_today,
+		"year" => now.year,
+		"days_in_month" => days_in_month,
+		"day_num" => daynum_today
+	};
 
 	return time_info;
 }

@@ -23,7 +23,7 @@ class DataViewInitial extends WatchUi.View {
 
 //		screen_radius = dc.getWidth()/2;
     	// Refresh current daynum
-    	current_daynum = getTime()["day_num"];
+    	current_daynum = getTime(null)["day_num"];
     	    	
     	// Load the data from the last n_days
     	current_data = loadDaynumHabitData(active_habits, current_daynum);
@@ -41,7 +41,7 @@ class DataViewInitial extends WatchUi.View {
     function onUpdate(dc) {
     
     	// Refresh the data if the day has changed (i.e if it has just passed midnight)
-    	var new_daynum = getTime()["day_num"];
+    	var new_daynum = getTime(null)["day_num"];
 		if (new_daynum != current_daynum) {
 	    	current_data = loadDaynumHabitData(active_habits, new_daynum);
 	    	current_daynum = new_daynum;

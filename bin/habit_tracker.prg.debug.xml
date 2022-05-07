@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\hanne\Documents\Blue\habit_tracker\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="1" lineNum="16" parent="globals" pc="268435456" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="1" lineNum="17" parent="globals" pc="268435468" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="1" lineNum="18" parent="globals" pc="268435510" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="1" lineNum="19" parent="globals" pc="268435546" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="1" lineNum="20" parent="globals" pc="268435557" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="1" lineNum="22" parent="globals" pc="268435581" symbol="is_first_use"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="27" parent="globals" pc="268435591" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="29" parent="globals" pc="268435603" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="32" parent="globals" pc="268435624" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="35" parent="globals" pc="268435646" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="37" parent="globals" pc="268435666" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="38" parent="globals" pc="268435687" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="41" parent="globals" pc="268435711" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="44" parent="globals" pc="268435752" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="45" parent="globals" pc="268435801" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="46" parent="globals" pc="268435836" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="49" parent="globals" pc="268435883" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="50" parent="globals" pc="268435920" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="51" parent="globals" pc="268435944" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="2" lineNum="52" parent="globals" pc="268435974" symbol="first_time_setup"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="60" parent="globals" pc="268436038" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="62" parent="globals" pc="268436050" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="63" parent="globals" pc="268436071" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="65" parent="globals" pc="268436089" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="66" parent="globals" pc="268436127" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="69" parent="globals" pc="268436153" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="70" parent="globals" pc="268436180" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="3" lineNum="71" parent="globals" pc="268436215" symbol="set_up_new_habit"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="4" lineNum="76" parent="globals" pc="268436269" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="4" lineNum="78" parent="globals" pc="268436281" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="4" lineNum="79" parent="globals" pc="268436309" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="4" lineNum="81" parent="globals" pc="268436343" symbol="refreshFixedSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="87" parent="globals" pc="268436387" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="90" parent="globals" pc="268436399" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="93" parent="globals" pc="268436433" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="94" parent="globals" pc="268436467" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="97" parent="globals" pc="268436492" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="100" parent="globals" pc="268436523" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="103" parent="globals" pc="268436557" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="104" parent="globals" pc="268436571" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="105" parent="globals" pc="268436585" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="106" parent="globals" pc="268436585" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="107" parent="globals" pc="268436585" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="109" parent="globals" pc="268436585" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="111" parent="globals" pc="268436628" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="113" parent="globals" pc="268436649" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="115" parent="globals" pc="268436662" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="116" parent="globals" pc="268436687" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="118" parent="globals" pc="268436700" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="119" parent="globals" pc="268436710" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\settings_utils.mc" id="5" lineNum="122" parent="globals" pc="268436739" symbol="refreshUserSettings"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="7" lineNum="17" parent="globals/DataViewInitial" pc="268436784" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="7" lineNum="18" parent="globals/DataViewInitial" pc="268436788" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="8" lineNum="22" parent="globals/DataViewInitial" pc="268436807" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="8" lineNum="26" parent="globals/DataViewInitial" pc="268436811" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="8" lineNum="29" parent="globals/DataViewInitial" pc="268436837" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="9" lineNum="36" parent="globals/DataViewInitial" pc="268436873" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="9" lineNum="37" parent="globals/DataViewInitial" pc="268436877" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="41" parent="globals/DataViewInitial" pc="268436888" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="44" parent="globals/DataViewInitial" pc="268436892" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="45" parent="globals/DataViewInitial" pc="268436912" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="46" parent="globals/DataViewInitial" pc="268436926" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="47" parent="globals/DataViewInitial" pc="268436955" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="50" parent="globals/DataViewInitial" pc="268436968" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="52" parent="globals/DataViewInitial" pc="268436979" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="53" parent="globals/DataViewInitial" pc="268437019" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="54" parent="globals/DataViewInitial" pc="268437031" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="10" lineNum="55" parent="globals/DataViewInitial" pc="268437059" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="11" lineNum="62" parent="globals/DataViewInitial" pc="268437073" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="12" lineNum="14" parent="globals/DataViewInitial" pc="268444879" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="12" lineNum="14" parent="globals/DataViewInitial" pc="268444879" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="13" lineNum="71" parent="globals/DataViewInitialDelegate" pc="268437078" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="13" lineNum="72" parent="globals/DataViewInitialDelegate" pc="268437082" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="14" lineNum="75" parent="globals/DataViewInitialDelegate" pc="268437101" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="14" lineNum="76" parent="globals/DataViewInitialDelegate" pc="268437105" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="14" lineNum="77" parent="globals/DataViewInitialDelegate" pc="268437118" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="14" lineNum="78" parent="globals/DataViewInitialDelegate" pc="268437132" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="14" lineNum="80" parent="globals/DataViewInitialDelegate" pc="268437172" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="15" lineNum="69" parent="globals/DataViewInitialDelegate" pc="268444898" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewInitial.mc" id="15" lineNum="69" parent="globals/DataViewInitialDelegate" pc="268444898" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="17" lineNum="6" parent="globals" pc="268437176" symbol="print"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="17" lineNum="7" parent="globals" pc="268437188" symbol="print"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="18" lineNum="11" parent="globals" pc="268437207" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="18" lineNum="12" parent="globals" pc="268437219" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="18" lineNum="13" parent="globals" pc="268437227" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="18" lineNum="15" parent="globals" pc="268437233" symbol="max"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="19" lineNum="19" parent="globals" pc="268437237" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="19" lineNum="20" parent="globals" pc="268437249" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="19" lineNum="21" parent="globals" pc="268437257" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="19" lineNum="23" parent="globals" pc="268437263" symbol="min"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="20" lineNum="28" parent="globals" pc="268437267" symbol="contains"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="20" lineNum="29" parent="globals" pc="268437279" symbol="contains"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="21" lineNum="33" parent="globals" pc="268437300" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="21" lineNum="34" parent="globals" pc="268437312" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="21" lineNum="35" parent="globals" pc="268437327" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="21" lineNum="40" parent="globals" pc="268437417" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="21" lineNum="41" parent="globals" pc="268437435" symbol="vibrate_with_delay"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="46" parent="globals" pc="268437460" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="47" parent="globals" pc="268437472" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="48" parent="globals" pc="268437490" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="49" parent="globals" pc="268437509" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="50" parent="globals" pc="268437533" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="51" parent="globals" pc="268437552" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\general_utils.mc" id="22" lineNum="53" parent="globals" pc="268437577" symbol="respond"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="24" lineNum="11" parent="globals/DataViewSelect" pc="268437610" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="24" lineNum="12" parent="globals/DataViewSelect" pc="268437614" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="25" lineNum="16" parent="globals/DataViewSelect" pc="268437633" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="25" lineNum="17" parent="globals/DataViewSelect" pc="268437637" symbol="onLayout"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="26" lineNum="24" parent="globals/DataViewSelect" pc="268437678" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="26" lineNum="26" parent="globals/DataViewSelect" pc="268437682" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="26" lineNum="27" parent="globals/DataViewSelect" pc="268437701" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="26" lineNum="29" parent="globals/DataViewSelect" pc="268437716" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="26" lineNum="30" parent="globals/DataViewSelect" pc="268437736" symbol="onShow"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="36" parent="globals/DataViewSelect" pc="268437759" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="39" parent="globals/DataViewSelect" pc="268437763" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="40" parent="globals/DataViewSelect" pc="268437783" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="41" parent="globals/DataViewSelect" pc="268437809" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="42" parent="globals/DataViewSelect" pc="268437829" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="43" parent="globals/DataViewSelect" pc="268437851" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="45" parent="globals/DataViewSelect" pc="268437889" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="46" parent="globals/DataViewSelect" pc="268437909" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="27" lineNum="48" parent="globals/DataViewSelect" pc="268437926" symbol="onUpdate"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="28" lineNum="55" parent="globals/DataViewSelect" pc="268437963" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="28" lineNum="57" parent="globals/DataViewSelect" pc="268437967" symbol="onHide"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="29" lineNum="8" parent="globals/DataViewSelect" pc="268444810" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="29" lineNum="8" parent="globals/DataViewSelect" pc="268444810" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="30" lineNum="68" parent="globals/DataViewSelectDelegate" pc="268437992" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="30" lineNum="69" parent="globals/DataViewSelectDelegate" pc="268437996" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="30" lineNum="70" parent="globals/DataViewSelectDelegate" pc="268438014" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="73" parent="globals/DataViewSelectDelegate" pc="268438028" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="75" parent="globals/DataViewSelectDelegate" pc="268438032" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="77" parent="globals/DataViewSelectDelegate" pc="268438045" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="78" parent="globals/DataViewSelectDelegate" pc="268438059" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="79" parent="globals/DataViewSelectDelegate" pc="268438080" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="80" parent="globals/DataViewSelectDelegate" pc="268438094" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="81" parent="globals/DataViewSelectDelegate" pc="268438115" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="82" parent="globals/DataViewSelectDelegate" pc="268438129" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="83" parent="globals/DataViewSelectDelegate" pc="268438162" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="84" parent="globals/DataViewSelectDelegate" pc="268438185" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="85" parent="globals/DataViewSelectDelegate" pc="268438199" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="88" parent="globals/DataViewSelectDelegate" pc="268438223" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="90" parent="globals/DataViewSelectDelegate" pc="268438247" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="31" lineNum="91" parent="globals/DataViewSelectDelegate" pc="268438263" symbol="onKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="32" lineNum="64" parent="globals/DataViewSelectDelegate" pc="268444860" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\DataViewSelect.mc" id="32" lineNum="64" parent="globals/DataViewSelectDelegate" pc="268444860" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="22" parent="globals" pc="268438267" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="23" parent="globals" pc="268438279" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="24" parent="globals" pc="268438309" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="25" parent="globals" pc="268438337" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="26" parent="globals" pc="268438371" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="27" parent="globals" pc="268438472" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="29" parent="globals" pc="268438535" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="34" lineNum="30" parent="globals" pc="268438584" symbol="item_to_coords"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="35" lineNum="35" parent="globals" pc="268438614" symbol="getStorageKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="35" lineNum="36" parent="globals" pc="268438626" symbol="getStorageKey"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="41" parent="globals" pc="268438660" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="43" parent="globals" pc="268438672" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="46" parent="globals" pc="268438685" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="47" parent="globals" pc="268438700" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="51" parent="globals" pc="268438715" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="53" parent="globals" pc="268438757" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="54" parent="globals" pc="268438764" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="56" parent="globals" pc="268438818" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="60" parent="globals" pc="268438869" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="62" parent="globals" pc="268438893" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="63" parent="globals" pc="268438900" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="65" parent="globals" pc="268438900" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="68" parent="globals" pc="268438920" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="69" parent="globals" pc="268438927" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="71" parent="globals" pc="268438938" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="75" parent="globals" pc="268438945" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="77" parent="globals" pc="268438957" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="81" parent="globals" pc="268438971" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="84" parent="globals" pc="268438986" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="85" parent="globals" pc="268439003" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="88" parent="globals" pc="268439028" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="90" parent="globals" pc="268439035" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="93" parent="globals" pc="268439043" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="94" parent="globals" pc="268439060" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="99" parent="globals" pc="268439131" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="100" parent="globals" pc="268439156" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="103" parent="globals" pc="268439181" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="104" parent="globals" pc="268439198" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="105" parent="globals" pc="268439215" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="108" parent="globals" pc="268439228" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="110" parent="globals" pc="268439249" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="112" parent="globals" pc="268439256" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="113" parent="globals" pc="268439276" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="117" parent="globals" pc="268439293" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="120" parent="globals" pc="268439300" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="121" parent="globals" pc="268439315" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="125" parent="globals" pc="268439344" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="130" parent="globals" pc="268439383" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="132" parent="globals" pc="268439390" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="133" parent="globals" pc="268439407" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="137" parent="globals" pc="268439481" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="36" lineNum="141" parent="globals" pc="268439504" symbol="SaveLoadHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="37" lineNum="147" parent="globals" pc="268439508" symbol="loadDaynumHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="37" lineNum="148" parent="globals" pc="268439520" symbol="loadDaynumHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="37" lineNum="149" parent="globals" pc="268439539" symbol="loadDaynumHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="38" lineNum="154" parent="globals" pc="268439565" symbol="SaveHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="38" lineNum="155" parent="globals" pc="268439577" symbol="SaveHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="38" lineNum="156" parent="globals" pc="268439593" symbol="SaveHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="38" lineNum="157" parent="globals" pc="268439609" symbol="SaveHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="38" lineNum="158" parent="globals" pc="268439623" symbol="SaveHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="38" lineNum="159" parent="globals" pc="268439639" symbol="SaveHabitData"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="164" parent="globals" pc="268439666" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="166" parent="globals" pc="268439678" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="167" parent="globals" pc="268439693" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="168" parent="globals" pc="268439703" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="170" parent="globals" pc="268439713" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="171" parent="globals" pc="268439731" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="173" parent="globals" pc="268439749" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="174" parent="globals" pc="268439762" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="176" parent="globals" pc="268439781" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="177" parent="globals" pc="268439797" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="179" parent="globals" pc="268439804" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="181" parent="globals" pc="268439823" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="182" parent="globals" pc="268439844" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="183" parent="globals" pc="268439851" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="184" parent="globals" pc="268439861" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="185" parent="globals" pc="268439872" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="187" parent="globals" pc="268439882" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="191" parent="globals" pc="268439917" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="194" parent="globals" pc="268439949" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\data_utils.mc" id="39" lineNum="196" parent="globals" pc="268439965" symbol="change_datum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="41" lineNum="13" parent="globals/BlueApp" pc="268439969" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="41" lineNum="14" parent="globals/BlueApp" pc="268439973" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="21" parent="globals/BlueApp" pc="268439992" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="23" parent="globals/BlueApp" pc="268439996" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="26" parent="globals/BlueApp" pc="268440019" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="28" parent="globals/BlueApp" pc="268440038" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="29" parent="globals/BlueApp" pc="268440085" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="30" parent="globals/BlueApp" pc="268440105" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="31" parent="globals/BlueApp" pc="268440134" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="35" parent="globals/BlueApp" pc="268440173" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="36" parent="globals/BlueApp" pc="268440184" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="38" parent="globals/BlueApp" pc="268440199" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="41" parent="globals/BlueApp" pc="268440211" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="45" parent="globals/BlueApp" pc="268440223" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="47" parent="globals/BlueApp" pc="268440235" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="48" parent="globals/BlueApp" pc="268440265" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="50" parent="globals/BlueApp" pc="268440295" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="42" lineNum="51" parent="globals/BlueApp" pc="268440325" symbol="onStart"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="43" lineNum="63" parent="globals/BlueApp" pc="268440356" symbol="getInitialView"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="43" lineNum="65" parent="globals/BlueApp" pc="268440360" symbol="getInitialView"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="44" lineNum="76" parent="globals/BlueApp" pc="268440400" symbol="onStop"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="44" lineNum="77" parent="globals/BlueApp" pc="268440404" symbol="onStop"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="45" lineNum="11" parent="globals/BlueApp" pc="268444791" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\BlueApp.mc" id="45" lineNum="11" parent="globals/BlueApp" pc="268444791" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="47" lineNum="7" parent="globals" pc="268440425" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="47" lineNum="8" parent="globals" pc="268440437" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="47" lineNum="9" parent="globals" pc="268440453" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="47" lineNum="10" parent="globals" pc="268440460" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="47" lineNum="11" parent="globals" pc="268440474" symbol="annulusSector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="40" parent="globals/sectorDisplayer" pc="268440560" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="41" parent="globals/sectorDisplayer" pc="268440564" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="42" parent="globals/sectorDisplayer" pc="268440574" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="43" parent="globals/sectorDisplayer" pc="268440596" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="44" parent="globals/sectorDisplayer" pc="268440672" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="46" parent="globals/sectorDisplayer" pc="268440712" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="47" parent="globals/sectorDisplayer" pc="268440725" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="48" parent="globals/sectorDisplayer" pc="268440734" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="49" parent="globals/sectorDisplayer" pc="268440756" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="50" parent="globals/sectorDisplayer" pc="268440765" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="51" parent="globals/sectorDisplayer" pc="268440778" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="53" parent="globals/sectorDisplayer" pc="268440787" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="48" lineNum="54" parent="globals/sectorDisplayer" pc="268440807" symbol="initialize"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="64" parent="globals/sectorDisplayer" pc="268440817" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="66" parent="globals/sectorDisplayer" pc="268440821" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="67" parent="globals/sectorDisplayer" pc="268440870" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="68" parent="globals/sectorDisplayer" pc="268440895" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="69" parent="globals/sectorDisplayer" pc="268440929" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="71" parent="globals/sectorDisplayer" pc="268440984" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="72" parent="globals/sectorDisplayer" pc="268441009" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="83" parent="globals/sectorDisplayer" pc="268441060" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="84" parent="globals/sectorDisplayer" pc="268441060" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="49" lineNum="85" parent="globals/sectorDisplayer" pc="268441082" symbol="plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="93" parent="globals/sectorDisplayer" pc="268441112" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="95" parent="globals/sectorDisplayer" pc="268441116" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="96" parent="globals/sectorDisplayer" pc="268441123" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="97" parent="globals/sectorDisplayer" pc="268441144" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="98" parent="globals/sectorDisplayer" pc="268441160" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="101" parent="globals/sectorDisplayer" pc="268441179" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="102" parent="globals/sectorDisplayer" pc="268441198" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="103" parent="globals/sectorDisplayer" pc="268441220" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="50" lineNum="105" parent="globals/sectorDisplayer" pc="268441257" symbol="get_data_plot_sector"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="51" lineNum="110" parent="globals/sectorDisplayer" pc="268441284" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="51" lineNum="112" parent="globals/sectorDisplayer" pc="268441288" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="51" lineNum="114" parent="globals/sectorDisplayer" pc="268441309" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="51" lineNum="116" parent="globals/sectorDisplayer" pc="268441330" symbol="display_habit_data"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="122" parent="globals/sectorDisplayer" pc="268441379" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="123" parent="globals/sectorDisplayer" pc="268441383" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="124" parent="globals/sectorDisplayer" pc="268441399" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="126" parent="globals/sectorDisplayer" pc="268441415" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="127" parent="globals/sectorDisplayer" pc="268441442" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="128" parent="globals/sectorDisplayer" pc="268441464" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="131" parent="globals/sectorDisplayer" pc="268441486" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="132" parent="globals/sectorDisplayer" pc="268441506" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="133" parent="globals/sectorDisplayer" pc="268441522" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="52" lineNum="134" parent="globals/sectorDisplayer" pc="268441535" symbol="update_idx_and_time"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="53" lineNum="139" parent="globals/sectorDisplayer" pc="268441584" symbol="up"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="53" lineNum="140" parent="globals/sectorDisplayer" pc="268441588" symbol="up"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="53" lineNum="141" parent="globals/sectorDisplayer" pc="268441604" symbol="up"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="53" lineNum="142" parent="globals/sectorDisplayer" pc="268441635" symbol="up"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="54" lineNum="145" parent="globals/sectorDisplayer" pc="268441648" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="54" lineNum="146" parent="globals/sectorDisplayer" pc="268441652" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="54" lineNum="147" parent="globals/sectorDisplayer" pc="268441668" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="54" lineNum="148" parent="globals/sectorDisplayer" pc="268441699" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="54" lineNum="149" parent="globals/sectorDisplayer" pc="268441716" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="54" lineNum="151" parent="globals/sectorDisplayer" pc="268441741" symbol="down"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="157" parent="globals/sectorDisplayer" pc="268441754" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="177" parent="globals/sectorDisplayer" pc="268441758" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="179" parent="globals/sectorDisplayer" pc="268441780" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="181" parent="globals/sectorDisplayer" pc="268441795" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="182" parent="globals/sectorDisplayer" pc="268441800" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="184" parent="globals/sectorDisplayer" pc="268441823" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="55" lineNum="187" parent="globals/sectorDisplayer" pc="268441843" symbol="display_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="205" parent="globals/sectorDisplayer" pc="268441897" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="207" parent="globals/sectorDisplayer" pc="268441901" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="208" parent="globals/sectorDisplayer" pc="268441911" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="210" parent="globals/sectorDisplayer" pc="268441921" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="213" parent="globals/sectorDisplayer" pc="268441934" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="214" parent="globals/sectorDisplayer" pc="268441954" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="218" parent="globals/sectorDisplayer" pc="268441967" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="219" parent="globals/sectorDisplayer" pc="268441987" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="222" parent="globals/sectorDisplayer" pc="268442000" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="56" lineNum="234" parent="globals/sectorDisplayer" pc="268442061" symbol="update_selection_and_labelling"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="57" lineNum="22" parent="globals/sectorDisplayer" pc="268444829" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="250" parent="globals" pc="268442120" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="253" parent="globals" pc="268442132" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="254" parent="globals" pc="268442139" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="257" parent="globals" pc="268442156" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="258" parent="globals" pc="268442163" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="261" parent="globals" pc="268442180" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="263" parent="globals" pc="268442207" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="58" lineNum="264" parent="globals" pc="268442233" symbol="display_date"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="274" parent="globals" pc="268442320" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="276" parent="globals" pc="268442332" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="277" parent="globals" pc="268442351" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="279" parent="globals" pc="268442370" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="281" parent="globals" pc="268442389" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="282" parent="globals" pc="268442400" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="283" parent="globals" pc="268442410" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="284" parent="globals" pc="268442421" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="285" parent="globals" pc="268442431" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="286" parent="globals" pc="268442438" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="288" parent="globals" pc="268442448" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="291" parent="globals" pc="268442480" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="292" parent="globals" pc="268442485" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="294" parent="globals" pc="268442509" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\display_utils.mc" id="59" lineNum="298" parent="globals" pc="268442533" symbol="get_colour"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="10" parent="globals" pc="268442566" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="11" parent="globals" pc="268442578" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="13" parent="globals" pc="268442597" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="14" parent="globals" pc="268442614" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="16" parent="globals" pc="268442623" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="19" parent="globals" pc="268442632" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="20" parent="globals" pc="268442706" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="21" parent="globals" pc="268442715" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="22" parent="globals" pc="268442828" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="61" lineNum="24" parent="globals" pc="268442837" symbol="daysInMonth"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="62" lineNum="29" parent="globals" pc="268442875" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="62" lineNum="30" parent="globals" pc="268442887" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="62" lineNum="31" parent="globals" pc="268442904" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="62" lineNum="33" parent="globals" pc="268442913" symbol="daysInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="38" parent="globals" pc="268442920" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="40" parent="globals" pc="268442932" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="43" parent="globals" pc="268442939" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="44" parent="globals" pc="268442950" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="45" parent="globals" pc="268442965" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="47" parent="globals" pc="268442999" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="48" parent="globals" pc="268443010" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="52" parent="globals" pc="268443041" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="53" parent="globals" pc="268443052" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="55" parent="globals" pc="268443083" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="56" parent="globals" pc="268443094" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="59" parent="globals" pc="268443125" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="60" parent="globals" pc="268443136" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="61" parent="globals" pc="268443151" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="62" parent="globals" pc="268443170" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="67" parent="globals" pc="268443206" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="68" parent="globals" pc="268443242" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="70" parent="globals" pc="268443273" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="71" parent="globals" pc="268443284" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="74" parent="globals" pc="268443315" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="63" lineNum="76" parent="globals" pc="268443322" symbol="dayNumber"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="81" parent="globals" pc="268443326" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="83" parent="globals" pc="268443338" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="84" parent="globals" pc="268443349" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="87" parent="globals" pc="268443380" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="88" parent="globals" pc="268443398" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="89" parent="globals" pc="268443427" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="64" lineNum="93" parent="globals" pc="268443446" symbol="yearFromDaynum"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="65" lineNum="98" parent="globals" pc="268443475" symbol="DayInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="65" lineNum="99" parent="globals" pc="268443487" symbol="DayInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="65" lineNum="100" parent="globals" pc="268443502" symbol="DayInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="65" lineNum="101" parent="globals" pc="268443513" symbol="DayInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="65" lineNum="103" parent="globals" pc="268443519" symbol="DayInYear"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="111" parent="globals" pc="268443553" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="113" parent="globals" pc="268443565" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="115" parent="globals" pc="268443588" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="116" parent="globals" pc="268443595" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="117" parent="globals" pc="268443613" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="119" parent="globals" pc="268443641" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="121" parent="globals" pc="268443680" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="124" parent="globals" pc="268443716" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="125" parent="globals" pc="268443753" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="126" parent="globals" pc="268443782" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="127" parent="globals" pc="268443809" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="128" parent="globals" pc="268443840" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="66" lineNum="137" parent="globals" pc="268443942" symbol="getTime"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="141" parent="globals" pc="268443946" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="142" parent="globals" pc="268443958" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="143" parent="globals" pc="268443995" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="144" parent="globals" pc="268444008" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="145" parent="globals" pc="268444019" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="146" parent="globals" pc="268444029" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="147" parent="globals" pc="268444040" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="148" parent="globals" pc="268444050" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="149" parent="globals" pc="268444061" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="151" parent="globals" pc="268444071" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="67" lineNum="153" parent="globals" pc="268444081" symbol="month_day_string"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="156" parent="globals" pc="268444085" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="157" parent="globals" pc="268444097" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="158" parent="globals" pc="268444110" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="159" parent="globals" pc="268444124" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="160" parent="globals" pc="268444143" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="162" parent="globals" pc="268444157" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="163" parent="globals" pc="268444176" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="164" parent="globals" pc="268444204" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="165" parent="globals" pc="268444223" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="68" lineNum="167" parent="globals" pc="268444251" symbol="abbreviate_weekday"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="69" lineNum="171" parent="globals" pc="268444255" symbol="day_of_week_by_index"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="69" lineNum="172" parent="globals" pc="268444267" symbol="day_of_week_by_index"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="69" lineNum="173" parent="globals" pc="268444288" symbol="day_of_week_by_index"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="69" lineNum="174" parent="globals" pc="268444301" symbol="day_of_week_by_index"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="70" lineNum="6" parent="globals" pc="268444515" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\hanne\\Documents\\Blue\\habit_tracker\\source\\dates.mc" id="70" lineNum="7" parent="globals" pc="268444685" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="71" lineNum="2" parent="globals/Rez/Drawables" pc="268444854" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="72" lineNum="7" parent="globals/Rez/Fonts" pc="268444856" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="73" lineNum="9" parent="globals/Rez/JsonData" pc="268444858" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="74" lineNum="22" parent="globals/Rez/Layouts" pc="268444314" symbol="MainLayout"/>
+<entry filename="Rez" id="74" lineNum="24" parent="globals/Rez/Layouts" pc="268444326" symbol="MainLayout"/>
+<entry filename="Rez" id="74" lineNum="25" parent="globals/Rez/Layouts" pc="268444445" symbol="MainLayout"/>
+<entry filename="Rez" id="74" lineNum="27" parent="globals/Rez/Layouts" pc="268444497" symbol="MainLayout"/>
+<entry filename="Rez" id="75" lineNum="15" parent="globals/Rez/Layouts" pc="268444857" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="76" lineNum="32" parent="globals/Rez/Menus" pc="268444855" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="77" lineNum="34" parent="globals/Rez/Strings" pc="268444859" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="78" lineNum="1" parent="globals/Rez" pc="268444830" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="78" lineNum="1" parent="globals/Rez" pc="268444830" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="38" symbol="habit_metadata"/>
+<entry field="true" id="12" symbol="fixedDisplaySettings"/>
+<entry id="56" method="true" symbol="annulusSector"/>
+<entry field="true" id="52" symbol="selection_view"/>
+<entry id="96" method="true" symbol="down"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="100" symbol="prev_day_idx"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="110" symbol="userDefaults"/>
+<entry id="103" method="true" symbol="update_selection_and_labelling"/>
+<entry id="108" method="true" symbol="MainLayout"/>
+<entry id="69" method="true" symbol="month_day_string"/>
+<entry field="true" id="84" symbol="min_deg"/>
+<entry field="true" id="74" symbol="shape"/>
+<entry field="true" id="90" symbol="datum"/>
+<entry field="true" id="101" symbol="update_day_label"/>
+<entry field="true" id="34" symbol="n_habits"/>
+<entry field="true" id="75" symbol="item_idx"/>
+<entry field="true" id="9" symbol="first_use_bool"/>
+<entry field="true" id="23" symbol="current_data"/>
+<entry field="true" id="79" symbol="day_idx"/>
+<entry field="true" id="72" symbol="day_degrees"/>
+<entry field="true" id="87" symbol="max_rad"/>
+<entry field="true" id="13" symbol="userDisplaySettings"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry id="16" method="true" symbol="is_first_use"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="65" method="true" symbol="yearFromDaynum"/>
+<entry field="true" id="89" symbol="habit_name"/>
+<entry id="98" method="true" symbol="display_selection_and_labelling"/>
+<entry id="8389341" symbol="days"/>
+<entry field="true" id="80" symbol="previous_day_idx"/>
+<entry id="64" method="true" symbol="dayNumber"/>
+<entry field="true" id="81" symbol="time_info"/>
+<entry field="true" id="111" symbol="AppName"/>
+<entry field="true" id="102" symbol="update_habit_label"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="48" method="true" symbol="change_datum"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry field="true" id="36" symbol="total_items"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="8388935" method="true" symbol="duration"/>
+<entry field="true" id="50" symbol="carousel_view"/>
+<entry id="17" method="true" symbol="first_time_setup"/>
+<entry id="70" method="true" symbol="abbreviate_weekday"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="31" symbol="current_time"/>
+<entry id="88" method="true" symbol="plot_sector"/>
+<entry field="true" id="85" symbol="max_deg"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="113" symbol="just_shown"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry field="true" id="53" symbol="selection_delegate"/>
+<entry id="8388712" method="true" symbol="print"/>
+<entry id="26" object="true" symbol="DataViewInitialDelegate"/>
+<entry id="95" method="true" symbol="up"/>
+<entry id="45" method="true" symbol="SaveLoadHabitData"/>
+<entry id="63" method="true" symbol="daysInYear"/>
+<entry field="true" id="10" symbol="first_use_time_info"/>
+<entry id="62" method="true" symbol="daysInMonth"/>
+<entry field="true" id="8388721" method="true" symbol="min"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="105" module="true" symbol="Menus"/>
+<entry field="true" id="78" symbol="previous_habit_idx"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="91" symbol="colour"/>
+<entry id="27" method="true" symbol="max"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="99" symbol="prev_habit_idx"/>
+<entry field="true" id="112" symbol="response_code"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry field="true" id="67" symbol="time"/>
+<entry field="true" id="42" symbol="down_key"/>
+<entry field="true" id="39" symbol="start_key"/>
+<entry id="29" method="true" symbol="vibrate_with_delay"/>
+<entry id="8388987" method="true" symbol="vibrate"/>
+<entry id="59" method="true" symbol="get_colour"/>
+<entry id="94" method="true" symbol="update_idx_and_time"/>
+<entry field="true" id="49" symbol="first_use"/>
+<entry field="true" id="83" symbol="coords"/>
+<entry id="58" method="true" symbol="display_date"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry field="true" id="76" symbol="previous_item_idx"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="28" method="true" symbol="contains"/>
+<entry id="30" method="true" symbol="respond"/>
+<entry id="20" method="true" symbol="refreshFixedSettings"/>
+<entry id="32" object="true" symbol="DataViewSelect"/>
+<entry field="true" id="24" symbol="screen_radius"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="68" method="true" symbol="getTime"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="43" method="true" symbol="item_to_coords"/>
+<entry field="true" id="82" symbol="previous_time_info"/>
+<entry field="true" id="11" symbol="n_uses"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="46" method="true" symbol="loadDaynumHabitData"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="107" symbol="LauncherIcon"/>
+<entry field="true" id="22" symbol="current_daynum"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="41" symbol="up_key"/>
+<entry field="true" id="51" symbol="carousel_delegate"/>
+<entry id="44" method="true" symbol="getStorageKey"/>
+<entry id="19" method="true" symbol="set_up_new_habit"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="77" symbol="habit_idx"/>
+<entry field="true" id="37" symbol="active_habits"/>
+<entry id="21" method="true" symbol="refreshUserSettings"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="109" symbol="fixedSettings"/>
+<entry id="92" method="true" symbol="get_data_plot_sector"/>
+<entry field="true" id="73" symbol="radius_increment"/>
+<entry field="true" id="61" symbol="__DAYS_OF_WEEK__"/>
+<entry id="93" method="true" symbol="display_habit_data"/>
+<entry field="true" id="106" symbol="settings"/>
+<entry field="true" id="35" symbol="n_days"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="40" symbol="back_key"/>
+<entry id="54" object="true" symbol="BlueApp"/>
+<entry id="8389097" method="true" symbol="onKey"/>
+<entry field="true" id="18" symbol="new_habit_dict"/>
+<entry id="66" method="true" symbol="DayInYear"/>
+<entry id="25" object="true" symbol="DataViewInitial"/>
+<entry id="104" module="true" symbol="Layouts"/>
+<entry field="true" id="15" symbol="sectorDisplay"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry field="true" id="60" symbol="__MONTH_NAMES__"/>
+<entry id="47" method="true" symbol="SaveHabitData"/>
+<entry field="true" id="97" symbol="col"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry field="true" id="86" symbol="min_rad"/>
+<entry id="71" method="true" symbol="day_of_week_by_index"/>
+<entry field="true" id="55" symbol="colour_scheme"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="57" object="true" symbol="sectorDisplayer"/>
+<entry field="true" id="14" symbol="data_start_daynum"/>
+<entry id="33" object="true" symbol="DataViewSelectDelegate"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268436036" name="entry_idx" stackId="2" startPc="268435944"/>
+<entry endPc="268436036" name="userDefaults" stackId="1" startPc="268435603"/>
+<entry endPc="268436267" name="new_habit_dict" stackId="5" startPc="268436050"/>
+<entry arg="true" endPc="268436268" name="name" stackId="1" startPc="268436038"/>
+<entry arg="true" endPc="268436268" name="type" stackId="3" startPc="268436038"/>
+<entry arg="true" endPc="268436268" name="colours" stackId="4" startPc="268436038"/>
+<entry arg="true" endPc="268436268" name="abbreviation" stackId="2" startPc="268436038"/>
+<entry endPc="268436385" name="first_use_date" stackId="1" startPc="268436281"/>
+<entry endPc="268436738" name="h" stackId="5" startPc="268436649"/>
+<entry endPc="268436782" name="colour_schemes" stackId="4" startPc="268436399"/>
+<entry endPc="268436782" name="habit_name" stackId="1" startPc="268436399"/>
+<entry endPc="268436782" name="habit_meta" stackId="2" startPc="268436399"/>
+<entry endPc="268436782" name="habit_colours" stackId="3" startPc="268436399"/>
+<entry arg="true" endPc="268436872" name="dc" stackId="1" startPc="268436807"/>
+<entry endPc="268437071" name="new_daynum" stackId="2" startPc="268436892"/>
+<entry arg="true" endPc="268437072" name="dc" stackId="1" startPc="268436888"/>
+<entry endPc="268437174" name="key" stackId="2" startPc="268437105"/>
+<entry arg="true" endPc="268437175" name="keyEvent" stackId="1" startPc="268437101"/>
+<entry arg="true" endPc="268437206" name="str" stackId="1" startPc="268437176"/>
+<entry arg="true" endPc="268437236" name="b" stackId="2" startPc="268437207"/>
+<entry arg="true" endPc="268437236" name="a" stackId="1" startPc="268437207"/>
+<entry arg="true" endPc="268437266" name="b" stackId="2" startPc="268437237"/>
+<entry arg="true" endPc="268437266" name="a" stackId="1" startPc="268437237"/>
+<entry arg="true" endPc="268437299" name="element" stackId="2" startPc="268437267"/>
+<entry arg="true" endPc="268437299" name="array" stackId="1" startPc="268437267"/>
+<entry endPc="268437455" name="vibeData" stackId="3" startPc="268437327"/>
+<entry arg="true" endPc="268437459" name="vibration_ms" stackId="2" startPc="268437300"/>
+<entry arg="true" endPc="268437459" name="delay_ms" stackId="1" startPc="268437300"/>
+<entry arg="true" endPc="268437609" name="response_code" stackId="1" startPc="268437460"/>
+<entry arg="true" endPc="268437677" name="dc" stackId="1" startPc="268437633"/>
+<entry arg="true" endPc="268437962" name="dc" stackId="1" startPc="268437759"/>
+<entry endPc="268438265" name="key" stackId="2" startPc="268438032"/>
+<entry arg="true" endPc="268438266" name="keyEvent" stackId="1" startPc="268438028"/>
+<entry endPc="268438612" name="exception_string" stackId="2" startPc="268438535"/>
+<entry arg="true" endPc="268438613" name="item_idx" stackId="1" startPc="268438267"/>
+<entry arg="true" endPc="268438659" name="habit_name" stackId="1" startPc="268438614"/>
+<entry arg="true" endPc="268438659" name="year" stackId="2" startPc="268438614"/>
+<entry endPc="268439289" name="read" stackId="22" startPc="268439256"/>
+<entry endPc="268439343" name="w" stackId="24" startPc="268439315"/>
+<entry endPc="268439369" name="write_start_index" stackId="23" startPc="268439293"/>
+<entry endPc="268439369" name="year_length" stackId="13" startPc="268438957"/>
+<entry endPc="268439369" name="block_start" stackId="16" startPc="268438957"/>
+<entry endPc="268439369" name="save_data_start_index" stackId="21" startPc="268438957"/>
+<entry endPc="268439369" name="storage_key" stackId="14" startPc="268438957"/>
+<entry endPc="268439369" name="block_data" stackId="15" startPc="268438957"/>
+<entry endPc="268439369" name="overlap_length" stackId="20" startPc="268438957"/>
+<entry endPc="268439369" name="overlap_start_daynum" stackId="18" startPc="268438957"/>
+<entry endPc="268439369" name="block_end" stackId="17" startPc="268438957"/>
+<entry endPc="268439369" name="overlap_end_daynum" stackId="19" startPc="268438957"/>
+<entry endPc="268439382" name="y" stackId="12" startPc="268438957"/>
+<entry endPc="268439490" name="habit_name" stackId="10" startPc="268438893"/>
+<entry endPc="268439490" name="habit_data" stackId="11" startPc="268438893"/>
+<entry endPc="268439503" name="h" stackId="9" startPc="268438893"/>
+<entry endPc="268439506" name="loaded_data" stackId="8" startPc="268438672"/>
+<entry endPc="268439506" name="end_year" stackId="7" startPc="268438672"/>
+<entry endPc="268439506" name="start_year" stackId="6" startPc="268438672"/>
+<entry endPc="268439506" name="n" stackId="5" startPc="268438672"/>
+<entry arg="true" endPc="268439507" name="habits" stackId="3" startPc="268438660"/>
+<entry arg="true" endPc="268439507" name="save_data" stackId="4" startPc="268438660"/>
+<entry arg="true" endPc="268439507" name="last_daynum" stackId="2" startPc="268438660"/>
+<entry arg="true" endPc="268439507" name="start_daynum" stackId="1" startPc="268438660"/>
+<entry endPc="268439563" name="start_daynum" stackId="3" startPc="268439520"/>
+<entry arg="true" endPc="268439564" name="last_daynum" stackId="2" startPc="268439508"/>
+<entry arg="true" endPc="268439564" name="habits_to_load" stackId="1" startPc="268439508"/>
+<entry endPc="268439664" name="last_daynum" stackId="3" startPc="268439577"/>
+<entry endPc="268439664" name="start_daynum" stackId="2" startPc="268439577"/>
+<entry arg="true" endPc="268439665" name="save_data" stackId="1" startPc="268439565"/>
+<entry endPc="268439967" name="selected_habit_idx" stackId="4" startPc="268439678"/>
+<entry endPc="268439967" name="selected_day_idx" stackId="3" startPc="268439678"/>
+<entry endPc="268439967" name="response" stackId="8" startPc="268439678"/>
+<entry endPc="268439967" name="datum" stackId="7" startPc="268439678"/>
+<entry endPc="268439967" name="selected_habit_name" stackId="5" startPc="268439678"/>
+<entry endPc="268439967" name="type" stackId="6" startPc="268439678"/>
+<entry endPc="268439967" name="coords" stackId="2" startPc="268439678"/>
+<entry arg="true" endPc="268439968" name="item_idx" stackId="1" startPc="268439666"/>
+<entry endPc="268440354" name="thing" stackId="2" startPc="268439996"/>
+<entry arg="true" endPc="268440355" name="state" stackId="1" startPc="268439992"/>
+<entry arg="true" endPc="268440424" name="state" stackId="1" startPc="268440400"/>
+<entry endPc="268440558" name="width" stackId="7" startPc="268440437"/>
+<entry arg="true" endPc="268440559" name="dc" stackId="1" startPc="268440425"/>
+<entry arg="true" endPc="268440559" name="enddeg" stackId="3" startPc="268440425"/>
+<entry arg="true" endPc="268440559" name="startdeg" stackId="2" startPc="268440425"/>
+<entry arg="true" endPc="268440559" name="colour" stackId="6" startPc="268440425"/>
+<entry arg="true" endPc="268440559" name="endrad" stackId="5" startPc="268440425"/>
+<entry arg="true" endPc="268440559" name="startrad" stackId="4" startPc="268440425"/>
+<entry arg="true" endPc="268440816" name="shape" stackId="1" startPc="268440560"/>
+<entry endPc="268441110" name="error_message" stackId="5" startPc="268441060"/>
+<entry arg="true" endPc="268441111" name="dc" stackId="1" startPc="268440817"/>
+<entry arg="true" endPc="268441111" name="h" stackId="3" startPc="268440817"/>
+<entry arg="true" endPc="268441111" name="colour" stackId="4" startPc="268440817"/>
+<entry arg="true" endPc="268441111" name="d" stackId="2" startPc="268440817"/>
+<entry arg="true" endPc="268441283" name="dc" stackId="1" startPc="268441112"/>
+<entry arg="true" endPc="268441283" name="selected" stackId="5" startPc="268441112"/>
+<entry arg="true" endPc="268441283" name="h" stackId="4" startPc="268441112"/>
+<entry arg="true" endPc="268441283" name="habit_data" stackId="2" startPc="268441112"/>
+<entry arg="true" endPc="268441283" name="d" stackId="3" startPc="268441112"/>
+<entry endPc="268441364" name="d" stackId="4" startPc="268441330"/>
+<entry endPc="268441377" name="h" stackId="3" startPc="268441309"/>
+<entry arg="true" endPc="268441378" name="dc" stackId="1" startPc="268441284"/>
+<entry arg="true" endPc="268441378" name="habit_data" stackId="2" startPc="268441284"/>
+<entry arg="true" endPc="268441896" name="dc" stackId="1" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="t_info" stackId="3" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="update_habit_lab" stackId="7" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="h" stackId="5" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="habit_data" stackId="2" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="d" stackId="4" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="on_or_off" stackId="8" startPc="268441754"/>
+<entry arg="true" endPc="268441896" name="update_day_lab" stackId="6" startPc="268441754"/>
+<entry arg="true" endPc="268442119" name="dc" stackId="1" startPc="268441897"/>
+<entry arg="true" endPc="268442119" name="habit_data" stackId="2" startPc="268441897"/>
+<entry arg="true" endPc="268442119" name="time_info" stackId="3" startPc="268441897"/>
+<entry endPc="268442318" name="date_string" stackId="6" startPc="268442132"/>
+<entry arg="true" endPc="268442319" name="dc" stackId="1" startPc="268442120"/>
+<entry arg="true" endPc="268442319" name="font" stackId="4" startPc="268442120"/>
+<entry arg="true" endPc="268442319" name="day" stackId="3" startPc="268442120"/>
+<entry arg="true" endPc="268442319" name="day_of_week" stackId="2" startPc="268442120"/>
+<entry arg="true" endPc="268442319" name="colour" stackId="5" startPc="268442120"/>
+<entry endPc="268442564" name="type" stackId="4" startPc="268442332"/>
+<entry endPc="268442564" name="habit_colours" stackId="5" startPc="268442332"/>
+<entry arg="true" endPc="268442565" name="habit_name" stackId="1" startPc="268442320"/>
+<entry arg="true" endPc="268442565" name="datum" stackId="2" startPc="268442320"/>
+<entry arg="true" endPc="268442565" name="selected" stackId="3" startPc="268442320"/>
+<entry arg="true" endPc="268442874" name="year" stackId="2" startPc="268442566"/>
+<entry arg="true" endPc="268442874" name="month" stackId="1" startPc="268442566"/>
+<entry arg="true" endPc="268442919" name="year" stackId="1" startPc="268442875"/>
+<entry endPc="268442995" name="y" stackId="5" startPc="268442965"/>
+<entry endPc="268443189" name="m_str" stackId="7" startPc="268443151"/>
+<entry endPc="268443202" name="m" stackId="6" startPc="268443151"/>
+<entry endPc="268443324" name="days_since_31122019" stackId="4" startPc="268442932"/>
+<entry arg="true" endPc="268443325" name="day" stackId="1" startPc="268442920"/>
+<entry arg="true" endPc="268443325" name="year" stackId="3" startPc="268442920"/>
+<entry arg="true" endPc="268443325" name="month" stackId="2" startPc="268442920"/>
+<entry endPc="268443445" name="y" stackId="2" startPc="268443398"/>
+<entry arg="true" endPc="268443474" name="daynum" stackId="1" startPc="268443326"/>
+<entry endPc="268443551" name="y" stackId="2" startPc="268443487"/>
+<entry arg="true" endPc="268443552" name="daynum" stackId="1" startPc="268443475"/>
+<entry endPc="268443944" name="monthnum_today" stackId="4" startPc="268443565"/>
+<entry endPc="268443944" name="now" stackId="2" startPc="268443565"/>
+<entry endPc="268443944" name="daynum_today" stackId="5" startPc="268443565"/>
+<entry endPc="268443944" name="days_in_month" stackId="3" startPc="268443565"/>
+<entry endPc="268443944" name="time_info" stackId="6" startPc="268443565"/>
+<entry arg="true" endPc="268443945" name="time_difference" stackId="1" startPc="268443553"/>
+<entry endPc="268444083" name="day_string" stackId="3" startPc="268443958"/>
+<entry endPc="268444083" name="last_char" stackId="2" startPc="268443958"/>
+<entry arg="true" endPc="268444084" name="day" stackId="1" startPc="268443946"/>
+<entry endPc="268444253" name="char_array" stackId="2" startPc="268444097"/>
+<entry endPc="268444253" name="abbreviation" stackId="3" startPc="268444097"/>
+<entry arg="true" endPc="268444254" name="day_of_week" stackId="1" startPc="268444085"/>
+<entry endPc="268444312" name="return_day_index" stackId="4" startPc="268444267"/>
+<entry endPc="268444312" name="today_index" stackId="3" startPc="268444267"/>
+<entry arg="true" endPc="268444313" name="index_difference" stackId="2" startPc="268444255"/>
+<entry arg="true" endPc="268444313" name="day_today" stackId="1" startPc="268444255"/>
+<entry endPc="268444513" name="rez_cmp_local_bitmap_settings" stackId="2" startPc="268444326"/>
+<entry arg="true" endPc="268444514" name="dc" stackId="1" startPc="268444314"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="settings"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="fixedDisplaySettings"/>
+<annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="fixedSettings"/>
+<annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="userDefaults"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/BlueApp" offset="662" parentId="globals" symbolId="BlueApp" type="class"/>
+<dataEntry label="globals/DataViewSelect" offset="733" parentId="globals" symbolId="DataViewSelect" type="class"/>
+<dataEntry label="globals/sectorDisplayer" offset="812" parentId="globals" symbolId="sectorDisplayer" type="class"/>
+<dataEntry label="globals/Rez" offset="1123" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="1202" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="1249" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="1280" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="1311" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="1350" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1405" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/DataViewSelectDelegate" offset="1444" parentId="globals" symbolId="DataViewSelectDelegate" type="class"/>
+<dataEntry label="globals/DataViewInitial" offset="1507" parentId="globals" symbolId="DataViewInitial" type="class"/>
+<dataEntry label="globals/DataViewInitialDelegate" offset="1594" parentId="globals" symbolId="DataViewInitialDelegate" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435590" name="is_first_use" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436037" name="first_time_setup" startPc="268435591">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436268" name="set_up_new_habit" startPc="268436038">
+<param id="name"/>
+<param id="abbreviation"/>
+<param id="type"/>
+<param id="colours"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436386" name="refreshFixedSettings" startPc="268436269">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436783" name="refreshUserSettings" startPc="268436387">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436806" name="initialize" parent="DataViewInitial" startPc="268436784">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436872" name="onLayout" parent="DataViewInitial" startPc="268436807">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436887" name="onShow" parent="DataViewInitial" startPc="268436873">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437072" name="onUpdate" parent="DataViewInitial" startPc="268436888">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437077" name="onHide" parent="DataViewInitial" startPc="268437073">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444897" name="&lt;init&gt;" parent="DataViewInitial" startPc="268444879">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437100" name="initialize" parent="DataViewInitialDelegate" startPc="268437078">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437175" name="onKey" parent="DataViewInitialDelegate" startPc="268437101">
+<param id="keyEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444916" name="&lt;init&gt;" parent="DataViewInitialDelegate" startPc="268444898">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437206" name="print" startPc="268437176">
+<param id="str"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437236" name="max" startPc="268437207">
+<param id="a"/>
+<param id="b"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437266" name="min" startPc="268437237">
+<param id="a"/>
+<param id="b"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437299" name="contains" startPc="268437267">
+<param id="array"/>
+<param id="element"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437459" name="vibrate_with_delay" startPc="268437300">
+<param id="delay_ms"/>
+<param id="vibration_ms"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437609" name="respond" startPc="268437460">
+<param id="response_code"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437632" name="initialize" parent="DataViewSelect" startPc="268437610">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437677" name="onLayout" parent="DataViewSelect" startPc="268437633">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437758" name="onShow" parent="DataViewSelect" startPc="268437678">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437962" name="onUpdate" parent="DataViewSelect" startPc="268437759">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437991" name="onHide" parent="DataViewSelect" startPc="268437963">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444828" name="&lt;init&gt;" parent="DataViewSelect" startPc="268444810">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438027" name="initialize" parent="DataViewSelectDelegate" startPc="268437992">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438266" name="onKey" parent="DataViewSelectDelegate" startPc="268438028">
+<param id="keyEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444878" name="&lt;init&gt;" parent="DataViewSelectDelegate" startPc="268444860">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438613" name="item_to_coords" startPc="268438267">
+<param id="item_idx"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438659" name="getStorageKey" startPc="268438614">
+<param id="habit_name"/>
+<param id="year"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439507" name="SaveLoadHabitData" startPc="268438660">
+<param id="start_daynum"/>
+<param id="last_daynum"/>
+<param id="habits"/>
+<param id="save_data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439564" name="loadDaynumHabitData" startPc="268439508">
+<param id="habits_to_load"/>
+<param id="last_daynum"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439665" name="SaveHabitData" startPc="268439565">
+<param id="save_data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439968" name="change_datum" startPc="268439666">
+<param id="item_idx"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439991" name="initialize" parent="BlueApp" startPc="268439969">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440355" name="onStart" parent="BlueApp" startPc="268439992">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440399" name="getInitialView" parent="BlueApp" startPc="268440356">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440424" name="onStop" parent="BlueApp" startPc="268440400">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444809" name="&lt;init&gt;" parent="BlueApp" startPc="268444791">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440559" name="annulusSector" startPc="268440425">
+<param id="dc"/>
+<param id="startdeg"/>
+<param id="enddeg"/>
+<param id="startrad"/>
+<param id="endrad"/>
+<param id="colour"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440816" name="initialize" parent="sectorDisplayer" startPc="268440560">
+<param id="shape"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441111" name="plot_sector" parent="sectorDisplayer" startPc="268440817">
+<param id="dc"/>
+<param id="d"/>
+<param id="h"/>
+<param id="colour"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441283" name="get_data_plot_sector" parent="sectorDisplayer" startPc="268441112">
+<param id="dc"/>
+<param id="habit_data"/>
+<param id="d"/>
+<param id="h"/>
+<param id="selected"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441378" name="display_habit_data" parent="sectorDisplayer" startPc="268441284">
+<param id="dc"/>
+<param id="habit_data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441583" name="update_idx_and_time" parent="sectorDisplayer" startPc="268441379">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441647" name="up" parent="sectorDisplayer" startPc="268441584">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441753" name="down" parent="sectorDisplayer" startPc="268441648">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441896" name="display_selection_and_labelling" parent="sectorDisplayer" startPc="268441754">
+<param id="dc"/>
+<param id="habit_data"/>
+<param id="t_info"/>
+<param id="d"/>
+<param id="h"/>
+<param id="update_day_lab"/>
+<param id="update_habit_lab"/>
+<param id="on_or_off"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442119" name="update_selection_and_labelling" parent="sectorDisplayer" startPc="268441897">
+<param id="dc"/>
+<param id="habit_data"/>
+<param id="time_info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444829" name="&lt;init&gt;" parent="sectorDisplayer" startPc="268444829">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442319" name="display_date" startPc="268442120">
+<param id="dc"/>
+<param id="day_of_week"/>
+<param id="day"/>
+<param id="font"/>
+<param id="colour"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442565" name="get_colour" startPc="268442320">
+<param id="habit_name"/>
+<param id="datum"/>
+<param id="selected"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442874" name="daysInMonth" startPc="268442566">
+<param id="month"/>
+<param id="year"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442919" name="daysInYear" startPc="268442875">
+<param id="year"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443325" name="dayNumber" startPc="268442920">
+<param id="day"/>
+<param id="month"/>
+<param id="year"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443474" name="yearFromDaynum" startPc="268443326">
+<param id="daynum"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443552" name="DayInYear" startPc="268443475">
+<param id="daynum"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268443945" name="getTime" startPc="268443553">
+<param id="time_difference"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444084" name="month_day_string" startPc="268443946">
+<param id="day"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444254" name="abbreviate_weekday" startPc="268444085">
+<param id="day_of_week"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444313" name="day_of_week_by_index" startPc="268444255">
+<param id="day_today"/>
+<param id="index_difference"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444854" name="&lt;init&gt;" parent="Drawables" startPc="268444854">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444856" name="&lt;init&gt;" parent="Fonts" startPc="268444856">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444858" name="&lt;init&gt;" parent="JsonData" startPc="268444858">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268444514" name="MainLayout" parent="Layouts" startPc="268444314">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444857" name="&lt;init&gt;" parent="Layouts" startPc="268444857">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444855" name="&lt;init&gt;" parent="Menus" startPc="268444855">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444859" name="&lt;init&gt;" parent="Strings" startPc="268444859">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268444853" name="&lt;init&gt;" parent="Rez" startPc="268444830">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

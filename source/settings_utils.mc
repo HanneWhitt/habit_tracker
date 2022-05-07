@@ -32,7 +32,7 @@ function first_time_setup() {
 	Application.Storage.clearValues();
 
 	// First time date info
-	first_use_time_info = getTime();
+	first_use_time_info = getTime(null);
 	
 	System.println("FIRST TIME INFO...");
 	System.println(first_use_time_info);
