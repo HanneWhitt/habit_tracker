@@ -78,8 +78,12 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     	} else if (key == down_key) {
     		sectorDisplay.down();
     	} else if (key == start_key) {
-    		self.response_code = change_datum(sectorDisplay.item_idx);
-    		respond(self.response_code);
+			if (sectorDisplay.is_showing_settings()) {
+				WatchUi.pushView(settings_main_view, settings_main_delegate, 1);
+			} else {
+				self.response_code = change_datum(sectorDisplay.item_idx);
+    			respond(self.response_code);
+			}
     	} else if (key == back_key) {
     		WatchUi.popView(2);
     	}

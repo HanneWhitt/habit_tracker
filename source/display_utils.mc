@@ -29,10 +29,21 @@ function indicator(dc, x, y, r, colour) {
 }
 
 
-function indicator(dc, x, y, r, colour) {
+var theta;
+function settings_symbol(dc, x, y, r, colour) {
+	
 	dc.setColor(colour, colour);
 	dc.setPenWidth(r);
-    dc.drawCircle(x, y, 0);
+    dc.drawCircle(x, y, r);
+
+	for (var a = 0; a < 360; a += 45) {
+		theta = Math.toRadians(a);
+		dc.drawCircle(
+			x + 3*r*Math.sin(theta)/2,
+			y + 3*r*Math.cos(theta)/2, 
+			0
+		);
+	}
 }
 
 
@@ -141,6 +152,7 @@ class sectorDisplayer {
 					
 			}
 		}
+
 	}
 
 	function update_idx_and_time() {
@@ -189,30 +201,35 @@ class sectorDisplayer {
 			on_or_off
 		) {
 
-		self.get_data_plot_sector(dc, habit_data, d, h, on_or_off);
-
 		if (on_or_off) {
 			col = Graphics.COLOR_BLACK;
 		} else {
 			col = Graphics.COLOR_WHITE;
 		}
 
-		if (t_info != null and update_day_lab) {
+		if (d == null and h == null) {
+			self.display_settings_option(dc, Graphics.FONT_XTINY, col);
+		} else {
+
+			self.get_data_plot_sector(dc, habit_data, d, h, on_or_off);
 			
-			display_date(
-				dc,
-				t_info["day_of_week"],
-				t_info["day"],
-				Graphics.FONT_XTINY,
-				col
-			);
-			display_day_indicator(dc, d, col);
+			if (t_info != null and update_day_lab) {
+				display_date(
+					dc,
+					t_info["day_of_week"],
+					t_info["day"],
+					Graphics.FONT_XTINY,
+					col
+				);
+				display_day_indicator(dc, d, col);
+			}
+
+			if (update_habit_lab) {
+				display_habit_label(dc, h, Graphics.FONT_XTINY, col);
+				display_habit_indicator(dc, h, col);
+			}
 		}
 
-		if (update_habit_lab) {
-			display_habit_label(dc, h, Graphics.FONT_XTINY, col);
-			display_habit_indicator(dc, h, col);
-		}
 	}
 
 	protected var prev_habit_idx;
@@ -265,22 +282,13 @@ class sectorDisplayer {
 	}
 
 	function display_date(dc, day_of_week, day, font, colour) {
-		//var date_string = day_of_week + "\n" + day.toString();
-		
-		if (font == null) {
-			font = Graphics.FONT_XTINY;
-		}
-		
-		if (colour == null) {
-			colour = Graphics.COLOR_BLACK;
-		}
 
 		var date_string = abbreviate_weekday(day_of_week) + day.toString();
 		
 		dc.setColor(colour, Graphics.COLOR_WHITE);
 		dc.drawText(
-			dc.getWidth() / 2,
-			dc.getHeight() / 2 - Graphics.getFontHeight(font)/2,
+			self.screen_radius,
+			self.screen_radius - Graphics.getFontHeight(font)/2,
 			font,
 			date_string,
 			Graphics.TEXT_JUSTIFY_CENTER
@@ -289,21 +297,14 @@ class sectorDisplayer {
 
 
 	function display_habit_label(dc, h, font, colour) {
-		
-		if (font == null) {
-			font = Graphics.FONT_XTINY;
-		}
-		if (colour == null) {
-			colour = Graphics.COLOR_BLACK;
-		}
 
 		var hname = active_habits[h];
 		var h_abbrev = habit_metadata[hname]["Abbreviation"];
 		
 		dc.setColor(colour, Graphics.COLOR_WHITE);
 		dc.drawText(
-			dc.getWidth() / 2 + 20,
-			dc.getHeight() / 2 - self.half_radius - Graphics.getFontHeight(font)/2,
+			self.screen_radius + 20,
+			self.screen_radius - self.half_radius - Graphics.getFontHeight(font)/2,
 			font,
 			h_abbrev,
 			Graphics.TEXT_JUSTIFY_LEFT
@@ -318,10 +319,6 @@ class sectorDisplayer {
 	protected var y_pos;
 
 	function display_day_indicator(dc, d, colour) {
-		
-		if (colour == null) {
-			colour = Graphics.COLOR_BLACK;
-		}
 
 		ang = Math.toRadians(fixedDisplaySettings["max_display_degrees"] - d*(self.day_degrees + fixedDisplaySettings["gap_degrees"]) - self.day_degrees/2);
 		hyp = self.min_radius - 6;
@@ -334,10 +331,6 @@ class sectorDisplayer {
 
 
 	function display_habit_indicator(dc, h, colour) {
-		
-		if (colour == null) {
-			colour = Graphics.COLOR_BLACK;
-		}
 
 		x_pos = self.screen_radius + 6;
 		min_rad = self.min_radius + h*self.radius_increment;
@@ -346,6 +339,28 @@ class sectorDisplayer {
 		
 		indicator(dc, x_pos, y_pos, 5, colour);
 
+	}
+
+	function display_settings_option(dc, font, colour) {
+		settings_symbol(
+			dc, 
+			self.screen_radius,
+			self.screen_radius,
+			self.screen_radius/12,
+			colour
+		);
+		dc.setColor(colour, Graphics.COLOR_WHITE);
+		dc.drawText(
+			self.screen_radius + 10,
+			self.screen_radius - self.half_radius,
+			font,
+			"Settings",
+			Graphics.TEXT_JUSTIFY_LEFT
+		);
+	}
+
+	function is_showing_settings() {
+		return (self.item_idx == total_items - 1);
 	}
 
 }
