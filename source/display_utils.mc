@@ -1,6 +1,9 @@
 using Toybox.Graphics;
 using Toybox.System;
 using Toybox.Lang;
+using Toybox.Math;
+
+
 var colour_scheme;
 
 
@@ -19,9 +22,26 @@ function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
 }
 
 
+function indicator(dc, x, y, r, colour) {
+	dc.setColor(colour, colour);
+	dc.setPenWidth(r);
+    dc.drawCircle(x, y, 0);
+}
+
+
+function indicator(dc, x, y, r, colour) {
+	dc.setColor(colour, colour);
+	dc.setPenWidth(r);
+    dc.drawCircle(x, y, 0);
+}
+
+
+
 class sectorDisplayer {
 
 	public var screen_radius;
+	public var min_radius;
+	public var half_radius;
 	public var day_degrees;
 	public var radius_increment;
 	public var shape;
@@ -40,16 +60,20 @@ class sectorDisplayer {
 	function initialize(shape) {
 		self.shape = shape;
 		self.screen_radius = fixedDisplaySettings["screen_radius"];
+		self.min_radius = fixedDisplaySettings["min_radius"];
+		self.half_radius = (self.screen_radius + self.min_radius)/2;
 		self.day_degrees = (fixedDisplaySettings["max_display_degrees"] - fixedDisplaySettings["min_display_degrees"] - (n_days - 1)*fixedDisplaySettings["gap_degrees"])/n_days;
-		self.radius_increment = (screen_radius - fixedDisplaySettings["min_radius"])/n_habits;
-		
+		self.radius_increment = (screen_radius - self.min_radius)/n_habits;
+		self.indices_to_start();
+	}
+
+	function indices_to_start() {
 		self.item_idx = 0;
 		self.previous_item_idx = null;
 		self.day_idx = n_days - 1;
 		self.previous_day_idx = null;
 		self.habit_idx = 0;
 		self.previous_day_idx = null;
-
 		self.time_info = getTime(null);
 		self.previous_time_info = null;
 	}
@@ -65,8 +89,8 @@ class sectorDisplayer {
 		
 		max_deg = fixedDisplaySettings["max_display_degrees"] - d*(self.day_degrees + fixedDisplaySettings["gap_degrees"]);
 		min_deg = max_deg - self.day_degrees;
-		min_rad = fixedDisplaySettings["min_radius"] + h*self.radius_increment;
-		max_rad = fixedDisplaySettings["min_radius"] + (h + 1)*self.radius_increment - fixedDisplaySettings["gap_radius"];
+		min_rad = self.min_radius + h*self.radius_increment;
+		max_rad = self.min_radius + (h + 1)*self.radius_increment - fixedDisplaySettings["gap_radius"];
 		
 		if (self.shape.equals("Annulus Sector")) {
 			annulusSector(
@@ -165,25 +189,16 @@ class sectorDisplayer {
 			on_or_off
 		) {
 
-		// if (on_or_off) {
-		// 	print("ADDING");
-		// } else {
-		// 	print("REMOVING");
-		// }
-		// print("DAY IDX: " + day_idx.toString());
-		// print("HABIT IDX: " + habit_idx.toString());
-
-		// Display selected sector or unselect if on_or_off = false
 		self.get_data_plot_sector(dc, habit_data, d, h, on_or_off);
+
+		if (on_or_off) {
+			col = Graphics.COLOR_BLACK;
+		} else {
+			col = Graphics.COLOR_WHITE;
+		}
 
 		if (t_info != null and update_day_lab) {
 			
-			if (on_or_off) {
-				col = Graphics.COLOR_BLACK;
-			} else {
-				col = Graphics.COLOR_WHITE;
-			}
-
 			display_date(
 				dc,
 				t_info["day_of_week"],
@@ -191,8 +206,13 @@ class sectorDisplayer {
 				Graphics.FONT_XTINY,
 				col
 			);
+			display_day_indicator(dc, d, col);
 		}
-					
+
+		if (update_habit_lab) {
+			display_habit_label(dc, h, Graphics.FONT_XTINY, col);
+			display_habit_indicator(dc, h, col);
+		}
 	}
 
 	protected var prev_habit_idx;
@@ -244,31 +264,92 @@ class sectorDisplayer {
 
 	}
 
+	function display_date(dc, day_of_week, day, font, colour) {
+		//var date_string = day_of_week + "\n" + day.toString();
+		
+		if (font == null) {
+			font = Graphics.FONT_XTINY;
+		}
+		
+		if (colour == null) {
+			colour = Graphics.COLOR_BLACK;
+		}
+
+		var date_string = abbreviate_weekday(day_of_week) + day.toString();
+		
+		dc.setColor(colour, Graphics.COLOR_WHITE);
+		dc.drawText(
+			dc.getWidth() / 2,
+			dc.getHeight() / 2 - Graphics.getFontHeight(font)/2,
+			font,
+			date_string,
+			Graphics.TEXT_JUSTIFY_CENTER
+		);
+	}
+
+
+	function display_habit_label(dc, h, font, colour) {
+		
+		if (font == null) {
+			font = Graphics.FONT_XTINY;
+		}
+		if (colour == null) {
+			colour = Graphics.COLOR_BLACK;
+		}
+
+		var hname = active_habits[h];
+		var h_abbrev = habit_metadata[hname]["Abbreviation"];
+		
+		dc.setColor(colour, Graphics.COLOR_WHITE);
+		dc.drawText(
+			dc.getWidth() / 2 + 20,
+			dc.getHeight() / 2 - self.half_radius - Graphics.getFontHeight(font)/2,
+			font,
+			h_abbrev,
+			Graphics.TEXT_JUSTIFY_LEFT
+		);
+
+	}
+
+
+	protected var ang;	
+	protected var hyp;
+	protected var x_pos;
+	protected var y_pos;
+
+	function display_day_indicator(dc, d, colour) {
+		
+		if (colour == null) {
+			colour = Graphics.COLOR_BLACK;
+		}
+
+		ang = Math.toRadians(fixedDisplaySettings["max_display_degrees"] - d*(self.day_degrees + fixedDisplaySettings["gap_degrees"]) - self.day_degrees/2);
+		hyp = self.min_radius - 6;
+		x_pos = self.screen_radius - hyp*Math.sin(ang);
+		y_pos = self.screen_radius - hyp*Math.cos(ang);
+		
+		indicator(dc, x_pos, y_pos, 5, colour);
+
+	}
+
+
+	function display_habit_indicator(dc, h, colour) {
+		
+		if (colour == null) {
+			colour = Graphics.COLOR_BLACK;
+		}
+
+		x_pos = self.screen_radius + 6;
+		min_rad = self.min_radius + h*self.radius_increment;
+		max_rad = self.min_radius + (h + 1)*self.radius_increment - fixedDisplaySettings["gap_radius"];
+		y_pos = self.screen_radius - (max_rad + min_rad)/2;
+		
+		indicator(dc, x_pos, y_pos, 5, colour);
+
+	}
+
 }
 
-
-function display_date(dc, day_of_week, day, font, colour) {
-	//var date_string = day_of_week + "\n" + day.toString();
-	
-	if (font == null) {
-		font = Graphics.FONT_XTINY;
-	}
-	
-	if (colour == null) {
-		colour = Graphics.COLOR_BLACK;
-	}
-
-	var date_string = abbreviate_weekday(day_of_week) + day.toString();
-	
-	dc.setColor(colour, Graphics.COLOR_WHITE);
-    dc.drawText(
-        dc.getWidth() / 2,
-        dc.getHeight() / 2 - Graphics.getFontHeight(font)/2,
-        font,
-        date_string,
-        Graphics.TEXT_JUSTIFY_CENTER
-    );
-}
 
 
 function get_colour(habit_name, datum, selected) {
@@ -299,4 +380,3 @@ function get_colour(habit_name, datum, selected) {
 	}
 	
 }
-

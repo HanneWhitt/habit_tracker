@@ -23,8 +23,7 @@ class DataViewSelect extends WatchUi.View {
     // loading resources into memory.
     function onShow() {
     	// Set item indexes back to start whenever the view brought to foreground
-        sectorDisplay.item_idx = 0;
-        sectorDisplay.previous_item_idx = null;
+        sectorDisplay.indices_to_start();
 	   	// Refresh current daynum
     	current_time = getTime(null);
     	current_daynum = current_time["day_num"];
