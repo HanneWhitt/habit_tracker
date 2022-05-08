@@ -8,6 +8,7 @@ var selection_view;
 var selection_delegate;
 var settings_main_view;
 var settings_main_delegate;
+var settings_menu_up;
 
 
 class BlueApp extends Application.AppBase {
@@ -54,6 +55,7 @@ class BlueApp extends Application.AppBase {
 
 		settings_main_view = new SettingsMainMenu();
 		settings_main_delegate = new MyMenu2InputDelegate();
+		settings_menu_up = false;
     	
     }
     

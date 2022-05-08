@@ -32,4 +32,8 @@ class MyMenu2InputDelegate extends WatchUi.Menu2InputDelegate {
     function onSelect(item) {
         System.println(item.getId());
     }
+
+    function onBack() {
+        WatchUi.popView(2);
+    }
 }

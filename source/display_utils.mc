@@ -3,7 +3,6 @@ using Toybox.System;
 using Toybox.Lang;
 using Toybox.Math;
 
-
 var colour_scheme;
 
 
@@ -38,7 +37,7 @@ function settings_symbol(dc, x, y, r, colour) {
 
 	for (var a = 0; a < 360; a += 45) {
 		theta = Math.toRadians(a);
-		dc.drawCircle(
+		dc.drawCircle(uu
 			x + 3*r*Math.sin(theta)/2,
 			y + 3*r*Math.cos(theta)/2, 
 			0

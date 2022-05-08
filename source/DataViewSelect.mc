@@ -34,15 +34,22 @@ class DataViewSelect extends WatchUi.View {
     // Update the view
     function onUpdate(dc) {
     	
-    	// Save and refresh the data if the day has changed (i.e if it has just passed midnight)
+    	// Save and refresh the data if the day has changed (i.e if it has just passed midnight),
+		// or if the settings may have changed
     	current_time = getTime(null);
-		if (current_time["day_num"] != current_daynum) {
+		if (current_time["day_num"] != current_daynum or settings_menu_up) {
 			SaveHabitData(current_data);
     		current_daynum = current_time["day_num"];
 	    	current_data = loadDaynumHabitData(active_habits, current_daynum);
 		}
-		print(current_time);
-		print("HELLLOOOOO");
+
+		// If the settings menu was just up, we need to replot all the data
+		if (settings_menu_up) {
+			dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
+			dc.clear();
+			sectorDisplay.display_habit_data(dc, current_data);
+			settings_menu_up = false;
+		}
 
 		sectorDisplay.update_selection_and_labelling(dc, current_data, current_time);		
 		
@@ -79,6 +86,7 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     		sectorDisplay.down();
     	} else if (key == start_key) {
 			if (sectorDisplay.is_showing_settings()) {
+				settings_menu_up = true;
 				WatchUi.pushView(settings_main_view, settings_main_delegate, 1);
 			} else {
 				self.response_code = change_datum(sectorDisplay.item_idx);
