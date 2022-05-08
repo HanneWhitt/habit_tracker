@@ -5,6 +5,8 @@ using Toybox.System;
 
 var current_time;
 
+
+
 class DataViewSelect extends WatchUi.View {
 
 
@@ -34,25 +36,25 @@ class DataViewSelect extends WatchUi.View {
     // Update the view
     function onUpdate(dc) {
     	
-    	// Save and refresh the data if the day has changed (i.e if it has just passed midnight),
-		// or if the settings may have changed
-    	current_time = getTime(null);
-		if (current_time["day_num"] != current_daynum or settings_menu_up) {
-			SaveHabitData(current_data);
-    		current_daynum = current_time["day_num"];
-	    	current_data = loadDaynumHabitData(active_habits, current_daynum);
-		}
-
 		// If the settings menu was just up, we need to replot all the data
 		if (settings_menu_up) {
-			dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
-			dc.clear();
-			sectorDisplay.display_habit_data(dc, current_data);
-			settings_menu_up = false;
+			animation_complete = sectorDisplay.display_habit_data_animated(dc, current_data);
+			if (animation_complete) {
+				settings_menu_up = false;
+			}
+		} else {
+			sectorDisplay.update_selection_and_labelling(dc, current_data, current_time);	
 		}
 
-		sectorDisplay.update_selection_and_labelling(dc, current_data, current_time);		
-		
+		// MIDNIGHT EDGE CASE
+		// Save and refresh the data if the day has changed (i.e if it has just passed midnight)
+		// current_time = getTime(null);
+		// if (current_time["day_num"] != current_daynum) {
+		// 	SaveHabitData(current_data);
+		// 	current_daynum = current_time["day_num"];
+		// 	current_data = loadDaynumHabitData(active_habits, current_daynum);
+		// }
+
     }        
 
     // Called when this View is removed from the screen. Save the
@@ -61,7 +63,7 @@ class DataViewSelect extends WatchUi.View {
     function onHide() {
     
     	System.println(current_data);
-    
+
     }
 	
 }
@@ -87,13 +89,17 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     	} else if (key == start_key) {
 			if (sectorDisplay.is_showing_settings()) {
 				settings_menu_up = true;
-				WatchUi.pushView(settings_main_view, settings_main_delegate, 1);
+				WatchUi.pushView(new SettingsMain(), new SettingsMainDelegate(), 1);
 			} else {
 				self.response_code = change_datum(sectorDisplay.item_idx);
     			respond(self.response_code);
 			}
     	} else if (key == back_key) {
-    		WatchUi.popView(2);
+			if (sectorDisplay.is_showing_settings()) {
+				sectorDisplay.up();
+			} else {
+				WatchUi.popView(2);
+			}
     	}
     	
     	System.println(response_code);

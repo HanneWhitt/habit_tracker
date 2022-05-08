@@ -6,6 +6,7 @@ var carousel_view;
 var carousel_delegate;
 var selection_view;
 var selection_delegate;
+var selection_view_up;
 var settings_main_view;
 var settings_main_delegate;
 var settings_menu_up;
@@ -52,9 +53,8 @@ class BlueApp extends Application.AppBase {
     	
     	selection_view = new DataViewSelect();
 		selection_delegate = new DataViewSelectDelegate();
+		selection_view_up = false;
 
-		settings_main_view = new SettingsMainMenu();
-		settings_main_delegate = new MyMenu2InputDelegate();
 		settings_menu_up = false;
     	
     }

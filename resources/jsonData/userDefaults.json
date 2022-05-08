@@ -3,22 +3,11 @@
 	"__ALL_HABITS__": [ 
 		"Habit 1",
 		"Habit 2",
-		"Habit 3",
-		"Habit 4",
-		"Habit 5",
-		"Habit 6",
-		"Habit 7",
-		"Habit 8",
-		"Habit 9",
-		"Habit 10"
+		"Habit 3"
 	],
 	"__ACTIVE_HABITS__": [ 
 		"Habit 1",
-		"Habit 2",
-		"Habit 3",
-		"Habit 4",
-		"Habit 5",
-		"Habit 6"
+		"Habit 2"
 	],
 	"__N_DAYS__": 14,
 	"__USER_DISPLAY_SETTINGS__": { 
@@ -36,21 +25,6 @@
 	},
 	"Habit 3": {
 		"Abbreviation": "H3",
-		"Type": "Binary", 
-		"Colours": "Blue"
-	},
-	"Habit 4": {
-		"Abbreviation": "H4",
-		"Type": "Binary", 
-		"Colours": "Blue"
-	},
-	"Habit 5": {
-		"Abbreviation": "H5",
-		"Type": "Binary", 
-		"Colours": "Blue"
-	},
-	"Habit 6": {
-		"Abbreviation": "H6",
 		"Type": "Binary", 
 		"Colours": "Blue"
 	}

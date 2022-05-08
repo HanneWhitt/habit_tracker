@@ -4,24 +4,25 @@ using Toybox.Application;
 using Toybox.System;
 using Toybox.Lang;
 
-
 var current_daynum;
 var current_data;
 
 var screen_radius;
+
+var animation_complete;
 
 
 class DataViewInitial extends WatchUi.View {
 
 
     function initialize() {
-        View.initialize();   	
+        View.initialize();
+		just_shown = true;
     }
 
     // Load your resources here
     function onLayout(dc) {
 
-//		screen_radius = dc.getWidth()/2;
     	// Refresh current daynum
     	current_daynum = getTime(null)["day_num"];
     	    	
@@ -34,26 +35,34 @@ class DataViewInitial extends WatchUi.View {
     // loading resources into memory.
     protected var just_shown;
     function onShow() {  	
-		just_shown = true;
+		
     }
 
     // Update the view
-    function onUpdate(dc) {
-    
-    	// Refresh the data if the day has changed (i.e if it has just passed midnight)
-    	var new_daynum = getTime(null)["day_num"];
-		if (new_daynum != current_daynum) {
-	    	current_data = loadDaynumHabitData(active_habits, new_daynum);
-	    	current_daynum = new_daynum;
-		}
+    function onUpdate(dc) {    	
 		
+		if (selection_view_up) {
+			sectorDisplay.clear_selection_and_labelling(dc, current_data);
+			selection_view_up = false;
+		}
+
 		if (just_shown) {
 			// Show data with no selection, no date, no habit names displayed
-			dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
-			dc.clear();
-			sectorDisplay.display_habit_data(dc, current_data);
-			just_shown = false;
+			animation_complete = sectorDisplay.display_habit_data_animated(dc, current_data);
+			if (animation_complete) {
+				just_shown = false;
+			}
 		}
+
+		// MIDNIGHT EDGE CASE
+		// Save and refresh the data if the day has changed (i.e if it has just passed midnight)
+		// current_time = getTime(null);
+		// if (current_time["day_num"] != current_daynum) {
+		// 	SaveHabitData(current_data);
+		// 	current_daynum = current_time["day_num"];
+		// 	current_data = loadDaynumHabitData(active_habits, current_daynum);
+		// }
+
     }        
 
     // Called when this View is removed from the screen. Save the
@@ -75,6 +84,7 @@ class DataViewInitialDelegate extends WatchUi.InputDelegate {
     function onKey(keyEvent) {
     	var key = keyEvent.getKey();
 		if (key == start_key) {
+			selection_view_up = true;
 			WatchUi.pushView(selection_view, selection_delegate, 1);
     	}      
     	return true;

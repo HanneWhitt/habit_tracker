@@ -3,6 +3,7 @@ using Toybox.Application;
 using Toybox.System;
 
 // First use information
+var first_use_date;
 var first_use_bool; 
 var first_use_time_info;
 var n_uses;
@@ -12,6 +13,10 @@ var fixedDisplaySettings;
 var userDisplaySettings;
 var data_start_daynum;
 var sectorDisplay; 
+
+var all_habits;
+
+
 
 function is_first_use() {
 	System.println(Application.Storage.getValue("__FIRST_USE_DAYNUM__"));
@@ -75,7 +80,7 @@ function set_up_new_habit(name, abbreviation, type, colours) {
 // A function to load settings which are qualities of the device. We only support fr645m for the moment. 
 function refreshFixedSettings() {
 
-	var first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
+	first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
 	n_uses = Application.Storage.getValue("__N_USES__");
 	
 	fixedDisplaySettings = WatchUi.loadResource(Rez.JsonData.fixedDisplaySettings);
@@ -91,7 +96,8 @@ function refreshUserSettings() {
     
     // Habits to display
   	active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
-  	n_habits = active_habits.size();
+	n_habits = active_habits.size();
+	all_habits = Application.Storage.getValue("__ALL_HABITS__");
   	
   	// Total items on data display screen, +1 for settings symbol
   	total_items = n_days*n_habits + 1;
@@ -108,9 +114,9 @@ function refreshUserSettings() {
   	
   	var colour_schemes = WatchUi.loadResource(Rez.JsonData.fixedSettings)["Colour Schemes"];
   	
-  	for (var h = 0; h < n_habits; h += 1) {
+  	for (var h = 0; h < all_habits.size(); h += 1) {
   	
-  		habit_name = self.active_habits[h];
+  		habit_name = self.all_habits[h];
   		
   		habit_meta = Application.Storage.getValue(habit_name);
 		self.habit_metadata[habit_name] = habit_meta;

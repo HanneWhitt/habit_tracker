@@ -37,7 +37,7 @@ function settings_symbol(dc, x, y, r, colour) {
 
 	for (var a = 0; a < 360; a += 45) {
 		theta = Math.toRadians(a);
-		dc.drawCircle(uu
+		dc.drawCircle(
 			x + 3*r*Math.sin(theta)/2,
 			y + 3*r*Math.cos(theta)/2, 
 			0
@@ -66,6 +66,8 @@ class sectorDisplayer {
 	protected var time_info;
 	protected var previous_time_info;
 
+	public var animation_item_idx;
+
 	
 	function initialize(shape) {
 		self.shape = shape;
@@ -86,6 +88,7 @@ class sectorDisplayer {
 		self.previous_day_idx = null;
 		self.time_info = getTime(null);
 		self.previous_time_info = null;
+		self.animation_item_idx = 0;
 	}
 
 	protected var coords;
@@ -140,6 +143,8 @@ class sectorDisplayer {
 			
 	}
 	
+
+
 	// Display habit data only - initial view screen.
 	function display_habit_data(dc, habit_data) {
 		
@@ -150,6 +155,28 @@ class sectorDisplayer {
 				self.get_data_plot_sector(dc, habit_data, d, h, false);
 					
 			}
+		}
+
+	}
+
+	function display_habit_data_animated(dc, habit_data) {
+
+		if (self.animation_item_idx == 0) {
+			dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
+			dc.clear();
+		}
+
+		if (self.animation_item_idx < total_items - 1) {
+
+			coords = item_to_coords(self.animation_item_idx);
+
+			self.get_data_plot_sector(dc, habit_data, coords[0], coords[1], false);
+			self.animation_item_idx += 1;
+
+			WatchUi.requestUpdate();
+
+		} else {
+			return true;
 		}
 
 	}
@@ -279,6 +306,23 @@ class sectorDisplayer {
 		);
 
 	}
+
+
+	function clear_selection_and_labelling(dc, habit_data) {
+
+		self.display_selection_and_labelling(
+			dc, 
+			habit_data, 
+			self.time_info, 
+			self.day_idx, 
+			self.habit_idx,
+			true,
+			true,
+			false
+		);
+
+	}
+
 
 	function display_date(dc, day_of_week, day, font, colour) {
 
