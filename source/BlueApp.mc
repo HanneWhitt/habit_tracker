@@ -2,14 +2,24 @@ using Toybox.Application;
 
 
 var first_use;
+
 var carousel_view;
 var carousel_delegate;
+
 var selection_view;
 var selection_delegate;
 var selection_view_up;
+
 var settings_main_view;
 var settings_main_delegate;
 var settings_menu_up;
+
+var habit_menu_view;
+var habit_menu_delegate;
+
+var single_habit_settings_view;
+var single_habit_settings_delegate;
+
 
 
 class BlueApp extends Application.AppBase {
@@ -23,23 +33,14 @@ class BlueApp extends Application.AppBase {
 	// This is where app level settings can be initialized or retrieved from
 	// the object store before the initial View is created.
     function onStart(state) {
-    
-    	System.println("onSTART RAN");
-    			
+        			
 		// Is this the first time the app has run?
 		first_use = is_first_use();
-		
-		var thing = [1, 2, 3];
-		System.println(thing);
-		System.println(thing.size());
-		System.println(thing.slice(1, 3));
-		
 
 		// If so, set up app by writing default and example values to storage
 		if (first_use) {
 			first_time_setup();
 		}
-		first_time_setup();
 		
 		// A function to load app-wide settings/set variables not available to the user
 		refreshFixedSettings();
@@ -50,11 +51,8 @@ class BlueApp extends Application.AppBase {
     	
     	carousel_view = new DataViewInitial();
     	carousel_delegate = new DataViewInitialDelegate();
-    	
-    	selection_view = new DataViewSelect();
-		selection_delegate = new DataViewSelectDelegate();
-		selection_view_up = false;
 
+		selection_view_up = false;
 		settings_menu_up = false;
     	
     }
@@ -68,7 +66,7 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-    
+		
         return [ carousel_view, carousel_delegate ];
     }
     

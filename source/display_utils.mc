@@ -123,7 +123,7 @@ class sectorDisplayer {
 		}		
 	}
 
-	protected var habit_name;
+	protected var habit_id;
 	protected var datum;
 	protected var colour;
 	
@@ -135,12 +135,11 @@ class sectorDisplayer {
 			h = coords[1];
 		}
 		
-		habit_name = active_habits[h];
-		datum = habit_data[habit_name][d];
-		colour = get_colour(habit_name, datum, selected);
-				
+		habit_id = active_habits[h];
+		datum = habit_data[habit_id][d];
+		colour = get_colour(habit_id, datum, selected);
+
 		self.plot_sector(dc, d, h, colour);
-			
 	}
 	
 
@@ -168,12 +167,14 @@ class sectorDisplayer {
 
 		if (self.animation_item_idx < total_items - 1) {
 
-			coords = item_to_coords(self.animation_item_idx);
-
-			self.get_data_plot_sector(dc, habit_data, coords[0], coords[1], false);
-			self.animation_item_idx += 1;
+			for (var i = 0; i < n_habits; i += 1) {
+				coords = item_to_coords(self.animation_item_idx);
+				self.get_data_plot_sector(dc, habit_data, coords[0], coords[1], false);
+				self.animation_item_idx += 1;
+			}
 
 			WatchUi.requestUpdate();
+			return false;
 
 		} else {
 			return true;
@@ -341,8 +342,8 @@ class sectorDisplayer {
 
 	function display_habit_label(dc, h, font, colour) {
 
-		var hname = active_habits[h];
-		var h_abbrev = habit_metadata[hname]["Abbreviation"];
+		var h_id = active_habits[h];
+		var h_abbrev = habit_metadata[h_id]["Abbreviation"];
 		
 		dc.setColor(colour, Graphics.COLOR_WHITE);
 		dc.drawText(
@@ -410,10 +411,10 @@ class sectorDisplayer {
 
 
 
-function get_colour(habit_name, datum, selected) {
+function get_colour(habit_id, datum, selected) {
 	
-	var type = habit_metadata[habit_name]["Type"];
-	var habit_colours = habit_metadata[habit_name]["Colours"];
+	var type = habit_metadata[habit_id]["Type"];
+	var habit_colours = habit_metadata[habit_id]["Colours"];
 		
 	if (type.equals("Binary")) {
 	

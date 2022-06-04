@@ -84,6 +84,8 @@ class DataViewInitialDelegate extends WatchUi.InputDelegate {
     function onKey(keyEvent) {
     	var key = keyEvent.getKey();
 		if (key == start_key) {
+			selection_view = new DataViewSelect();
+			selection_delegate = new DataViewSelectDelegate();
 			selection_view_up = true;
 			WatchUi.pushView(selection_view, selection_delegate, 1);
     	}      

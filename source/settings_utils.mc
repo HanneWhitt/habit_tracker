@@ -7,6 +7,8 @@ var first_use_date;
 var first_use_bool; 
 var first_use_time_info;
 var n_uses;
+var next_new_hab_idx;
+
 
 // General
 var fixedDisplaySettings;
@@ -60,33 +62,52 @@ function first_time_setup() {
 }
 
 
-var new_habit_dict;
 
-function set_up_new_habit(name, abbreviation, type, colours) {
-	
-	System.println("SETTING UP HABIT:");
-	System.println(name);
 
-	var new_habit_dict = {"Abbreviation" => abbreviation, "Type" => type, "Colours" => colours};
-	Application.Storage.setValue(name, new_habit_dict);
+
+// function set_up_new_habit(new_habit_dict) {
 	
-	// Update "ALL" and "ACTIVE" habit lists on disk and active_habits in memory
-  	active_habits = active_habits.add(name);
-  	Application.Storage.setValue("__ACTIVE_HABITS__", active_habits);
-	Application.Storage.setValue("__ALL_HABITS__", Application.Storage.getValue("__ALL_HABITS__"));
+// 	System.println("SETTING UP HABIT:");
+// 	System.println(name);
+
+// 	var next_hab_idx = Application.Storage.getValue("__NEXT_HABIT_INDEX__");
+// 	var new_hab_id = habit_ID_from_idx(next_hab_idx);
+// 	var new_habit_dict = {"Name"=> name, "Abbreviation" => abbreviation, "Type" => type, "Colours" => colours};
+// 	Application.Storage.setValue(new_hab_id, new_habit_dict);
+// 	Application.Storage.setValue("__NEXT_HABIT_INDEX__", next_hab_idx + 1);
 	
-}
+// 	// Update "ALL" and "ACTIVE" habit lists on disk and active_habits in memory
+//   	active_habits = active_habits.add(new_hab_id);
+//   	Application.Storage.setValue("__ACTIVE_HABITS__", active_habits);
+// 	Application.Storage.setValue("__ALL_HABITS__", Application.Storage.getValue("__ALL_HABITS__").add(new_hab_id));
+	
+// }
 
 // A function to load settings which are qualities of the device. We only support fr645m for the moment. 
 function refreshFixedSettings() {
 
 	first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
 	n_uses = Application.Storage.getValue("__N_USES__");
+	next_new_hab_idx = Application.Storage.getValue("__NEXT_NEW_HABIT_INDEX__");
 	
 	fixedDisplaySettings = WatchUi.loadResource(Rez.JsonData.fixedDisplaySettings);
 	
 }
 
+
+function habit_ID_from_idx(idx) {
+	var s = "habit_" + idx.toString();
+	return s;
+}
+
+function default_new_habit(idx) {
+    return {
+        "Name" => "Habit" + (idx + 1).toString(),
+        "Abbreviation" => "H" + (idx + 1).toString(),
+        "Type" => "Binary",
+        "Colours" => "Blue"
+    };
+}
 
 // A function to load general, permanent settings which depend on user preference - not the day or time. Some hard coded for dev but more could be made available to user later.
 function refreshUserSettings() {
@@ -98,6 +119,9 @@ function refreshUserSettings() {
   	active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
 	n_habits = active_habits.size();
 	all_habits = Application.Storage.getValue("__ALL_HABITS__");
+
+	// Next new habit index
+	next_new_hab_idx = Application.Storage.getValue("__NEXT_NEW_HABIT_INDEX__");
   	
   	// Total items on data display screen, +1 for settings symbol
   	total_items = n_days*n_habits + 1;
@@ -106,9 +130,9 @@ function refreshUserSettings() {
   	userDisplaySettings = Application.Storage.getValue("__USER_DISPLAY_SETTINGS__");
   	
   	// Habit metadata
-  	self.habit_metadata = {};
-  	self.colour_scheme = {};
-  	var habit_name;
+  	habit_metadata = {};
+  	colour_scheme = {};
+  	var habit_id;
   	var habit_meta;
   	var habit_colours;
   	
@@ -116,10 +140,10 @@ function refreshUserSettings() {
   	
   	for (var h = 0; h < all_habits.size(); h += 1) {
   	
-  		habit_name = self.all_habits[h];
+  		habit_id = self.all_habits[h];
   		
-  		habit_meta = Application.Storage.getValue(habit_name);
-		self.habit_metadata[habit_name] = habit_meta;
+  		habit_meta = Application.Storage.getValue(habit_id);
+		self.habit_metadata[habit_id] = habit_meta;
 		
 		habit_colours = habit_meta["Colours"];
 		self.colour_scheme[habit_colours] = colour_schemes[habit_colours];

@@ -1,32 +1,35 @@
 {
 	"__N_USES__": 0,
 	"__ALL_HABITS__": [ 
-		"Habit 1",
-		"Habit 2",
-		"Habit 3"
+		"habit_0",
+		"habit_1",
+		"habit_2"
 	],
 	"__ACTIVE_HABITS__": [ 
-		"Habit 1",
-		"Habit 2"
+		"habit_0",
+		"habit_1"
 	],
 	"__N_DAYS__": 14,
 	"__USER_DISPLAY_SETTINGS__": { 
 		"shape": "Annulus Sector"
 	},
-	"Habit 1": {
+	"habit_0": {
+		"Name": "Habit1",
 		"Abbreviation": "H1",
 		"Type": "Binary", 
 		"Colours": "Blue"
 	},
-	"Habit 2": {
+	"habit_1": {
+		"Name": "Habit2",
 		"Abbreviation": "H2",
 		"Type": "Binary", 
 		"Colours": "Blue"
 	},
-	"Habit 3": {
+	"habit_2": {
+		"Name": "Habit3",
 		"Abbreviation": "H3",
 		"Type": "Binary", 
 		"Colours": "Blue"
-	}
-	
+	},
+	"__NEXT_NEW_HABIT_INDEX__": 3
 }

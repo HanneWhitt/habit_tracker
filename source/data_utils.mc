@@ -32,13 +32,13 @@ function item_to_coords(item_idx) {
 }
 
 
-function getStorageKey(habit_name, year) {
-	return ("__"+ habit_name + "_" + year.toString() + "__");
+function getStorageKey(habit_id, year) {
+	return ("__"+ habit_id + "_" + year.toString() + "__");
 }
 
 
 // A function to load from storage data for the last n_days_to_display and put it in an array
-function SaveLoadHabitData(start_daynum, last_daynum, habits, save_data) {
+function SaveLoadHabitData(start_daynum, last_daynum, habit_ids, save_data) {
 	
 	var n = last_daynum - start_daynum + 1;
 	
@@ -57,18 +57,18 @@ function SaveLoadHabitData(start_daynum, last_daynum, habits, save_data) {
 	} 
 	
 	// Iterate through habits
-	for (var h = 0; h < habits.size(); h += 1) {		
+	for (var h = 0; h < habit_ids.size(); h += 1) {		
 		
-		var habit_name = habits[h];
+		var habit_id = habit_ids[h];
 		var habit_data;
 		
-		print('\n' + habit_name);
+		print('\n' + habit_id);
 		
 		
 		if (save_data == null) {
 			habit_data = new [0];
 		} else {
-			habit_data = save_data[habit_name];
+			habit_data = save_data[habit_id];
 		}
 
 		// Iterate through year blocks
@@ -81,7 +81,7 @@ function SaveLoadHabitData(start_daynum, last_daynum, habits, save_data) {
 			var year_length = daysInYear(y);
 			
 			// Load current saved version of appropriate block for habit and year
-			var storage_key = getStorageKey(habit_name, y);
+			var storage_key = getStorageKey(habit_id, y);
 			var block_data = Application.Storage.getValue(storage_key);
 			
 			// If block does not exist...
@@ -134,7 +134,7 @@ function SaveLoadHabitData(start_daynum, last_daynum, habits, save_data) {
 			}
 			
 			// Add it to the master array
-			loaded_data[habit_name] = habit_data;
+			loaded_data[habit_id] = habit_data;
 		}
 	}
 	
@@ -149,8 +149,15 @@ function loadDaynumHabitData(habits_to_load, last_daynum) {
 	return SaveLoadHabitData(start_daynum, last_daynum, active_habits, null);
 }
 
+function addBlankHabitData(habit_data, new_habit_id) {
+	var start_daynum = habit_data["__DAYNUM_INTERVAL__"][0];
+	var last_daynum = habit_data["__DAYNUM_INTERVAL__"][1];
+	var n = last_daynum - start_daynum + 1;
 
-// Given a daynum, load n_days of data leading up to and including that day
+	return habit_data;
+}
+
+
 function SaveHabitData(save_data) {
 	var start_daynum = save_data["__DAYNUM_INTERVAL__"][0];
 	var last_daynum = save_data["__DAYNUM_INTERVAL__"][1];
@@ -170,10 +177,10 @@ function change_datum(item_idx) {
 	System.println(selected_day_idx);
 	System.println(selected_habit_idx);
 	
-	var selected_habit_name = active_habits[selected_habit_idx];
-	var type = habit_metadata[selected_habit_name]["Type"];
+	var selected_habit_id = active_habits[selected_habit_idx];
+	var type = habit_metadata[selected_habit_id]["Type"];
 	
-	var datum = current_data[selected_habit_name][selected_day_idx];
+	var datum = current_data[selected_habit_id][selected_day_idx];
 	var response = "None";
 	
 	if (type.equals("Binary")) {
@@ -191,7 +198,7 @@ function change_datum(item_idx) {
 		throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
 	}
 	
-	current_data[selected_habit_name][selected_day_idx] = datum;
+	current_data[selected_habit_id][selected_day_idx] = datum;
 	
 	return response;
 
