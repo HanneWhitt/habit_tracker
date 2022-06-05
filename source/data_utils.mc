@@ -23,7 +23,6 @@ function item_to_coords(item_idx) {
 	if (item_idx == total_items - 1 or item_idx == null) {
 		return [null, null];
 	} else if (item_idx < total_items - 1 and item_idx >= 0) {
-		System.println([total_items, item_idx, n_days - item_idx/n_habits - 1, item_idx % n_habits]);
 		return [n_days - item_idx/n_habits - 1, item_idx % n_habits]; 
 	} else {
 		var exception_string = "Invalid item_idx: " + item_idx.toString() + ". Must be in range 0 - " + (total_items - 1).toString();
@@ -60,10 +59,7 @@ function SaveLoadHabitData(start_daynum, last_daynum, habit_ids, save_data) {
 	for (var h = 0; h < habit_ids.size(); h += 1) {		
 		
 		var habit_id = habit_ids[h];
-		var habit_data;
-		
-		print('\n' + habit_id);
-		
+		var habit_data;		
 		
 		if (save_data == null) {
 			habit_data = new [0];
@@ -73,9 +69,6 @@ function SaveLoadHabitData(start_daynum, last_daynum, habit_ids, save_data) {
 
 		// Iterate through year blocks
 		for (var y = start_year; y <= end_year; y += 1) {
-			
-			print(y);
-			
 			
 			// Year length
 			var year_length = daysInYear(y);
@@ -149,20 +142,32 @@ function loadDaynumHabitData(habits_to_load, last_daynum) {
 	return SaveLoadHabitData(start_daynum, last_daynum, active_habits, null);
 }
 
+// Add a new blank habit to data dict. Faster than addHabitData()- use where possible
 function addBlankHabitData(habit_data, new_habit_id) {
 	var start_daynum = habit_data["__DAYNUM_INTERVAL__"][0];
 	var last_daynum = habit_data["__DAYNUM_INTERVAL__"][1];
 	var n = last_daynum - start_daynum + 1;
-
+	var block_data = new [n];
+	habit_data[new_habit_id] = block_data;
 	return habit_data;
 }
 
+// Add a new NON-blank habit to data dict
+function addHabitData(habit_data, habit_ids) {
+	var start_daynum = habit_data["__DAYNUM_INTERVAL__"][0];
+	var last_daynum = habit_data["__DAYNUM_INTERVAL__"][1];
+	var new_data = SaveLoadHabitData(start_daynum, last_daynum, habit_ids, null);
+	for (var h = 0; h < habit_ids.size(); h += 1) {
+		var h_id = habit_ids[h];
+		habit_data[h_id] = new_data[h_id];
+	}
+	return habit_data;
+}
 
+// Save habit data array
 function SaveHabitData(save_data) {
 	var start_daynum = save_data["__DAYNUM_INTERVAL__"][0];
 	var last_daynum = save_data["__DAYNUM_INTERVAL__"][1];
-	print(save_data);
-	print((save_data == null));
 	SaveLoadHabitData(start_daynum, last_daynum, active_habits, save_data);
 }
 
@@ -173,9 +178,6 @@ function change_datum(item_idx) {
 	var coords = item_to_coords(item_idx);
 	var selected_day_idx = coords[0];
 	var selected_habit_idx = coords[1];
-	
-	System.println(selected_day_idx);
-	System.println(selected_habit_idx);
 	
 	var selected_habit_id = active_habits[selected_habit_idx];
 	var type = habit_metadata[selected_habit_id]["Type"];

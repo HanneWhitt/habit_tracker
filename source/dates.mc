@@ -21,7 +21,7 @@ function daysInMonth(month, year) {
 			} else if (contains(["Jan", "Mar", "May", "Jul", "Aug", "Oct", "Dec"], month)) {
 				return 31;
 			} else {
-				throw new InvalidValueException("daysInMonth() got month arg with unexpected value '" + month + "'");
+				throw new Lang.InvalidValueException("daysInMonth() got month arg with unexpected value '" + month + "'");
 			}
 		}
 	}
@@ -123,7 +123,7 @@ function getTime(time_difference) {
 
 	var now = Gregorian.info(time, Time.FORMAT_MEDIUM);
 	var days_in_month = daysInMonth(now.month, now.year);
-	var monthnum_today = __MONTH_NAMES__.indexOf(now.month);
+	var monthnum_today = __MONTH_NAMES__.indexOf(now.month) + 1;
 	var daynum_today = dayNumber(now.day, monthnum_today, now.year);
 	var time_info = {"day" => now.day, 
 		"day_of_week" => now.day_of_week,
@@ -155,9 +155,7 @@ function month_day_string(day) {
 
 function abbreviate_weekday(day_of_week) {
 	var char_array = day_of_week.toCharArray();
-	print(char_array);
 	var abbreviation = char_array[0].toString();
-	print(abbreviation);
 	
 	if (abbreviation.equals("T")) {
 		abbreviation = "T" + char_array[1].toString();

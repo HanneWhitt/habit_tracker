@@ -36,6 +36,5 @@ class TypingDelegate extends WatchUi.TextPickerDelegate {
     }
 
     function onCancel() {
-        print("Canceled");
     }
 }

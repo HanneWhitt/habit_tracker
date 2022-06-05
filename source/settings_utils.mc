@@ -18,11 +18,10 @@ var sectorDisplay;
 
 var all_habits;
 
-
+var wipe_data_str = "__FIRST_USE_V6_DAYNUM__";
 
 function is_first_use() {
-	System.println(Application.Storage.getValue("__FIRST_USE_DAYNUM__"));
-	first_use_bool = (Application.Storage.getValue("__FIRST_USE_DAYNUM__") == null);
+	first_use_bool = (Application.Storage.getValue(wipe_data_str) == null);
 	if (first_use_bool) {
 			System.println("THIS IS FIRST USE OF APPLICATION");
 	}
@@ -45,7 +44,7 @@ function first_time_setup() {
 	System.println(first_use_time_info);
 	
 	// Set first use date
-	Application.Storage.setValue("__FIRST_USE_DAYNUM__", first_use_time_info["day_num"]);
+	Application.Storage.setValue(wipe_data_str, first_use_time_info["day_num"]);
 	
 	// First possible date to record data is 1st Jan, at least one year before first use date
 	data_start_daynum = dayNumber(1, 1, first_use_time_info["year"] - 1);	
@@ -55,33 +54,11 @@ function first_time_setup() {
 	// Set up default user settings values from json file
 	var userDefaults = WatchUi.loadResource(Rez.JsonData.userDefaults);
 	for (var entry_idx = 0; entry_idx < userDefaults.size(); entry_idx += 1) {
-		System.println(userDefaults.keys()[entry_idx]);
 		Application.Storage.setValue(userDefaults.keys()[entry_idx], userDefaults.values()[entry_idx]);
 	}
 
 }
 
-
-
-
-
-// function set_up_new_habit(new_habit_dict) {
-	
-// 	System.println("SETTING UP HABIT:");
-// 	System.println(name);
-
-// 	var next_hab_idx = Application.Storage.getValue("__NEXT_HABIT_INDEX__");
-// 	var new_hab_id = habit_ID_from_idx(next_hab_idx);
-// 	var new_habit_dict = {"Name"=> name, "Abbreviation" => abbreviation, "Type" => type, "Colours" => colours};
-// 	Application.Storage.setValue(new_hab_id, new_habit_dict);
-// 	Application.Storage.setValue("__NEXT_HABIT_INDEX__", next_hab_idx + 1);
-	
-// 	// Update "ALL" and "ACTIVE" habit lists on disk and active_habits in memory
-//   	active_habits = active_habits.add(new_hab_id);
-//   	Application.Storage.setValue("__ACTIVE_HABITS__", active_habits);
-// 	Application.Storage.setValue("__ALL_HABITS__", Application.Storage.getValue("__ALL_HABITS__").add(new_hab_id));
-	
-// }
 
 // A function to load settings which are qualities of the device. We only support fr645m for the moment. 
 function refreshFixedSettings() {

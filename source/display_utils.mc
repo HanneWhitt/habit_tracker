@@ -6,6 +6,12 @@ using Toybox.Math;
 var colour_scheme;
 
 
+function clearScreen(dc) {
+	dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_WHITE);
+	dc.clear();
+}
+
+
 function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
 	dc.setColor(colour, colour);
 	var width = endrad - startrad;
@@ -76,10 +82,10 @@ class sectorDisplayer {
 		self.half_radius = (self.screen_radius + self.min_radius)/2;
 		self.day_degrees = (fixedDisplaySettings["max_display_degrees"] - fixedDisplaySettings["min_display_degrees"] - (n_days - 1)*fixedDisplaySettings["gap_degrees"])/n_days;
 		self.radius_increment = (screen_radius - self.min_radius)/n_habits;
-		self.indices_to_start();
+		reset_selection_vars()
 	}
 
-	function indices_to_start() {
+	function reset_selection_vars() {
 		self.item_idx = 0;
 		self.previous_item_idx = null;
 		self.day_idx = n_days - 1;
@@ -147,6 +153,8 @@ class sectorDisplayer {
 	// Display habit data only - initial view screen.
 	function display_habit_data(dc, habit_data) {
 		
+		clearScreen(dc);
+
 		for (var h = 0; h < n_habits; h += 1) {
 		
 			for (var d = 0; d < n_days; d += 1) {
@@ -158,11 +166,10 @@ class sectorDisplayer {
 
 	}
 
-	function display_habit_data_animated(dc, habit_data) {
+	function display_habit_data_animated(dc, habit_data, add_selection) {
 
 		if (self.animation_item_idx == 0) {
-			dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_WHITE);
-			dc.clear();
+			clearScreen(dc);
 		}
 
 		if (self.animation_item_idx < total_items - 1) {
@@ -172,13 +179,19 @@ class sectorDisplayer {
 				self.get_data_plot_sector(dc, habit_data, coords[0], coords[1], false);
 				self.animation_item_idx += 1;
 			}
-
 			WatchUi.requestUpdate();
+
 			return false;
 
 		} else {
+
+			if (add_selection) {
+				self.update_selection_and_labelling(dc, habit_data);
+			}
+
 			return true;
 		}
+		
 
 	}
 
@@ -266,7 +279,7 @@ class sectorDisplayer {
 
 
 	// Remove the old selection elements, then add the new ones
-	function update_selection_and_labelling(dc, habit_data, time_info) {
+	function update_selection_and_labelling(dc, habit_data) {
 
 		update_day_label = true;
 		update_habit_label = true;
@@ -321,6 +334,10 @@ class sectorDisplayer {
 			true,
 			false
 		);
+
+		reset_selection_vars();
+
+		print("clear_selection_and_labelling ran");
 
 	}
 

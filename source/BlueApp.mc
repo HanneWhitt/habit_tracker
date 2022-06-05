@@ -41,16 +41,13 @@ class BlueApp extends Application.AppBase {
 		if (first_use) {
 			first_time_setup();
 		}
-		
+
 		// A function to load app-wide settings/set variables not available to the user
 		refreshFixedSettings();
     	
     	//  A function to load app-wide settings/set variables based on settings which 
     	// will be available to the user
     	refreshUserSettings();
-    	
-    	carousel_view = new DataViewInitial();
-    	carousel_delegate = new DataViewInitialDelegate();
 
 		selection_view_up = false;
 		settings_menu_up = false;
@@ -66,7 +63,8 @@ class BlueApp extends Application.AppBase {
 	// @return [Array] An array containing
 	// [ WatchUi.View, WatchUi.InputDelegate (optional) ]
     function getInitialView() {
-		
+    	carousel_view = new DataViewInitial();
+    	carousel_delegate = new DataViewInitialDelegate();
         return [ carousel_view, carousel_delegate ];
     }
     
@@ -79,7 +77,7 @@ class BlueApp extends Application.AppBase {
 	// If the application needs to save state to the object store it should be
 	// done in this function.
     function onStop(state) {
-		SaveHabitData(current_data);    
+		SaveHabitData(current_data);
     }
 
 }

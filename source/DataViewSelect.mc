@@ -16,8 +16,6 @@ class DataViewSelect extends WatchUi.View {
 
     // Load your resources here
     function onLayout(dc) {
-       dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
-//		dc.clear();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -25,7 +23,6 @@ class DataViewSelect extends WatchUi.View {
     // loading resources into memory.
     function onShow() {
     	// Set item indexes back to start whenever the view brought to foreground
-        sectorDisplay.indices_to_start();
 	   	// Refresh current daynum
     	current_time = getTime(null);
     	current_daynum = current_time["day_num"];
@@ -38,12 +35,15 @@ class DataViewSelect extends WatchUi.View {
     	
 		// If the settings menu was just up, we need to replot all the data
 		if (settings_menu_up) {
-			animation_complete = sectorDisplay.display_habit_data_animated(dc, current_data);
-			if (animation_complete) {
-				settings_menu_up = false;
-			}
+			settings_menu_up = false;
+			animation_complete = false;
+			sectorDisplay.animation_item_idx = 0;
+		}
+
+		if (animation_complete) {
+			sectorDisplay.update_selection_and_labelling(dc, current_data);	
 		} else {
-			sectorDisplay.update_selection_and_labelling(dc, current_data, current_time);	
+			animation_complete = sectorDisplay.display_habit_data_animated(dc, current_data, true);
 		}
 
 		// MIDNIGHT EDGE CASE
@@ -62,8 +62,6 @@ class DataViewSelect extends WatchUi.View {
     // memory.
     function onHide() {
     
-    	System.println(current_data);
-
     }
 	
 }
@@ -84,27 +82,28 @@ class DataViewSelectDelegate extends WatchUi.InputDelegate {
     	
     	if (key == up_key) {
     		sectorDisplay.up();
+			WatchUi.requestUpdate();
     	} else if (key == down_key) {
     		sectorDisplay.down();
+			WatchUi.requestUpdate();
     	} else if (key == start_key) {
 			if (sectorDisplay.is_showing_settings()) {
-				settings_menu_up = true;
 				WatchUi.pushView(new SettingsMain(), new SettingsMainDelegate(), 1);
+				settings_menu_up = true;
 			} else {
 				self.response_code = change_datum(sectorDisplay.item_idx);
     			respond(self.response_code);
+				WatchUi.requestUpdate();
 			}
     	} else if (key == back_key) {
 			if (sectorDisplay.is_showing_settings()) {
 				sectorDisplay.up();
+				WatchUi.requestUpdate();
 			} else {
 				WatchUi.popView(2);
 			}
     	}
-    	
-    	System.println(response_code);
-    	    	
-        WatchUi.requestUpdate();
+    	    	    	
         return true;
     }
 }

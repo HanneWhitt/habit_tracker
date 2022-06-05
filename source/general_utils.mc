@@ -38,15 +38,12 @@ function vibrate_with_delay(delay_ms, vibration_ms) {
 	        new Attention.VibeProfile(50, vibration_ms),  // On for 0.7s
 	    ];
 	    Attention.vibrate(vibeData);
-	    System.println("Watch Vibrated");
 	}
 }
 
 // Vibration, sounds, or other ways that the watch responds to the user momentarily, without changing data 
 function respond(response_code) {
-	System.println(response_code);
 	if (response_code.equals("None")) {
-		System.println("No response");
 	} else if (response_code.equals("vibrate")) {
 		vibrate_with_delay(300, 700);
 	} else {

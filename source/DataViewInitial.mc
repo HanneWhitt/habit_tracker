@@ -9,7 +9,7 @@ var current_data;
 
 var screen_radius;
 
-var animation_complete;
+var animation_complete = false;
 
 
 class DataViewInitial extends WatchUi.View {
@@ -17,7 +17,6 @@ class DataViewInitial extends WatchUi.View {
 
     function initialize() {
         View.initialize();
-		just_shown = true;
     }
 
     // Load your resources here
@@ -33,9 +32,8 @@ class DataViewInitial extends WatchUi.View {
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
-    protected var just_shown;
     function onShow() {  	
-		
+
     }
 
     // Update the view
@@ -43,15 +41,13 @@ class DataViewInitial extends WatchUi.View {
 		
 		if (selection_view_up) {
 			sectorDisplay.clear_selection_and_labelling(dc, current_data);
+			animation_complete = true;
 			selection_view_up = false;
 		}
 
-		if (just_shown) {
+		if (!animation_complete) {
 			// Show data with no selection, no date, no habit names displayed
-			animation_complete = sectorDisplay.display_habit_data_animated(dc, current_data);
-			if (animation_complete) {
-				just_shown = false;
-			}
+			animation_complete = sectorDisplay.display_habit_data_animated(dc, current_data, false);
 		}
 
 		// MIDNIGHT EDGE CASE

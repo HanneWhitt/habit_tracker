@@ -34,7 +34,6 @@ class SettingsMainDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onSelect(item) {
-        print(item.getId());
         habit_menu_view = new HabitMenu();
         habit_menu_delegate = new HabitMenuDelegate();
         if (item.getId().equals("Habits")) {
@@ -43,6 +42,7 @@ class SettingsMainDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onBack() {
+        sectorDisplay = new sectorDisplayer(userDisplaySettings["shape"]);
         WatchUi.popView(2);
     }
 }
@@ -130,6 +130,9 @@ class HabitMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onBack() {
+        // Update disk versions of all_habits, active habits
+        Application.Storage.setValue("__ALL_HABITS__", all_habits);
+        Application.Storage.setValue("__ACTIVE_HABITS__", active_habits);
         WatchUi.popView(2);
     }
 }
@@ -153,7 +156,7 @@ class SingleHabitSettings extends WatchUi.Menu2 {
             shs_hab_id = hab_id;
             shs_hab_meta = habit_metadata[hab_id];
             Menu2.initialize({:title=>shs_hab_meta["Name"]});
-            shs_hab_is_active_bool = contains(active_habits, shs_hab_meta["Name"]);
+            shs_hab_is_active_bool = contains(active_habits, shs_hab_id);
             self.addItem(
                 new ToggleMenuItem(
                     "Status",
@@ -263,12 +266,18 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
             all_habits.add(shs_hab_id);
             next_new_hab_idx += 1;
             Application.Storage.setValue("__NEXT_NEW_HABIT_INDEX__", next_new_hab_idx);
+            n_habits = active_habits.size();
+            total_items = n_days*n_habits + 1;
+            current_data = addBlankHabitData(current_data, shs_hab_id);
+            editing_idx = habit_menu_view.menu_length - 2;
         } else {
             // Updating old one
             editing_item = habit_menu_view.getItem(editing_idx);
             editing_item.setLabel(shs_hab_meta["Name"]);
             habit_menu_view.updateItem(editing_item, editing_idx);
         }
+
+        habit_menu_view.setFocus(editing_idx);
 
         WatchUi.popView(2);
     }
