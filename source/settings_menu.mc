@@ -220,12 +220,17 @@ class SingleHabitSettings extends WatchUi.Menu2 {
 
 class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
     
+    protected var original_hab_is_active_bool;
+
     function initialize() {
         Menu2InputDelegate.initialize();
+        original_hab_is_active_bool = shs_hab_is_active_bool;
     }
 
     function onSelect(item) {
-        if (item.getId().equals("Name")) {
+        if (item.getId().equals("Status")) {
+            shs_hab_is_active_bool = item.isEnabled();
+        } else if (item.getId().equals("Name")) {
             WatchUi.pushView(
                 new WatchUi.TextPicker(shs_hab_meta["Name"]),
                 new TypingDelegate("Name"),
@@ -247,6 +252,7 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onBack() {
+
         // Update/Create entry in habit_metadata for this item
         habit_metadata[shs_hab_id] = shs_hab_meta;
 
@@ -274,7 +280,28 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
             // Updating old one
             editing_item = habit_menu_view.getItem(editing_idx);
             editing_item.setLabel(shs_hab_meta["Name"]);
+
+            // Change status 
+            if (original_hab_is_active_bool != shs_hab_is_active_bool) {
+                if (shs_hab_is_active_bool) {
+                    editing_item.setSubLabel("Active");
+                    active_habits.add(shs_hab_id);
+                    n_habits = n_habits + 1;
+                    total_items = total_items + n_days;
+                    current_data = addHabitData(current_data, [shs_hab_id]);
+                } else {
+                    editing_item.setSubLabel("Inactive");
+                    active_habits.remove(shs_hab_id);
+                    n_habits = n_habits - 1;
+                    total_items = total_items - n_days;
+                    SaveHabitData(current_data, [shs_hab_id]);
+                    current_data.remove(shs_hab_id);
+                }
+            }
+
             habit_menu_view.updateItem(editing_item, editing_idx);
+
+
         }
 
         habit_menu_view.setFocus(editing_idx);

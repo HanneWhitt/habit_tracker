@@ -61,7 +61,7 @@ class DataViewSelect extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
-    
+		SaveHabitData(current_data, active_habits);
     }
 	
 }

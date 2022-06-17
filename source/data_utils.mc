@@ -165,10 +165,10 @@ function addHabitData(habit_data, habit_ids) {
 }
 
 // Save habit data array
-function SaveHabitData(save_data) {
+function SaveHabitData(save_data, habit_ids) {
 	var start_daynum = save_data["__DAYNUM_INTERVAL__"][0];
 	var last_daynum = save_data["__DAYNUM_INTERVAL__"][1];
-	SaveLoadHabitData(start_daynum, last_daynum, active_habits, save_data);
+	SaveLoadHabitData(start_daynum, last_daynum, habit_ids, save_data);
 }
 
 

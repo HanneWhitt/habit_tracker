@@ -82,7 +82,7 @@ class sectorDisplayer {
 		self.half_radius = (self.screen_radius + self.min_radius)/2;
 		self.day_degrees = (fixedDisplaySettings["max_display_degrees"] - fixedDisplaySettings["min_display_degrees"] - (n_days - 1)*fixedDisplaySettings["gap_degrees"])/n_days;
 		self.radius_increment = (screen_radius - self.min_radius)/n_habits;
-		reset_selection_vars()
+		reset_selection_vars();
 	}
 
 	function reset_selection_vars() {
