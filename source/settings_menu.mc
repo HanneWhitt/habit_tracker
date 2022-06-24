@@ -204,14 +204,25 @@ class SingleHabitSettings extends WatchUi.Menu2 {
             )
         );
 
-        self.addItem(
-            new MenuItem(
-                "Delete",
-                null,
-                "Delete",
-                {}
-            )
-        );
+        if (hab_id.equals("Add new")) {
+            self.addItem(
+                new MenuItem(
+                    "Cancel",
+                    null,
+                    "Cancel",
+                    {}
+                )
+            );
+        } else {
+            self.addItem(
+                new MenuItem(
+                    "Delete",
+                    null,
+                    "Delete",
+                    {}
+                )
+            );
+        }
 
 	}
 }
@@ -242,10 +253,15 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
                 new TypingDelegate("Abbreviation"),
                 2
             );
+        } else if (item.getId().equals("Cancel")) {
+            // Don't change anything; just pop back to the previous view
+            WatchUi.popView(2);
         } else if (item.getId().equals("Delete")) {
+            // Push deletion confirmation view
+            var message = "Delete " + shs_hab_meta["Name"] + "?";
             WatchUi.pushView(
-                new WatchUi.TextPicker(shs_hab_meta["Abbreviation"]),
-                new TypingDelegate("Abbreviation"),
+                new WatchUi.Confirmation(message),
+                new DeletionConfirmationDelegate(shs_hab_id),
                 2
             );
         }
@@ -300,7 +316,6 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
             }
 
             habit_menu_view.updateItem(editing_item, editing_idx);
-
 
         }
 

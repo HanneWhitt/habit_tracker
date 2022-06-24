@@ -25,6 +25,7 @@ function is_first_use() {
 	if (first_use_bool) {
 			System.println("THIS IS FIRST USE OF APPLICATION");
 	}
+
 	return first_use_bool;
 }
 

@@ -38,3 +38,47 @@ class TypingDelegate extends WatchUi.TextPickerDelegate {
     function onCancel() {
     }
 }
+
+
+class DeletionConfirmationDelegate extends WatchUi.ConfirmationDelegate {
+    
+    protected var habit_id;
+
+    function initialize(habit_id) {
+        ConfirmationDelegate.initialize();
+        self.habit_id = habit_id;
+    }
+
+    function onResponse(response) {
+        if (response == WatchUi.CONFIRM_NO) {
+            System.println("Cancel");
+        } else {
+            
+            // Steps occuring regardless of whether habit is active
+            habit_metadata.remove(self.habit_id);
+            all_habits.remove(self.habit_id);
+
+            // If habit was currently active
+            if (contains(active_habits, self.habit_id)) {
+                active_habits.remove(self.habit_id);
+                current_data.remove(self.habit_id);
+                n_habits = n_habits - 1;
+                total_items = total_items - n_days;
+            }
+
+            // Delete habit data on disk
+            Application.Storage.deleteValue(self.habit_id);
+            var data_start_year = Application.Storage.getValue("__DATA_START_YEAR__");
+            for (var y = data_start_year; y <= current_time["year"] + 1; y += 1) {
+                var storage_key = getStorageKey(self.habit_id, y);
+                Application.Storage.deleteValue(storage_key);
+            }
+
+            // Update habit list view
+            editing_idx = habit_menu_view.findItemById(self.habit_id);
+            habit_menu_view.deleteItem(editing_idx);
+
+            WatchUi.popView(2);
+        }
+    }
+}
