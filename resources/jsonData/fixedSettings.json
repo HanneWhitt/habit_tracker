@@ -1,16 +1,33 @@
 {
     "Colour Schemes": {
-	    "Blue": {
-	        "unselected": {
-	            "Yes": 255, 
-	            "No": 43775, 
-	            "No data": 11184810
-	        },
-	        "selected": {
-	            "Yes": 43520,
-	            "No": 65280,
-	            "No data": 65280
-	        }
-	    }
+		"Defaults": {
+			"Binary": "Blue"
+		},
+		"Binary": {
+			"Blue": {
+				"unselected": {
+					"Yes": 255, 
+					"No": 43775, 
+					"No data": 11184810
+				},
+				"selected": {
+					"Yes": 43520,
+					"No": 65280,
+					"No data": 65280
+				}
+			},
+			"Orange": {
+				"unselected": {
+					"Yes": 16282135, 
+					"No": 15569155, 
+					"No data": 11184810
+				},
+				"selected": {
+					"Yes": 43520,
+					"No": 65280,
+					"No data": 65280
+				}
+			}
+		}
     }
 }

@@ -3,7 +3,6 @@ using Toybox.System;
 using Toybox.Lang;
 using Toybox.Math;
 
-var colour_scheme;
 
 
 function clearScreen(dc) {
@@ -446,11 +445,11 @@ function get_colour(habit_id, datum, selected) {
 		}
 		
 		if (selected) {
-			return colour_scheme[habit_colours]["selected"][datum];
+			return colour_scheme[type][habit_colours]["selected"][datum];
 		} else {
-			return colour_scheme[habit_colours]["unselected"][datum];
+			return colour_scheme[type][habit_colours]["unselected"][datum];
 		}
-						
+	
 	} else {
 		throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
 	}

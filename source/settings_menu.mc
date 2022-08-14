@@ -253,6 +253,14 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
                 new TypingDelegate("Abbreviation"),
                 2
             );
+        } else if (item.getId().equals("Colours")) {
+            var colour_menu = new ColourMenu(shs_hab_id);
+            var colour_menu_delegate = new ColourMenuDelegate();
+            WatchUi.pushView(
+                colour_menu,
+                colour_menu_delegate,
+                2
+            );
         } else if (item.getId().equals("Cancel")) {
             // Don't change anything; just pop back to the previous view
             WatchUi.popView(2);

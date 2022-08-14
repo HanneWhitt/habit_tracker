@@ -8,6 +8,7 @@ var first_use_bool;
 var first_use_time_info;
 var n_uses;
 var next_new_hab_idx;
+var colour_scheme;
 
 
 // General
@@ -109,22 +110,17 @@ function refreshUserSettings() {
   	
   	// Habit metadata
   	habit_metadata = {};
-  	colour_scheme = {};
   	var habit_id;
   	var habit_meta;
-  	var habit_colours;
   	
-  	var colour_schemes = WatchUi.loadResource(Rez.JsonData.fixedSettings)["Colour Schemes"];
+  	colour_scheme = WatchUi.loadResource(Rez.JsonData.fixedSettings)["Colour Schemes"];
   	
   	for (var h = 0; h < all_habits.size(); h += 1) {
   	
   		habit_id = self.all_habits[h];
   		
   		habit_meta = Application.Storage.getValue(habit_id);
-		self.habit_metadata[habit_id] = habit_meta;
-		
-		habit_colours = habit_meta["Colours"];
-		self.colour_scheme[habit_colours] = colour_schemes[habit_colours];
+		self.habit_metadata[habit_id] = habit_meta;		
 	}
 	
 	sectorDisplay = new sectorDisplayer(userDisplaySettings["shape"]);
