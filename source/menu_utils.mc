@@ -91,10 +91,8 @@ class ColourMenu extends WatchUi.CustomMenu {
     public var current_colour;
     private var type;
 
-    function initialize(hab_id) {
+    function initialize() {
         
-        print("EVERYTHING IS FINE");
-
         CustomMenu.initialize(
             60,
             Graphics.COLOR_WHITE,
@@ -103,11 +101,11 @@ class ColourMenu extends WatchUi.CustomMenu {
 
         current_colour = shs_hab_meta["Colours"];
         type = shs_hab_meta["Type"];
-        available_colours = colour_scheme[type];
+        available_colours = colour_scheme[type]["ordering"];
         
-        for (var c = 0; c < available_colours.keys().size(); c += 1) {
+        for (var c = 0; c < available_colours.size(); c += 1) {
 
-            var colour = available_colours.keys()[c];
+            var colour = available_colours[c];
 
             print(colour);
 
@@ -124,7 +122,13 @@ class ColourMenu extends WatchUi.CustomMenu {
     function drawTitle(dc) {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
-        dc.drawText(dc.getWidth()/2, dc.getHeight()/2, Graphics.FONT_XTINY, "Custom Title", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(
+            dc.getWidth()/2,
+            dc.getHeight()/2,
+            Graphics.FONT_XTINY,
+            "Colours",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
     }
 
     function drawFooter(dc) {
@@ -146,19 +150,19 @@ class ColourMenuItem extends WatchUi.CustomMenuItem {
         CustomMenuItem.initialize(_colour, {});
         colour = _colour;
         type = _type;
-        item_scheme = colour_scheme[type][colour];
+        item_scheme = colour_scheme[type]["colours"][colour];
     }
 
     function draw(dc) {
 
         if (type.equals("Binary")) {
+
+            circle(dc, dc.getWidth()/2, dc.getHeight()/2, 40, item_scheme["unselected"]["Yes"]);
+
             dc.setColor(
-                item_scheme["unselected"]["Yes"],
+                Graphics.COLOR_BLACK,
                 Graphics.COLOR_WHITE
             );
-            dc.clear();
-            dc.setPenWidth(dc.getHeight()/2);
-            dc.drawCircle(dc.getWidth()/2, dc.getHeight()/2, dc.getHeight()/5);
             dc.setPenWidth(1);
             dc.drawLine(0, 0, dc.getWidth(), 0);
             dc.drawLine(0, dc.getHeight() - 1, dc.getWidth(), dc.getHeight() - 1);
@@ -174,6 +178,7 @@ class ColourMenuDelegate extends WatchUi.Menu2InputDelegate {
 
     function initialize() {
         Menu2InputDelegate.initialize();
+        selected_colour = shs_hab_meta["Colours"];
     }
 
     function onSelect(item) {

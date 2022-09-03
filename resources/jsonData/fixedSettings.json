@@ -1,31 +1,178 @@
 {
     "Colour Schemes": {
-		"Defaults": {
-			"Binary": "Blue"
-		},
 		"Binary": {
-			"Blue": {
-				"unselected": {
-					"Yes": 255, 
-					"No": 43775, 
-					"No data": 11184810
+			"default": "Original",
+			"ordering": [
+				"Original",
+				"Red",
+				"Orange",
+				"Yellow",
+				"Chartreuse",
+				"Green",
+				"Spring Green",
+				"Cyan",
+				"Azure",
+				"Blue",
+				"Violet",
+				"Magenta",
+				"Rose"
+			],
+			"colours": {
+				"Original": {
+					"unselected": {
+						"Yes": 255,
+						"No": 43775,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
 				},
-				"selected": {
-					"Yes": 43520,
-					"No": 65280,
-					"No data": 65280
-				}
-			},
-			"Orange": {
-				"unselected": {
-					"Yes": 16282135, 
-					"No": 15569155, 
-					"No data": 11184810
+				"Red": {
+					"unselected": {
+						"Yes": 16711680,
+						"No": 16754856,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
 				},
-				"selected": {
-					"Yes": 43520,
-					"No": 65280,
-					"No data": 65280
+				"Orange": {
+					"unselected": {
+						"Yes": 16744448,
+						"No": 16766120,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Yellow": {
+					"unselected": {
+						"Yes": 16776960,
+						"No": 16777128,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Chartreuse": {
+					"unselected": {
+						"Yes": 8453888,
+						"No": 13959080,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Green": {
+					"unselected": {
+						"Yes": 65280,
+						"No": 11075496,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Spring Green": {
+					"unselected": {
+						"Yes": 65408,
+						"No": 11075540,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Cyan": {
+					"unselected": {
+						"Yes": 65535,
+						"No": 11075583,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Azure": {
+					"unselected": {
+						"Yes": 33023,
+						"No": 11064575,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Blue": {
+					"unselected": {
+						"Yes": 255,
+						"No": 11053311,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Violet": {
+					"unselected": {
+						"Yes": 8388863,
+						"No": 13936895,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Magenta": {
+					"unselected": {
+						"Yes": 16711935,
+						"No": 16754943,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
+				},
+				"Rose": {
+					"unselected": {
+						"Yes": 16711808,
+						"No": 16754900,
+						"No data": 13948116
+					},
+					"selected": {
+						"Yes": 43520,
+						"No": 65280,
+						"No data": 65280
+					}
 				}
 			}
 		}

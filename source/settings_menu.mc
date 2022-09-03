@@ -254,7 +254,7 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
                 2
             );
         } else if (item.getId().equals("Colours")) {
-            var colour_menu = new ColourMenu(shs_hab_id);
+            var colour_menu = new ColourMenu();
             var colour_menu_delegate = new ColourMenuDelegate();
             WatchUi.pushView(
                 colour_menu,

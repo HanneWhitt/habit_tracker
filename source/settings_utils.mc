@@ -37,7 +37,7 @@ function first_time_setup() {
 	System.println("FIRST TIME SET UP");
 	
 	// Remove anything hanging around from e.g an old install or previous version
-	Application.Storage.clearValues();
+	// Application.Storage.clearValues();
 
 	// First time date info
 	first_use_time_info = getTime(null);

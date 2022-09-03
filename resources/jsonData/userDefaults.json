@@ -11,13 +11,17 @@
 		"Name": "Habit1",
 		"Abbreviation": "H1",
 		"Type": "Binary", 
-		"Colours": "Blue"
+		"Colours": "Blue",
+		"frequency_type": "daily",
+		"frequency_value": [0, 1, 3, 5, 6]
 	},
 	"habit_1": {
 		"Name": "Habit2",
 		"Abbreviation": "H2",
 		"Type": "Binary", 
-		"Colours": "Blue"
+		"Colours": "Blue",
+		"frequency_type": "weekly",
+		"frequency_value": 5
 	},
 	"__NEXT_NEW_HABIT_INDEX__": 2,
 	"__N_USES__": 0,

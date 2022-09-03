@@ -26,7 +26,7 @@ function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
 }
 
 
-function indicator(dc, x, y, r, colour) {
+function circle(dc, x, y, r, colour) {
 	dc.setColor(colour, colour);
 	dc.setPenWidth(r);
     dc.drawCircle(x, y, 0);
@@ -385,7 +385,7 @@ class sectorDisplayer {
 		x_pos = self.screen_radius - hyp*Math.sin(ang);
 		y_pos = self.screen_radius - hyp*Math.cos(ang);
 		
-		indicator(dc, x_pos, y_pos, 5, colour);
+		circle(dc, x_pos, y_pos, 5, colour);
 
 	}
 
@@ -397,7 +397,7 @@ class sectorDisplayer {
 		max_rad = self.min_radius + (h + 1)*self.radius_increment - fixedDisplaySettings["gap_radius"];
 		y_pos = self.screen_radius - (max_rad + min_rad)/2;
 		
-		indicator(dc, x_pos, y_pos, 5, colour);
+		circle(dc, x_pos, y_pos, 5, colour);
 
 	}
 
@@ -445,9 +445,9 @@ function get_colour(habit_id, datum, selected) {
 		}
 		
 		if (selected) {
-			return colour_scheme[type][habit_colours]["selected"][datum];
+			return colour_scheme[type]["colours"][habit_colours]["selected"][datum];
 		} else {
-			return colour_scheme[type][habit_colours]["unselected"][datum];
+			return colour_scheme[type]["colours"][habit_colours]["unselected"][datum];
 		}
 	
 	} else {
