@@ -6,6 +6,39 @@ using Toybox.Lang;
 var __MONTH_NAMES__ = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var __DAYS_OF_WEEK__ = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
+var __LONG_WEEKDAYS__ = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+var __SHORT_WEEKDAYS__ = ["M", "Tu", "W", "Th", "F", "Sa", "Su"];
+
+
+function frequency_text(frequency_type, frequency_value) {
+    var text = "";
+    if (frequency_type.equals("daily")) {
+        if (frequency_value.size() == 1) {
+			return __LONG_WEEKDAYS__[frequency_value[0]] + "s";
+        } else if (frequency_value.size() == 2 or frequency_value.size() == 3) {
+			for (var i = 0; i < frequency_value.size(); i += 1) {
+				text += __DAYS_OF_WEEK__[frequency_value[i]] + ", ";
+			}
+			if (text.equals("Sat, Sun, ")) {
+				return "Weekends";
+			} else {
+				return text.substring(0, text.length() - 2);
+			}
+		} else {
+			for (var i = 0; i < frequency_value.size(); i += 1) {
+				text += __SHORT_WEEKDAYS__[frequency_value[i]] + ", ";
+			}
+			if (text.equals("M, Tu, W, Th, F, Sa, Su, ")) {
+				return "Daily";
+			} else if (text.equals("M, Tu, W, Th, F, ")) {
+				return "Weekdays";
+			} else {
+				return text.substring(0, text.length() - 2);
+			}
+		}
+    }
+}
+
 
 function daysInMonth(month, year) {
 		if (month.equals("Feb")) {
@@ -26,6 +59,7 @@ function daysInMonth(month, year) {
 		}
 	}
 
+
 function daysInYear(year) {
 	if (year % 4 == 0) {
 		return 366;
@@ -33,6 +67,7 @@ function daysInYear(year) {
 		return 365;
 	}
 }
+
 
 // function to calculate the number of days since Dec 31st 2019. Used as a simpler language for dates internally
 function dayNumber(day, month, year) {
@@ -68,13 +103,24 @@ function dayNumber(day, month, year) {
 		throw new InvalidValueException("day value submitted to dayNumber() larger than number of days in month");
 	}
 	if (month < 1) {
-		throw new InvalidValueException("day value less than 1 submitted to dayNumber()");
+		throw new Lang.InvalidValueException("day value less than 1 submitted to dayNumber()");
 	}
 	
 	days_since_31122019 += day;
 	
 	return days_since_31122019;
 	
+}
+
+
+function weekday_number_from_daynum(daynum) {
+	
+	if (daynum <= 0) {
+		throw new InvalidValueException("daynum must be >0");
+	}
+
+	return (daynum + 1) % 7;
+
 }
 
 
@@ -156,7 +202,6 @@ function month_day_string(day) {
 function abbreviate_weekday(day_of_week) {
 	var char_array = day_of_week.toCharArray();
 	var abbreviation = char_array[0].toString();
-	
 	if (abbreviation.equals("T")) {
 		abbreviation = "T" + char_array[1].toString();
 	} else if (abbreviation.equals("S")) {

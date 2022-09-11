@@ -11,18 +11,36 @@ function clearScreen(dc) {
 }
 
 
+
 function annulusSector(dc, startdeg, enddeg, startrad, endrad, colour) {
 	dc.setColor(colour, colour);
 	var width = endrad - startrad;
     dc.setPenWidth(width);
+
+	var center_x = dc.getWidth() / 2;
+	var center_y = dc.getHeight() / 2; 
+
+	// var rad_av = (startrad + endrad)/2;
+	// var deg_av = Math.toRadians((startdeg + enddeg)/2 - 90);
+
+	// var boxsize = 50;
+
+	// var x_min = center_x - rad_av*Math.cos(deg_av) - boxsize/2;
+	// var y_min = center_y + rad_av*Math.sin(deg_av) - boxsize/2;
+
+	// dc.setClip(x_min, y_min, boxsize, boxsize);
+
     dc.drawArc(
-	    dc.getWidth() / 2,                     
-	    dc.getHeight() / 2,       
+	    center_x,                     
+	    center_y,       
 	    startrad + width / 2,
 	    Graphics.ARC_COUNTER_CLOCKWISE,
 	    startdeg + 90,
 	    enddeg + 90
     );
+	
+	//circle(dc, x_min, y_min, 5, Graphics.COLOR_BLACK);
+
 }
 
 
@@ -68,6 +86,11 @@ class sectorDisplayer {
 	public var day_idx;
 	public var previous_day_idx;
 
+	public var temp_day_idx;
+	public var temp_hab_idx;
+	public var temp_day_num;
+	public var temp_weekday;
+
 	protected var time_info;
 	protected var previous_time_info;
 
@@ -104,6 +127,9 @@ class sectorDisplayer {
 
 
 	function plot_sector(dc, d, h, colour) {
+
+		print("GUS");
+		print(colour);
 		
 		max_deg = fixedDisplaySettings["max_display_degrees"] - d*(self.day_degrees + fixedDisplaySettings["gap_degrees"]);
 		min_deg = max_deg - self.day_degrees;
@@ -142,7 +168,11 @@ class sectorDisplayer {
 		
 		habit_id = active_habits[h];
 		datum = habit_data[habit_id][d];
-		colour = get_colour(habit_id, datum, selected);
+
+		temp_day_num = current_daynum - n_days + d + 1;
+		temp_weekday = weekday_number_from_daynum(temp_day_num);
+
+		colour = get_colour(habit_id, datum, temp_weekday, selected);
 
 		self.plot_sector(dc, d, h, colour);
 	}
@@ -165,6 +195,7 @@ class sectorDisplayer {
 
 	}
 
+	// Animated version
 	function display_habit_data_animated(dc, habit_data, add_selection) {
 
 		if (self.animation_item_idx == 0) {
@@ -178,6 +209,7 @@ class sectorDisplayer {
 				self.get_data_plot_sector(dc, habit_data, coords[0], coords[1], false);
 				self.animation_item_idx += 1;
 			}
+
 			WatchUi.requestUpdate();
 
 			return false;
@@ -268,7 +300,6 @@ class sectorDisplayer {
 				display_habit_indicator(dc, h, col);
 			}
 		}
-
 	}
 
 	protected var prev_habit_idx;
@@ -427,31 +458,39 @@ class sectorDisplayer {
 
 
 
-function get_colour(habit_id, datum, selected) {
+function get_colour(habit_id, datum, weekday, selected) {
 	
 	var type = habit_metadata[habit_id]["Type"];
 	var habit_colours = habit_metadata[habit_id]["Colours"];
+	var frequency_type = habit_metadata[habit_id]["frequency_type"];
+	var frequency_value = habit_metadata[habit_id]["frequency_value"];
+
+	if (frequency_type.equals("daily")) {
+
+		if (type.equals("Binary")) {
 		
-	if (type.equals("Binary")) {
-	
-		if (datum == 1) {
-			datum = "Yes";
-		} else if (datum == 0) {
-			datum = "No";
-		} else if (datum == null) {
-			datum = "No data";
-		} else {
-			throw new Lang.InvalidValueException("Invalid datum in storage!");
-		}
+			if (datum == 1) {
+				datum = "Yes";
+			} else if (datum == 0) {
+				datum = "No";
+			} else if (datum == null) {
+				datum = "No data";
+			} else {
+				throw new Lang.InvalidValueException("Invalid datum in storage!");
+			}
+
+			if (selected) {
+				return colour_scheme[type]["colours"][habit_colours]["selected"][datum];
+			} else {
+				if (contains(frequency_value, weekday) or (datum.equals("Yes"))) {
+					return colour_scheme[type]["colours"][habit_colours]["unselected"][datum];
+				} else {
+					return Graphics.COLOR_WHITE;
+				}
+			}
 		
-		if (selected) {
-			return colour_scheme[type]["colours"][habit_colours]["selected"][datum];
 		} else {
-			return colour_scheme[type]["colours"][habit_colours]["unselected"][datum];
+			throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
 		}
-	
-	} else {
-		throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
 	}
-	
 }

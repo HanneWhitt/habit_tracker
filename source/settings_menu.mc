@@ -197,6 +197,18 @@ class SingleHabitSettings extends WatchUi.Menu2 {
 
         self.addItem(
             new MenuItem(
+                "Frequency",
+                frequency_text(
+                    shs_hab_meta["frequency_type"],
+                    shs_hab_meta["frequency_value"]
+                ),
+                "Frequency",
+                {}
+            )
+        );
+
+        self.addItem(
+            new MenuItem(
                 "Colours",
                 shs_hab_meta["Colours"],
                 "Colours",
@@ -251,6 +263,12 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
             WatchUi.pushView(
                 new WatchUi.TextPicker(shs_hab_meta["Abbreviation"]),
                 new TypingDelegate("Abbreviation"),
+                2
+            );
+        } else if (item.getId().equals("Frequency")) {
+            WatchUi.pushView(
+                new DayToggleMenu(),
+                new DayToggleDelegate(),
                 2
             );
         } else if (item.getId().equals("Colours")) {

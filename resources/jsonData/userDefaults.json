@@ -20,8 +20,8 @@
 		"Abbreviation": "H2",
 		"Type": "Binary", 
 		"Colours": "Blue",
-		"frequency_type": "weekly",
-		"frequency_value": 5
+		"frequency_type": "daily",
+		"frequency_value": [2, 4]
 	},
 	"__NEXT_NEW_HABIT_INDEX__": 2,
 	"__N_USES__": 0,

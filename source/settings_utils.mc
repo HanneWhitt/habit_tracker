@@ -19,6 +19,7 @@ var sectorDisplay;
 
 var all_habits;
 
+
 var wipe_data_str = "__FIRST_USE_V6_DAYNUM__";
 
 function is_first_use() {
@@ -37,7 +38,7 @@ function first_time_setup() {
 	System.println("FIRST TIME SET UP");
 	
 	// Remove anything hanging around from e.g an old install or previous version
-	// Application.Storage.clearValues();
+	//Application.Storage.clearValues();
 
 	// First time date info
 	first_use_time_info = getTime(null);
@@ -84,9 +85,30 @@ function default_new_habit(idx) {
         "Name" => "Habit" + (idx + 1).toString(),
         "Abbreviation" => "H" + (idx + 1).toString(),
         "Type" => "Binary",
-        "Colours" => "Blue"
+        "Colours" => "Original",
+		"frequency_type" => "daily",
+		"frequency_value" => [0, 1, 2, 3, 4, 5, 6]
     };
 }
+
+
+function safe_load_habit_meta(habit_id) {
+	
+	var default_habit = default_new_habit(0);
+	var all_keys = default_habit.keys();
+	var key;
+	var safe_loaded_habit_meta = Application.Storage.getValue(habit_id);
+
+	for (var k = 0; k < all_keys.size(); k += 1) {
+		key = all_keys[k];
+		if (!(safe_loaded_habit_meta.hasKey(key))) {
+			safe_loaded_habit_meta[key] = default_habit[key];
+		}
+	}
+
+	return safe_loaded_habit_meta;
+}
+
 
 // A function to load general, permanent settings which depend on user preference - not the day or time. Some hard coded for dev but more could be made available to user later.
 function refreshUserSettings() {
@@ -119,7 +141,7 @@ function refreshUserSettings() {
   	
   		habit_id = self.all_habits[h];
   		
-  		habit_meta = Application.Storage.getValue(habit_id);
+  		habit_meta = safe_load_habit_meta(habit_id);
 		self.habit_metadata[habit_id] = habit_meta;		
 	}
 	

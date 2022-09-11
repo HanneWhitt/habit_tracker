@@ -9,10 +9,24 @@ function print(str) {
 
 
 function max(a, b) {
-    if (a > b) { 
-		return a;
-	} else { 
-		return b;
+	if (a instanceof Lang.Array) {
+		var max = a[0];
+		if (a.size() == 1) {
+			return max;
+		} else {
+			for (var mx = 1; mx < a.size(); mx += 1) {
+				if (a[mx] > max) {
+					max = a[mx];
+				}
+			}
+			return max;
+		}
+	} else {
+		if (a > b) { 
+			return a;
+		} else { 
+			return b;
+		}
 	}
 }
 
@@ -27,7 +41,7 @@ function min(a, b) {
 
 function contains(array, element) {
     	return array.indexOf(element) != -1;
-    }
+}
 
     
 function vibrate_with_delay(delay_ms, vibration_ms) {

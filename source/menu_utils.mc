@@ -202,3 +202,80 @@ class ColourMenuDelegate extends WatchUi.Menu2InputDelegate {
         WatchUi.popView(2);
     }
 }
+
+
+
+class DayToggleMenu extends WatchUi.Menu2 {
+
+    protected var day_name;
+    protected var day_active;
+
+    function initialize() {
+        
+        Menu2.initialize({:title=>"Habit days"});
+        
+        for (var dy = 0; dy < 7; dy += 1) {
+
+            day_name = __LONG_WEEKDAYS__[dy];
+            day_active = contains(shs_hab_meta["frequency_value"], dy);
+
+            self.addItem(
+                new ToggleMenuItem(
+                    day_name,
+                    null,
+                    day_name,
+                    day_active,
+                    {}
+                )
+            );
+        }
+	}
+}
+
+
+
+class DayToggleDelegate extends WatchUi.Menu2InputDelegate {
+    
+    protected var selected_days;
+    protected var selected_day_no;
+
+
+    function initialize() {
+        Menu2InputDelegate.initialize();
+        selected_days = shs_hab_meta["frequency_value"];
+    }
+
+    function onSelect(item) {
+        selected_day_no = __LONG_WEEKDAYS__.indexOf(item.getId());
+        if (item.isEnabled()) {
+            selected_days.add(selected_day_no);
+        } else {
+            selected_days.removeAll(selected_day_no);
+        }
+    }
+
+    function onBack() {
+
+        // Sort new days arg
+        var new_days = [];
+
+        for (var dy = 0; dy < 7; dy += 1) {
+            if (contains(selected_days, dy)) {
+                new_days.add(dy);
+            }
+        }
+
+        // Update habit metadata for habit who's setting are being edited now
+        shs_hab_meta["frequency_value"] = new_days;
+
+        // Update the SingleHabitSettings view 
+        editing_idx = single_habit_settings_view.findItemById("Frequency");
+        editing_item = single_habit_settings_view.getItem(editing_idx);
+        editing_item.setSubLabel(frequency_text("daily", new_days));
+        single_habit_settings_view.updateItem(editing_item, editing_idx);
+
+        single_habit_settings_view.setFocus(editing_idx);
+
+        WatchUi.popView(2);
+    }
+}

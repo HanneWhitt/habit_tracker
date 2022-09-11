@@ -33,7 +33,19 @@ class BlueApp extends Application.AppBase {
 	// This is where app level settings can be initialized or retrieved from
 	// the object store before the initial View is created.
     function onStart(state) {
-        			
+
+		
+		var arr = [0, 3, 3, 1, 1];
+		arr.add(2);
+		print(arr);
+		arr.removeAll(1);
+		print(arr);
+		arr.removeAll(7);
+		print(arr);
+
+
+
+
 		// Is this the first time the app has run?
 		first_use = is_first_use();
 
