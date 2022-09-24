@@ -4,11 +4,10 @@ using Toybox.Lang;
 using Toybox.Attention;
 
 
-var n_habits;
 var n_days;
 var total_items;
 
-var active_habits;
+var core_habits;
 var habit_metadata;
 
 // Key indexes 
@@ -23,7 +22,7 @@ function item_to_coords(item_idx) {
 	if (item_idx == total_items - 1 or item_idx == null) {
 		return [null, null];
 	} else if (item_idx < total_items - 1 and item_idx >= 0) {
-		return [n_days - item_idx/n_habits - 1, item_idx % n_habits]; 
+		return [n_days - item_idx/core_habits.size() - 1, item_idx % core_habits.size()]; 
 	} else {
 		var exception_string = "Invalid item_idx: " + item_idx.toString() + ". Must be in range 0 - " + (total_items - 1).toString();
 		throw new Lang.InvalidValueException(exception_string);
@@ -139,7 +138,7 @@ function SaveLoadHabitData(start_daynum, last_daynum, habit_ids, save_data) {
 // Given a daynum, load n_days of data leading up to and including that day
 function loadDaynumHabitData(habits_to_load, last_daynum) {
 	var start_daynum = last_daynum - n_days + 1;
-	return SaveLoadHabitData(start_daynum, last_daynum, active_habits, null);
+	return SaveLoadHabitData(start_daynum, last_daynum, core_habits, null);
 }
 
 // Add a new blank habit to data dict. Faster than addHabitData()- use where possible
@@ -179,7 +178,7 @@ function change_datum(item_idx) {
 	var selected_day_idx = coords[0];
 	var selected_habit_idx = coords[1];
 	
-	var selected_habit_id = active_habits[selected_habit_idx];
+	var selected_habit_id = core_habits[selected_habit_idx];
 	var type = habit_metadata[selected_habit_id]["Type"];
 	
 	var datum = current_data[selected_habit_id][selected_day_idx];

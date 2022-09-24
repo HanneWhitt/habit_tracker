@@ -410,7 +410,7 @@
 <entry field="true" id="77" symbol="shape"/>
 <entry field="true" id="87" symbol="datum"/>
 <entry field="true" id="91" symbol="selected_day_idx"/>
-<entry field="true" id="9" symbol="n_habits"/>
+<entry field="true" id="9" symbol="core_habits.size()"/>
 <entry field="true" id="68" symbol="item_idx"/>
 <entry field="true" id="44" symbol="first_use_bool"/>
 <entry field="true" id="36" symbol="current_data"/>
@@ -492,7 +492,7 @@
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry field="true" id="79" symbol="habit_idx"/>
-<entry field="true" id="12" symbol="active_habits"/>
+<entry field="true" id="12" symbol="core_habits"/>
 <entry id="56" method="true" symbol="refreshUserSettings"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry field="true" id="100" symbol="fixedSettings"/>

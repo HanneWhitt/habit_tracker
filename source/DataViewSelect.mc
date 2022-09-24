@@ -27,7 +27,7 @@ class DataViewSelect extends WatchUi.View {
     	current_time = getTime(null);
     	current_daynum = current_time["day_num"];
     	// Load the data from the last n_days
-    	//current_data = loadDaynumHabitData(active_habits, current_daynum);
+    	//current_data = loadDaynumHabitData(core_habits, current_daynum);
     }
 
     // Update the view
@@ -52,7 +52,7 @@ class DataViewSelect extends WatchUi.View {
 		// if (current_time["day_num"] != current_daynum) {
 		// 	SaveHabitData(current_data);
 		// 	current_daynum = current_time["day_num"];
-		// 	current_data = loadDaynumHabitData(active_habits, current_daynum);
+		// 	current_data = loadDaynumHabitData(core_habits, current_daynum);
 		// }
 
     }        
@@ -61,7 +61,7 @@ class DataViewSelect extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
-		SaveHabitData(current_data, active_habits);
+		SaveHabitData(current_data, core_habits);
     }
 	
 }

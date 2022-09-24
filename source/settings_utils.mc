@@ -17,6 +17,8 @@ var userDisplaySettings;
 var data_start_daynum;
 var sectorDisplay; 
 
+var outer_habits;
+var archived_habits;
 var all_habits;
 
 
@@ -63,7 +65,7 @@ function first_time_setup() {
 }
 
 
-// A function to load settings which are qualities of the device. We only support fr645m for the moment. 
+// A function to load settings which are not editable by the user. 
 function refreshFixedSettings() {
 
 	first_use_date = Application.Storage.getValue("__FIRST_USE_DAYNUM__");
@@ -117,15 +119,15 @@ function refreshUserSettings() {
     n_days = Application.Storage.getValue("__N_DAYS__");
     
     // Habits to display
-  	active_habits = Application.Storage.getValue("__ACTIVE_HABITS__");
-	n_habits = active_habits.size();
-	all_habits = Application.Storage.getValue("__ALL_HABITS__");
+  	core_habits = Application.Storage.getValue("__CORE_HABITS__");
+	outer_habits = Application.Storage.getValue("__OUTER_HABITS__");
+	archived_habits = Application.Storage.getValue("__ARCHIVED__");
 
 	// Next new habit index
 	next_new_hab_idx = Application.Storage.getValue("__NEXT_NEW_HABIT_INDEX__");
   	
   	// Total items on data display screen, +1 for settings symbol
-  	total_items = n_days*n_habits + 1;
+  	total_items = n_days*core_habits.size() + 1;
   	
   	// Habits to display
   	userDisplaySettings = Application.Storage.getValue("__USER_DISPLAY_SETTINGS__");

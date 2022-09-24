@@ -61,10 +61,10 @@ class DeletionConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             all_habits.remove(self.habit_id);
 
             // If habit was currently active
-            if (contains(active_habits, self.habit_id)) {
-                active_habits.remove(self.habit_id);
+            if (contains(core_habits, self.habit_id)) {
+                core_habits.remove(self.habit_id);
                 current_data.remove(self.habit_id);
-                n_habits = n_habits - 1;
+                //ycore_habits.size() = core_habits.size() - 1;
                 total_items = total_items - n_days;
             }
 

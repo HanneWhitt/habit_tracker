@@ -1,10 +1,11 @@
 {
-	"__ALL_HABITS__": [ 
-		"habit_0",
-		"habit_1"
+	"__CORE_HABITS__": [ 
+		"habit_0"
 	],
-	"__ACTIVE_HABITS__": [ 
-		"habit_0",
+	"__OUTER_HABITS__": [ 
+		"habit_2"
+	],
+	"__ARCHIVED__": [ 
 		"habit_1"
 	],
 	"habit_0": {
@@ -23,11 +24,18 @@
 		"frequency_type": "daily",
 		"frequency_value": [2, 4]
 	},
-	"__NEXT_NEW_HABIT_INDEX__": 2,
+	"habit_2": {
+		"Name": "Habit3",
+		"Abbreviation": "H3",
+		"Type": "Binary", 
+		"Colours": "Blue",
+		"frequency_type": "daily",
+		"frequency_value": [2, 4]
+	},
+	"__NEXT_NEW_HABIT_INDEX__": 3,
 	"__N_USES__": 0,
 	"__N_DAYS__": 14,
 	"__USER_DISPLAY_SETTINGS__": { 
 		"shape": "Annulus Sector"
 	}
-	
 }

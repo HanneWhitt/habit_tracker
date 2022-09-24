@@ -1,5 +1,27 @@
 {
     "Colour Schemes": {
+		"Heat Map - Time": {
+			"default": "Spectrum",
+			"ordering": [
+				"Spectrum",
+				"Warm",
+				"Cool"
+			],
+			"colours": {
+				"Spectrum": {
+					"Aim Time": 240,
+					"Avoid Time": 0
+				},
+				"Warm": {
+					"Aim Time": 15,
+					"Avoid Time": 60
+				},
+				"Cool": {
+					"Aim Time": 240,
+					"Avoid Time": 120
+				}
+			}
+		},
 		"Binary": {
 			"default": "Original",
 			"ordering": [

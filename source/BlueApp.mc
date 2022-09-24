@@ -34,16 +34,13 @@ class BlueApp extends Application.AppBase {
 	// the object store before the initial View is created.
     function onStart(state) {
 
-		
-		var arr = [0, 3, 3, 1, 1];
-		arr.add(2);
-		print(arr);
-		arr.removeAll(1);
-		print(arr);
-		arr.removeAll(7);
-		print(arr);
-
-
+		var deg = -20;
+		while (deg < 380) {
+			deg = deg + 10;
+			print(deg);
+			print(degree_to_rgb(deg));
+			print("");
+		}
 
 
 		// Is this the first time the app has run?

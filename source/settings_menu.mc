@@ -66,7 +66,7 @@ class HabitMenu extends WatchUi.Menu2 {
 
             hab_name = habit_metadata[hab_id]["Name"];
 
-            if (contains(active_habits, hab_id)) {
+            if (contains(core_habits, hab_id)) {
                 hab_is_active = "Active";
             } else {
                 hab_is_active = "Inactive";
@@ -130,9 +130,10 @@ class HabitMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onBack() {
-        // Update disk versions of all_habits, active habits
-        Application.Storage.setValue("__ALL_HABITS__", all_habits);
-        Application.Storage.setValue("__ACTIVE_HABITS__", active_habits);
+        // Update disk versions of core, outer, archived habits
+        Application.Storage.setValue("__OUTER_HABITS__", all_habits);
+        Application.Storage.setValue("__ARCHIVED_HABITS__", all_habits);
+        Application.Storage.setValue("__CORE_HABITS__", core_habits);
         WatchUi.popView(2);
     }
 }
@@ -156,7 +157,7 @@ class SingleHabitSettings extends WatchUi.Menu2 {
             shs_hab_id = hab_id;
             shs_hab_meta = habit_metadata[hab_id];
             Menu2.initialize({:title=>shs_hab_meta["Name"]});
-            shs_hab_is_active_bool = contains(active_habits, shs_hab_id);
+            shs_hab_is_active_bool = contains(core_habits, shs_hab_id);
             self.addItem(
                 new ToggleMenuItem(
                     "Status",
@@ -310,12 +311,11 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
                 "Active",
                 shs_hab_id
             );
-            active_habits.add(shs_hab_id);
+            core_habits.add(shs_hab_id);
             all_habits.add(shs_hab_id);
             next_new_hab_idx += 1;
             Application.Storage.setValue("__NEXT_NEW_HABIT_INDEX__", next_new_hab_idx);
-            n_habits = active_habits.size();
-            total_items = n_days*n_habits + 1;
+            total_items = n_days*core_habits.size() + 1;
             current_data = addBlankHabitData(current_data, shs_hab_id);
             editing_idx = habit_menu_view.menu_length - 2;
         } else {
@@ -327,14 +327,12 @@ class SingleHabitSettingsDelegate extends WatchUi.Menu2InputDelegate {
             if (original_hab_is_active_bool != shs_hab_is_active_bool) {
                 if (shs_hab_is_active_bool) {
                     editing_item.setSubLabel("Active");
-                    active_habits.add(shs_hab_id);
-                    n_habits = n_habits + 1;
+                    core_habits.add(shs_hab_id);
                     total_items = total_items + n_days;
                     current_data = addHabitData(current_data, [shs_hab_id]);
                 } else {
                     editing_item.setSubLabel("Inactive");
-                    active_habits.remove(shs_hab_id);
-                    n_habits = n_habits - 1;
+                    core_habits.remove(shs_hab_id);
                     total_items = total_items - n_days;
                     SaveHabitData(current_data, [shs_hab_id]);
                     current_data.remove(shs_hab_id);

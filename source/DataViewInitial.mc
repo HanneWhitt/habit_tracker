@@ -26,7 +26,7 @@ class DataViewInitial extends WatchUi.View {
     	current_daynum = getTime(null)["day_num"];
     	    	
     	// Load the data from the last n_days
-    	current_data = loadDaynumHabitData(active_habits, current_daynum);
+    	current_data = loadDaynumHabitData(core_habits, current_daynum);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -56,7 +56,7 @@ class DataViewInitial extends WatchUi.View {
 		// if (current_time["day_num"] != current_daynum) {
 		// 	SaveHabitData(current_data);
 		// 	current_daynum = current_time["day_num"];
-		// 	current_data = loadDaynumHabitData(active_habits, current_daynum);
+		// 	current_data = loadDaynumHabitData(core_habits, current_daynum);
 		// }
 
     }        

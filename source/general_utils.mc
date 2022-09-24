@@ -43,6 +43,7 @@ function contains(array, element) {
     	return array.indexOf(element) != -1;
 }
 
+
     
 function vibrate_with_delay(delay_ms, vibration_ms) {
 	if (Attention has :vibrate) {

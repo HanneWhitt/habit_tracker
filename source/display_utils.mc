@@ -103,7 +103,7 @@ class sectorDisplayer {
 		self.min_radius = fixedDisplaySettings["min_radius"];
 		self.half_radius = (self.screen_radius + self.min_radius)/2;
 		self.day_degrees = (fixedDisplaySettings["max_display_degrees"] - fixedDisplaySettings["min_display_degrees"] - (n_days - 1)*fixedDisplaySettings["gap_degrees"])/n_days;
-		self.radius_increment = (screen_radius - self.min_radius)/n_habits;
+		self.radius_increment = (screen_radius - self.min_radius)/core_habits.size();
 		reset_selection_vars();
 	}
 
@@ -166,7 +166,7 @@ class sectorDisplayer {
 			h = coords[1];
 		}
 		
-		habit_id = active_habits[h];
+		habit_id = core_habits[h];
 		datum = habit_data[habit_id][d];
 
 		temp_day_num = current_daynum - n_days + d + 1;
@@ -184,7 +184,7 @@ class sectorDisplayer {
 		
 		clearScreen(dc);
 
-		for (var h = 0; h < n_habits; h += 1) {
+		for (var h = 0; h < core_habits.size(); h += 1) {
 		
 			for (var d = 0; d < n_days; d += 1) {
 				
@@ -204,7 +204,7 @@ class sectorDisplayer {
 
 		if (self.animation_item_idx < total_items - 1) {
 
-			for (var i = 0; i < n_habits; i += 1) {
+			for (var i = 0; i < core_habits.size(); i += 1) {
 				coords = item_to_coords(self.animation_item_idx);
 				self.get_data_plot_sector(dc, habit_data, coords[0], coords[1], false);
 				self.animation_item_idx += 1;
@@ -389,7 +389,7 @@ class sectorDisplayer {
 
 	function display_habit_label(dc, h, font, colour) {
 
-		var h_id = active_habits[h];
+		var h_id = core_habits[h];
 		var h_abbrev = habit_metadata[h_id]["Abbreviation"];
 		
 		dc.setColor(colour, Graphics.COLOR_WHITE);
@@ -493,4 +493,54 @@ function get_colour(habit_id, datum, weekday, selected) {
 			throw new Lang.InvalidValueException("Only Binary habits implemented at the moment.");
 		}
 	}
+}
+
+
+function decimal_from_rgb(rgb) {
+	if (!rgb.size() == 3) {
+		throw new Lang.InvalidValueException("decimal_from_rgb needs an array of size 3");
+	}
+	return rgb[0]*65536 + rgb[1]*256 + rgb[2];
+}
+
+
+function degree_to_red(degrees) {
+	
+	// Move degree value into range -180 to 180
+	degrees = degrees.abs();
+	while (degrees > 180) {
+		degrees = degrees - 360;
+	}
+	// Positive and negative are now the same; move to 0 to 180
+	degrees = degrees.abs();
+
+	if (degrees <= 60) {
+		return 255;
+	} else if (degrees >= 120) {
+		return 0;
+	} else {
+		degrees = 120 - degrees;
+		return (degrees*255/60).toNumber();
+	}
+	
+}
+
+
+function degree_to_green(degrees) {
+	return degree_to_red(degrees - 120);
+}
+
+
+function degree_to_blue(degrees) {
+	return degree_to_red(degrees + 120);
+}
+
+
+function degree_to_rgb(degrees) {
+	return [degree_to_red(degrees), degree_to_green(degrees), degree_to_blue(degrees)];
+}
+
+
+function degree_to_decimal(degrees) {
+	return decimal_from_rgb(degree_to_rgb(degrees)));
 }
